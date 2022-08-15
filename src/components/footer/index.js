@@ -2,7 +2,8 @@
 import "./index.scss";
 
 // Components
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
+import LogoCurso from "../../screens/assets/images/logoCurso.svg";
 
 function Footer(props) {
   return (
@@ -12,7 +13,13 @@ function Footer(props) {
       }`}
     >
       <Container>
-        <p>Copyright © Todos os direitos reservados.</p>
+        <Image
+          src={LogoCurso}
+          className={"mx-auto d-block logo"}
+          loading="lazy"
+          alt=""
+          fluid
+        />
       </Container>
     </footer>
   );

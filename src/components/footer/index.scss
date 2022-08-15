@@ -21,13 +21,17 @@
     .footerComponent {
       @at-root {
         footer#{&} {
-          background: $cor1;
+          background: $cor5;
           padding: 10px 0;
           position: relative;
           bottom: 0;
           left: 0;
           width: 100%;
           z-index: 100;
+
+          .logo {
+            height: 60px;
+          }
 
           p {
             color: rgba(255, 255, 255, 1);
