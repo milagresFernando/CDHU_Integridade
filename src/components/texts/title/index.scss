@@ -107,8 +107,58 @@
         h5#{&},
         h6 #{&} {
           color: $cor3;
+
+          &.titleSection {
+            text-transform: uppercase;
+            color: $cor1;
+            &::before {
+              content: "";
+              position: absolute;
+              bottom: -20%;
+              left: -10%;
+              background-color: $cor3;
+              height: 8px;
+              width: 30%;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              bottom: -15%;
+              left: 22%;
+              background-color: #374c8c;
+              height: 1px;
+              width: 70%;
+            }
+          }
+        }
+
+        @media #{$bp-phone} {
+          &.titleSection {
+            &::before {
+              content: "";
+              bottom: -20%;
+              left: -5%;
+              height: 6px;
+              width: 53%;
+            }
+            &::after {
+              bottom: -14%;
+              left: inherit;
+              right: -5%;
+              height: 1px;
+              width: 55%;
+            }
+          }
         }
       }
+    }
+
+    .ballTitle {
+      background-color: $cor2;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-block;
     }
   }
 }

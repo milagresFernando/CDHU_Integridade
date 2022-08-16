@@ -27,6 +27,7 @@ import BotoesNavegacao from "./customComponents/botoesNavegacao";
 import ScrollParallax from "./customComponents/scrollParallax";
 import ScrollParallaxSvg from "./customComponents/scrollParallaxSvg";
 import ProgressPage from "../../components/progressPage";
+import Introducao from "./customComponents/introducao";
 
 function Page1() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
@@ -49,6 +50,7 @@ function Page1() {
       <ProgressPage className="textBar" />
       <Header hideOnScroll setTemaCor={setTemaCor} className="" />
       <Wrapper>
+        <Introducao sectionTitle="Introdução" />
         <TituloTextos sectionTitle="Títulos e textos" />
         <Imagens sectionTitle="Imagens" />
         <CaixasDestaque sectionTitle="Caixas de Destaque" />

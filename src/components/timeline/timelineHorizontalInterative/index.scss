@@ -91,7 +91,7 @@
               z-index: 5;
               top: 50%;
               left: calc(50% + 1px);
-              font-family: $fonte;
+              font-family: $fonte1;
               font-size: 30px;
               @include transform(translate(-50%, -50%));
               @include transition(all 500ms ease-in-out);

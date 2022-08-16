@@ -13,13 +13,13 @@ $radius-padrao: 12px;
 $alt-top: $altura-header + 20;
 
 // CORES
-$cor-texto: #6a6767;
+$cor-texto: #262525;
 $cor-pagina: #fff;
 
-$cor1: #001030;
-$cor2: #004a4c;
-$cor3: #00a075;
-$cor4: #00bd83;
+$cor1: #00569e;
+$cor2: #92389b;
+$cor3: #ffbb3c;
+$cor4: #fff;
 $cor5: #f1f2f6;
 
 $colorQuiz: darken(
@@ -40,7 +40,7 @@ $svg5: str_slice(#{$cor5}, 2, 7);
 // FONTES
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Asap:wght@400;500;700&family=Montserrat:wght@400;600;700&family=Saira+Semi+Condensed:wght@400;600&display=swap");
 
-$fonte: "Asap", sans-serif;
-$fonte1: "Asap Condensed", sans-serif;
-$fonte2: "Montserrat", sans-serif;
-$fonte3: "Saira Semi Condensed", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap");
+
+$fonte1: "Roboto", sans-serif; // textos
+$fonte2: Verdana, sans-serif; // titulos

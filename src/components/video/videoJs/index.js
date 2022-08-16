@@ -57,8 +57,11 @@ export const VideoJS = (props) => {
 
     controlBar: {
       children: [
-        "playToggle",
         "progressControl",
+        "playToggle",
+        "currentTimeDisplay",
+        "timeDivider",
+        "durationDisplay",
         "volumePanel",
         "qualitySelector",
         "subsCapsButton",

@@ -12,7 +12,7 @@ function Title(props) {
 
   return (
     <CustomTitle className={`title ${props.className}`}>
-      {props.content}
+      {props.content} {props.children}
     </CustomTitle>
   );
 }
