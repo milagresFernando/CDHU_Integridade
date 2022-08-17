@@ -22,9 +22,10 @@ function SvgParallax(props) {
   return (
     <div className="svgParallax" ref={props.parallaxRef}>
       <SvgInterativo
-        className="svgParallax"
+        className={`svgParallaxInner ${props.className ? props.className : ""}`}
         svgName={props.svgName}
         isParallaxSvg={true}
+        responsive={props.responsive && props.responsive}
       />
     </div>
   );

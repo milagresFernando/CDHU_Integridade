@@ -26,7 +26,7 @@ function BlocoImportante() {
       <Col lg="10">
         <Destaques
           title="Importante"
-          className="importante"
+          className="importante mb-5"
           textsBlock={textsBlock}
         />
       </Col>

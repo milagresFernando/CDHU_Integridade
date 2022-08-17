@@ -6,12 +6,15 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 import BlocoVideoIntroducao from "./blocoVideoIntroducao";
 import BlocoImportante from "./blocoImportante";
+import BlocoFinalizou from "./blocoFinalizou";
+import ParallaxGrafAzul from "../scrollParallaxSvg/parallaxGrafAzul";
 
 //Imagens
 
 function Introducao(props) {
   return (
-    <section>
+    <section className="relative">
+      <ParallaxGrafAzul />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
@@ -27,6 +30,7 @@ function Introducao(props) {
 
         <BlocoVideoIntroducao />
         <BlocoImportante />
+        <BlocoFinalizou />
       </Container>
     </section>
   );

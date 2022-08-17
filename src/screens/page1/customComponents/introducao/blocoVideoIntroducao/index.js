@@ -6,6 +6,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../../components/texts/title";
 import VideoJS from "../../../../../components/video/videoJs";
 import TextBlock from "../../../../../components/texts/text_block";
+import ParallaxGrafismoAmareloVideo from "../../scrollParallaxSvg/parallaxGrafismoAmareloVideo";
+import ParallaxGrafismoBolaAzulVideo from "../../scrollParallaxSvg/parallaxGrafismoBolaAzulVideo";
+import ParallaxGrafismoBolaRoxoVideo from "../../scrollParallaxSvg/parallaxGrafismoBolaRoxoVideo";
 
 //Video Elementos
 import videoHd from "../../../../assets/videos/opcao1.mp4";
@@ -58,8 +61,12 @@ function BlocoVideoIntroducao(props) {
           <TextBlock textsBlock={textsBlock1} />
         </Col>
       </Row>
-      <Row className="justify-content-center">
-        <Col lg="10">
+
+      <Row className="justify-content-center relative">
+        <ParallaxGrafismoAmareloVideo />
+        <ParallaxGrafismoBolaAzulVideo />
+        <ParallaxGrafismoBolaRoxoVideo />
+        <Col lg="10" className="">
           <VideoJS className="mb-5 mt-5" videoElements={videoElements} />
         </Col>
       </Row>

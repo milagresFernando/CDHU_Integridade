@@ -3,8 +3,9 @@ import "./index.scss";
 
 // React Elements/Hooks
 import GlobalState from "../../contexts/globalState";
-import { useState, useRef, useEffect, useContext } from "react";
+import { useState, useRef, useEffect, useContext, Fragment } from "react";
 import { Link } from "react-router-dom";
+import Title from "../texts/title";
 
 // Components
 import { Container, Row, Col, Form } from "react-bootstrap";
@@ -62,32 +63,30 @@ function Header(props) {
       className={`headerComponent ${props.className}`}
     >
       <Container>
-        <Row className="align-items-center justify-content-between">
-          <Col xs="2">
-            <Link to="/">
-              <img
-                src={`${process.env.PUBLIC_URL}/data/${pagesData.curso.logo}`}
-                className="img-responsive"
-                alt="Logotipo da Empresa"
-              />
-            </Link>
+        <Row className="align-items-center ">
+          <Col
+            xl={{ span: 9, offset: 1 }}
+            xs="10"
+            className="d-flex justify-content-start align-items-center"
+          >
+            <Title
+              typeH="2"
+              className="titleHeader"
+              content={<Fragment>{"Integridade"}</Fragment>}
+            ></Title>
+
+            <Title
+              typeH="3"
+              className="subTitleHeader"
+              content={
+                <Fragment>
+                  {pagesData.curso.conteudo.telas[props.pageAtual - 1].titulo}
+                </Fragment>
+              }
+            ></Title>
           </Col>
 
-          <Col xs="2">
-            <Form.Select
-              onChange={(e) => handleThemeChange(e)}
-              aria-label="Default select example"
-              id="changeTemplate"
-            >
-              <option value="custom">Custom</option>
-              <option value="azulVerde">Padrão Azul / Verde</option>
-              <option value="azulAmarelo">Padrão Azul / Amarelo</option>
-              <option value="laranja">Padrão Laranja</option>
-              <option value="verdeAreia">Padrão Verde / Areia</option>
-            </Form.Select>
-          </Col>
-
-          <Col xs="2" className="d-flex justify-content-end">
+          <Col xl="1" xs="2" className="d-flex justify-content-end">
             <BotaoMenu
               setMenuIsOpen={setMenuIsOpen}
               menuIsOpen={menuIsOpen}

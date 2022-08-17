@@ -20,7 +20,13 @@
     .headerComponent {
       @at-root {
         header#{&} {
-          background: $cor1;
+          background: rgb(63, 49, 154);
+          background: linear-gradient(
+            90deg,
+            rgba(63, 49, 154, 1) 0%,
+            rgba(146, 56, 155, 1) 35%,
+            rgba(255, 206, 199, 1) 100%
+          );
           border: none;
           display: block;
           height: $altura-header;
@@ -33,7 +39,36 @@
             position: relative;
           }
 
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='330' height='84' viewBox='0 0 330 84'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='Retângulo_2593' data-name='Retângulo 2593' width='330' height='84' transform='translate(1664)' fill='%23fff'/%3E%3C/clipPath%3E%3CclipPath id='clip-path-2'%3E%3Cpath id='Caminho_23408' data-name='Caminho 23408' d='M0,79.62V242.761l489.771,37.992V79.62Z' fill='none'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='Grupo_5161' data-name='Grupo 5161' transform='translate(16578 12930)'%3E%3Cg id='Grupo_de_máscara_2053' data-name='Grupo de máscara 2053' transform='translate(-18242 -12930)' clip-path='url(%23clip-path)'%3E%3Cg id='Grupo_2515' data-name='Grupo 2515' transform='translate(1632 -141.62)'%3E%3Cg id='Grupo_2067' data-name='Grupo 2067' clip-path='url(%23clip-path-2)'%3E%3Cpath id='Caminho_23407' data-name='Caminho 23407' d='M134.959.866c35.683,20.593,61.874,57.462,68.164,98.179s-7.968,84.38-38.049,112.533c-14.513,13.583-32.64,23.631-52.232,26.991s-40.621-.309-57-11.572c-10.283-7.071-18.959-17.956-19.38-30.429-.305-9.028,3.782-17.774,9.557-24.72,15.041-18.089,40.059-24.6,63.568-25.464a181.677,181.677,0,0,1,71.188,11.761c15.277,5.826,32,17.558,30.484,33.837-1,10.7-9.951,19.511-10.522,30.243-.766,14.395,13.4,24.878,26.71,30.414a145.321,145.321,0,0,0,106.307,1.612c7.52-2.863,15.1-6.6,19.9-13.059s5.895-16.281.538-22.285c-2.582-2.894-6.247-4.546-9.83-6.032-9.523-3.952-19.412-7.389-27.794-13.392s-15.227-15.2-15.444-25.51c-.218-10.378,6.387-19.972,14.884-25.935s18.709-8.89,28.775-11.423c40.276-10.135,82.01-15.676,120.31-31.739,23.894-10.022,48.5-27.683,51.07-53.466.571-5.732-.009-11.606,1.375-17.2s5.5-11.125,11.24-11.648' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A")
+              center right no-repeat;
+            height: 100%;
+            width: 100%;
+          }
+          @media #{$bp-xlDesktop} {
+            &::before {
+              right: -10%;
+            }
+          }
+          @media #{$bp-desktop} {
+            &::before {
+              right: -15%;
+            }
+          }
+          @media #{$bp-tablet} {
+            &::before {
+              right: -20%;
+            }
+          }
+
           @media #{$bp-phone} {
+            &::before {
+              display: none;
+            }
             .form-select {
               display: none;
             }
