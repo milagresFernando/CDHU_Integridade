@@ -46,8 +46,10 @@ function Header(props) {
     let currentScrollPos = window.pageYOffset;
     if (prevScrollpos < currentScrollPos) {
       setShowHeader(false);
+      props.setPaddingCapaTop(false);
     } else {
       setShowHeader(true);
+      props.setPaddingCapaTop(true);
     }
     prevScrollpos = currentScrollPos;
   }
@@ -100,6 +102,7 @@ function Header(props) {
         setMenuIsOpen={setMenuIsOpen}
         menuIsOpen={menuIsOpen}
         pagesData={pagesData}
+        pageAtual={props.pageAtual}
         className=""
       />
     </header>

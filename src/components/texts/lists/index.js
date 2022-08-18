@@ -23,7 +23,12 @@ function List(props) {
     // passe um anchor para criar uma lista com rotas
     if (list.route) {
       return (
-        <li key={id} className={list.className}>
+        <li
+          key={id}
+          className={`${list.className ? list.className : "routeItem"} ${
+            list.route == props.pageAtual ? "active" : ""
+          }`}
+        >
           <Link to={`/${list.route}`}>{list.titulo}</Link>
         </li>
       );
@@ -40,7 +45,10 @@ function List(props) {
     );
   });
   return (
-    <TagElement className={`list ${props.className}`}>{listItens}</TagElement>
+    <TagElement className={`list ${props.className}`}>
+      {props.isMenu && <li className="titleMenu">Menu</li>}
+      {listItens}
+    </TagElement>
   );
 }
 

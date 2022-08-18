@@ -68,7 +68,26 @@ function SvgInterativo(props) {
       <Fragment>
         {props.children}
 
-        <Suspense fallback={<div>Carregando</div>}>
+        <Suspense
+          fallback={
+            <Fragment>
+              <div className="loadingContent">
+                <div className="loaderSpinner">
+                  <div className="loadingio-spinner">
+                    <div className="spinner">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                  </div>
+
+                  <div className="textoLoader">Carregando...</div>
+                </div>
+              </div>
+            </Fragment>
+          }
+        >
           {props.acessibilidadeItens}
           <div
             tabIndex="-1"

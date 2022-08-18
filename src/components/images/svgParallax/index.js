@@ -20,7 +20,12 @@ function SvgParallax(props) {
   }, []);
 
   return (
-    <div className="svgParallax" ref={props.parallaxRef}>
+    <div
+      className={`svgParallax ${
+        props.svgParallaxClassName ? props.svgParallaxClassName : ""
+      }`}
+      ref={props.parallaxRef}
+    >
       <SvgInterativo
         className={`svgParallaxInner ${props.className ? props.className : ""}`}
         svgName={props.svgName}

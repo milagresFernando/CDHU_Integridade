@@ -28,6 +28,11 @@ function Menu(props) {
                 tagElement="ul"
                 className="ulMenu"
                 listItens={props.pagesData.curso.conteudo.telas}
+                pageAtual={
+                  props.pagesData.curso.conteudo.telas[props.pageAtual - 1]
+                    .route
+                }
+                isMenu={true}
               />
             </div>
           </Col>

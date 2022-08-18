@@ -1,0 +1,8 @@
+@import "src/App.scss";
+.capa {
+  &.p-capa {
+    padding-top: $altura-header;
+  }
+
+  @include transition(all 0.5s ease);
+}
