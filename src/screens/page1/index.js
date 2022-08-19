@@ -7,7 +7,7 @@ import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
 import Footer from "../../components/footer";
 
-import BotoesNavegacao from "./customComponents/botoesNavegacao";
+import BotoesNavegacao from "./customComponents/introducao/botoesNavegacao";
 
 import Introducao from "./customComponents/introducao";
 import Capa from "./customComponents/capa";
@@ -41,7 +41,6 @@ function Page1() {
       <Capa paddingCapaTop={paddingCapaTop} />
       <Wrapper className="pt-2 pt-md-5">
         <Introducao sectionTitle="Introdução" />
-        <BotoesNavegacao sectionTitle="Botões de Navegação" />
       </Wrapper>
       <Footer fixed className="" />
     </Fragment>

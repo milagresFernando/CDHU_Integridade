@@ -17,7 +17,7 @@ function SvgParallax(props) {
     setTimeout(() => {
       parallaxController.update();
     }, 1000);
-  }, []);
+  }, [props.monitoraMudanca]);
 
   return (
     <div

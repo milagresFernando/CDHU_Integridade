@@ -18,7 +18,7 @@ function SvgInterativo(props) {
   useEffect(() => {
     const debouncedHandleResize = debounceTimeOut(function handleResize() {
       setWindowWidth(window.innerWidth);
-    }, 1000);
+    }, 500);
 
     window.addEventListener("resize", debouncedHandleResize);
     return () => {

@@ -14,6 +14,7 @@ import setBreakPoint from "../../../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../../../globalFunctions/debounceTimeOut";
 
 function ParallaxCapa(props) {
+  const [monitoraMudanca, setMonitoraMudanca] = useState(false);
   const [cabecaValue, setCabecaValue] = useState({ speed: -10 });
   const [linhaValue, setLinhaValue] = useState({ speed: 20 });
   const [ondaValeu, setOndaValue] = useState({ speed: 30 });
@@ -32,10 +33,11 @@ function ParallaxCapa(props) {
         setLinhaValue({ speed: 10 });
         setOndaValue({ speed: 15 });
       } else if (window.innerWidth <= setBreakPoint("sm")) {
-        setCabecaValue({ speed: -2 });
+        setCabecaValue({ speed: -4 });
         setLinhaValue({ speed: 3 });
-        setOndaValue({ speed: 5 });
+        setOndaValue({ speed: 6 });
       }
+      setMonitoraMudanca(!monitoraMudanca);
     }, 500);
 
     window.addEventListener("resize", debouncedHandleResize);
@@ -53,10 +55,11 @@ function ParallaxCapa(props) {
       setLinhaValue({ speed: 10 });
       setOndaValue({ speed: 15 });
     } else if (window.innerWidth <= setBreakPoint("sm")) {
-      setCabecaValue({ speed: -2 });
+      setCabecaValue({ speed: -4 });
       setLinhaValue({ speed: 3 });
-      setOndaValue({ speed: 5 });
+      setOndaValue({ speed: 6 });
     }
+    setMonitoraMudanca(!monitoraMudanca);
   }, []);
 
   return (
@@ -72,6 +75,7 @@ function ParallaxCapa(props) {
         svgParallaxClassName="zindex3"
         className=""
         parallaxRef={capaCabeca.ref}
+        monitoraMudanca={monitoraMudanca}
         responsive
       />
       <SvgParallax
@@ -79,6 +83,7 @@ function ParallaxCapa(props) {
         svgParallaxClassName="zindex1"
         className=""
         parallaxRef={capaOnda.ref}
+        monitoraMudanca={monitoraMudanca}
         responsive
       />
       <SvgParallax
@@ -86,6 +91,7 @@ function ParallaxCapa(props) {
         svgParallaxClassName="zindex2"
         className=""
         parallaxRef={capaLinha.ref}
+        monitoraMudanca={monitoraMudanca}
         responsive
       />
     </Fragment>

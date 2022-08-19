@@ -8,6 +8,7 @@ import BlocoVideoIntroducao from "./blocoVideoIntroducao";
 import BlocoImportante from "./blocoImportante";
 import BlocoFinalizou from "./blocoFinalizou";
 import ParallaxGrafAzul from "../scrollParallaxSvg/parallaxGrafAzul";
+import BotoesNavegacao from "./botoesNavegacao";
 
 //Imagens
 
@@ -27,10 +28,10 @@ function Introducao(props) {
             </Title>
           </Col>
         </Row>
-
         <BlocoVideoIntroducao />
         <BlocoImportante />
         <BlocoFinalizou />
+        <BotoesNavegacao />
       </Container>
     </section>
   );

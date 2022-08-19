@@ -52,6 +52,15 @@ function Header(props) {
       props.setPaddingCapaTop(true);
     }
     prevScrollpos = currentScrollPos;
+
+    // esse bloco de codigo funciona para ajustar o padding quando temos uma capa logo apos o header
+    let totalPageHeight = document.body.scrollHeight;
+    let scrollPoint = window.pageYOffset + window.innerHeight;
+    if (scrollPoint >= totalPageHeight) {
+      props.setPaddingCapaTop(false);
+      return;
+    }
+    ///////////
   }
 
   function handleThemeChange(e) {
