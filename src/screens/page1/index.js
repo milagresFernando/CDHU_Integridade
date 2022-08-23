@@ -7,14 +7,12 @@ import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
 import Footer from "../../components/footer";
 
-import BotoesNavegacao from "./customComponents/introducao/botoesNavegacao";
-
 import Introducao from "./customComponents/introducao";
 import Capa from "./customComponents/capa";
 
 function Page1() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
-  const [paddingCapaTop, setPaddingCapaTop] = useState(true);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -31,18 +29,12 @@ function Page1() {
   return (
     <Fragment>
       {/* <ProgressPage className="textBar" /> */}
-      <Header
-        hideOnScroll
-        setTemaCor={setTemaCor}
-        pageAtual={1}
-        className=""
-        setPaddingCapaTop={setPaddingCapaTop}
-      />
-      <Capa paddingCapaTop={paddingCapaTop} />
+      <Header setTemaCor={setTemaCor} pageAtual={1} className="" />
+      <Capa />
       <Wrapper className="pt-2 pt-md-5">
         <Introducao sectionTitle="Introdução" />
       </Wrapper>
-      <Footer fixed className="" />
+      <Footer className="" />
     </Fragment>
   );
 }

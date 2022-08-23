@@ -19,8 +19,7 @@
   .svgParallaxInner {
     display: flex;
     position: absolute;
-    top: 0;
-    left: 0;
+
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -30,7 +29,166 @@
       &.left#{$i} {
         left: #{$i} + "%";
       }
+      &.right#{$i} {
+        right: #{$i} + "%";
+      }
+      &.top#{$i} {
+        top: #{$i} + "%";
+      }
+      &.bottom#{$i} {
+        bottom: #{$i} + "%";
+      }
       $i: $i + 10;
+    }
+
+    &.grafismoRoxoVideo {
+      width: 494px;
+      height: 336px;
+
+      @media #{$bp-tablet} {
+        width: 250px;
+        height: 170px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 105px;
+        max-height: 102px;
+      }
+    }
+    &.grafismoRoxoVideo2 {
+      width: 195px;
+      height: 195px;
+
+      @media #{$bp-tablet} {
+        width: 140px;
+        height: 140px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 101px;
+        max-height: 101px;
+      }
+    }
+    &.grafismoAmareloVideo {
+      width: 500px;
+      height: 364px;
+
+      @media #{$bp-tablet} {
+        width: 250px;
+        height: 182px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 150px;
+        max-height: 110px;
+      }
+    }
+    &.grafismoBolaAzulVideo {
+      width: 245px;
+      height: 245px;
+
+      @media #{$bp-tablet} {
+        width: 122px;
+        height: 122px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 60px;
+        max-height: 60px;
+      }
+    }
+    &.grafismoBolaAzulVideo2 {
+      width: 24px;
+      height: 24px;
+
+      @media #{$bp-tablet} {
+        width: 12px;
+        height: 12px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 12px;
+        max-height: 12px;
+      }
+    }
+    &.grafismoBolaRoxoVideo {
+      width: 67px;
+      height: 67px;
+
+      @media #{$bp-tablet} {
+        width: 34px;
+        height: 34px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 17px;
+        max-height: 17px;
+      }
+    }
+    &.grafismoBolaAmareloVideo {
+      width: 60px;
+      height: 60px;
+
+      @media #{$bp-tablet} {
+        width: 45px;
+        height: 45px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 30px;
+        max-height: 30px;
+      }
+    }
+    &.grafismoBolaLaranjaVideo {
+      width: 117px;
+      height: 117px;
+
+      @media #{$bp-tablet} {
+        width: 81px;
+        height: 81px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 50px;
+        max-height: 50px;
+      }
+    }
+    &.grafismoAzulVideo {
+      width: 330px;
+      height: 418px;
+
+      @media #{$bp-tablet} {
+        width: 214px;
+        height: 272px;
+      }
+      @media #{$bp-phone} {
+        width: 100%;
+        height: 100%;
+        max-width: 130px;
+        max-height: 165px;
+      }
+    }
+    &.grafismoAzul {
+      @media #{$bp-phone} {
+        display: none;
+      }
+    }
+  }
+}
+.safari {
+  .capa {
+    .svgParallax {
+      .svgParallaxInner {
+        display: block;
+      }
     }
   }
 }

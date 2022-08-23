@@ -18,8 +18,10 @@ function App() {
     navigator?.userAgentData?.platform || navigator?.platform || "unknown";
 
   //checagem se é um dispostivo IOS
-  let iOS = /iPad|iPhone|iPod/.test(platform);
+  let iOS = /iPad|iPhone|iPod|macOS|MacIntel/.test(platform);
   // macOS|MacIntel
+
+  let isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
   useEffect(() => {
     loadData();
@@ -28,6 +30,9 @@ function App() {
   useEffect(() => {
     if (iOS) {
       document.body.classList.add("ios");
+    }
+    if (isSafari) {
+      document.body.classList.add("safari");
     }
   });
 

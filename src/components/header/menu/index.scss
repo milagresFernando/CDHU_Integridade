@@ -129,12 +129,14 @@
                     &::before {
                       width: 5%;
                       border-bottom: solid 8px $cor3;
+                      pointer-events: none;
                     }
                     a {
                       background: $cor4;
                       opacity: 0.8;
                       padding: 12px 30px;
                       color: $cor1;
+
                       &::after {
                         z-index: -1;
                       }
@@ -142,6 +144,7 @@
                   }
 
                   &.active {
+                    pointer-events: none;
                     &::before {
                       width: 5%;
                       border-bottom: solid 8px $cor4;

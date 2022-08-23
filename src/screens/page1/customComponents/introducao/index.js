@@ -7,8 +7,10 @@ import Title from "../../../../components/texts/title";
 import BlocoVideoIntroducao from "./blocoVideoIntroducao";
 import BlocoImportante from "./blocoImportante";
 import BlocoFinalizou from "./blocoFinalizou";
-import ParallaxGrafAzul from "../scrollParallaxSvg/parallaxGrafAzul";
+import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import BotoesNavegacao from "./botoesNavegacao";
+import BlocoVideoIntroducao2 from "./blocoVideoIntroducao2";
+import BlocoVideoIntroducao3 from "./blocoVideoIntroducao3";
 
 //Imagens
 
@@ -29,6 +31,8 @@ function Introducao(props) {
           </Col>
         </Row>
         <BlocoVideoIntroducao />
+        {/* <BlocoVideoIntroducao2 />
+        <BlocoVideoIntroducao3 /> */}
         <BlocoImportante />
         <BlocoFinalizou />
         <BotoesNavegacao />
