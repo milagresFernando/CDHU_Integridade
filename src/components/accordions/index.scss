@@ -9,6 +9,8 @@
   $cor3: map-get($cor, color3);
   $cor4: map-get($cor, color4);
   $cor5: map-get($cor, color5);
+  $cor6: map-get($cor, color6);
+  $cor7: map-get($cor, color7);
 
   $svg1: str_slice(#{$cor1}, 2, 7);
   $svg2: str_slice(#{$cor2}, 2, 7);
@@ -24,8 +26,9 @@
       .accordion-item {
         background-color: transparent;
         border: 0;
+        border-bottom: 2px solid $cor3;
         border-radius: 0;
-        margin: 0 auto 5px;
+        margin: 0 auto 0px;
         padding: 0;
         position: relative;
         @include box-shadow(none);
@@ -36,8 +39,8 @@
           &::before {
             content: "";
             position: absolute;
-            background: $cor1;
-            border-radius: $radius-padrao;
+            background: $cor5;
+            border-radius: 0;
             top: 0;
             left: 0;
             width: 100%;
@@ -79,18 +82,19 @@
 
           .accordion-button {
             padding: 20px 0 20px 20px;
-            background-color: rgba(255, 255, 255, 0);
+            background-image: linear-gradient(to right, $cor1, $cor7);
             color: #fff;
             font-size: 1.5rem;
             font-weight: 700;
-
+            border-radius: 0;
             position: relative;
             z-index: 4;
 
             &::before {
               counter-increment: numPanels;
               color: #fff;
-              content: counter(numPanels) ".";
+              // content: counter(numPanels) ".";
+              content: none;
               display: flex;
               margin-right: 10px;
               z-index: 3;
@@ -107,6 +111,14 @@
             }
 
             &.collapsed {
+              background-image: linear-gradient(to right, $cor5, $cor5);
+              color: $cor1;
+
+              &:hover {
+                background-image: linear-gradient(to right, $cor1, $cor7);
+                color: #fff;
+              }
+
               &::after {
                 @include triangle(down, 15px);
               }
@@ -117,14 +129,14 @@
       .accordion-collapse {
         background-color: $cor5;
         border: 0;
-        border-radius: 0 0 $radius-padrao $radius-padrao;
+        border-radius: 0;
         margin-top: -15px;
         padding: 15px 0 0;
         position: relative;
 
         z-index: -1;
         &:last-of-type {
-          border-radius: 0 0 $radius-padrao $radius-padrao;
+          border-radius: 0;
         }
 
         .accordion-body {
