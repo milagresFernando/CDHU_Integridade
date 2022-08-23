@@ -10,8 +10,8 @@ import BlocoVoltarAvancar from "./blocoVoltarAvancar";
 
 function BotoesNavegacao(props) {
   return (
-    <Row className="align-items-center mt-5">
-      <Col className="d-flex justify-content-center align-items-center">
+    <Row className="align-items-center my-5">
+      <Col className="d-flex justify-content-center align-items-center mt-lg-5 mt-3">
         <BlocoVoltarAvancar />
       </Col>
     </Row>
