@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="grafismo2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2500">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #4dbbce;
-        opacity: .4;
-      }
-    </style>
-  </defs>
-  <rect class="cls-1" x="1116.34" y="397.98" width="414.58" height="232.23"/>
-</svg>
+version https://git-lfs.github.com/spec/v1
+oid sha256:66c803942831c21ec052836111b74f3c519dc6e1ba0a3cb7989a714d2fff8823
+size 325

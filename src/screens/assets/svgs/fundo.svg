@@ -1,11 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="fundo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 2500">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #eddcc3;
-      }
-    </style>
-  </defs>
-  <rect class="cls-1" y="0" width="1920" height="2500"/>
-</svg>
+version https://git-lfs.github.com/spec/v1
+oid sha256:8b0daf786f3fbc7d71cb7b8fd31283d911ba89ef74837eee089a49980cf9eade
+size 278
