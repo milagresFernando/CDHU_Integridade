@@ -111,6 +111,7 @@
           &.titleSection {
             text-transform: uppercase;
             color: $cor1;
+
             &::before {
               content: "";
               position: absolute;
@@ -161,6 +162,10 @@
         }
 
         @media #{$bp-tablet} {
+          &.titleSection {
+            font-size: 1.8rem;
+          }
+
           &.titleHeader {
             font-size: 1.3rem;
 
@@ -175,6 +180,7 @@
 
         @media #{$bp-phone} {
           &.titleSection {
+            font-size: 1.3rem;
             &::before {
               content: "";
               bottom: -20%;

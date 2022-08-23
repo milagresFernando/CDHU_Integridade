@@ -51,6 +51,16 @@ body {
   }
 }
 
+.gradientBlueEnd {
+  background: rgb(189, 232, 242);
+  background: linear-gradient(
+    0deg,
+    rgba(189, 232, 242, 1) 25%,
+    rgba(189, 232, 242, 0) 100%
+  );
+  z-index: 0;
+}
+
 .overflow {
   overflow: hidden;
 }

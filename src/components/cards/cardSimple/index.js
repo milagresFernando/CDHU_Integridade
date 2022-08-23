@@ -24,6 +24,11 @@ function CardSimple(props) {
             style={imgStyle}
             variant={props.cardItems.images.imgSide}
             src={props.cardItems.images.imgCard}
+            className={
+              props.cardItems.images.className
+                ? props.cardItems.images.className
+                : ""
+            }
           />
           <div className="box-content">
             <Title
@@ -46,6 +51,11 @@ function CardSimple(props) {
           style={imgStyle}
           variant={props.cardItems.images.imgSide}
           src={props.cardItems.images.imgCard}
+          className={
+            props.cardItems.images.className
+              ? props.cardItems.images.className
+              : ""
+          }
         />
       ));
     } else {
@@ -53,10 +63,25 @@ function CardSimple(props) {
         <Card.Img
           variant={props.cardItems.images.imgSide}
           src={props.cardItems.images.imgCard}
+          className={
+            props.cardItems.images.className
+              ? props.cardItems.images.className
+              : ""
+          }
         />
       ));
     }
   }
+
+  const cardTitle = props.cardItems.title && (
+    <Card.Title as="div">
+      <Title
+        typeH={props.cardItems.title.tagTitle}
+        className={props.cardItems.title.titleClassName}
+        content={<Fragment>{props.cardItems.title.titleContent}</Fragment>}
+      />
+    </Card.Title>
+  );
 
   return (
     <Fragment>
@@ -98,15 +123,8 @@ function CardSimple(props) {
           <Fragment>
             {ImgCard}
             <Card.Body className={props.cardItems.contents.contentClassName}>
-              <Card.Title as="div">
-                <Title
-                  typeH={props.cardItems.title.tagTitle}
-                  className={props.cardItems.title.titleClassName}
-                  content={
-                    <Fragment>{props.cardItems.title.titleContent}</Fragment>
-                  }
-                />
-              </Card.Title>
+              {cardTitle}
+
               <Card.Text as="div">
                 <TextBlock textsBlock={props.cardItems.contents.textBlocks} />
               </Card.Text>
@@ -116,15 +134,7 @@ function CardSimple(props) {
         {props.cardItems.images.imgSide === "bottom" && (
           <Fragment>
             <Card.Body className={props.cardItems.contents.contentClassName}>
-              <Card.Title as="div">
-                <Title
-                  typeH={props.cardItems.title.tagTitle}
-                  className={props.cardItems.title.titleClassName}
-                  content={
-                    <Fragment>{props.cardItems.title.titleContent}</Fragment>
-                  }
-                />
-              </Card.Title>
+              {cardTitle}
               <Card.Text as="div">
                 <TextBlock textsBlock={props.cardItems.contents.textBlocks} />
               </Card.Text>

@@ -17,9 +17,32 @@
 
   body,
   body.#{$tema} {
-    .nextScreen {
-      &.btn-padrao {
-        margin: 0;
+    .btn-padrao {
+      &.nextScreen {
+        position: relative;
+        background-color: transparent;
+        &.btn-padrao {
+          margin: 0;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+
+          left: 50%;
+          @include transform(translateX(-50%));
+          height: 190px;
+          width: 100vw;
+
+          z-index: -1;
+          background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 2220 272.16'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient-2); %7D .cls-2 %7B stroke-width: 1.18px; %7D .cls-2, .cls-3, .cls-4, .cls-5 %7B fill: none; %7D .cls-2, .cls-4, .cls-5 %7B stroke: %23fff; stroke-miterlimit: 10; %7D .cls-6 %7B clip-path: url(%23clippath); %7D .cls-4, .cls-5 %7B stroke-width: 1.5px; %7D .cls-7 %7B fill: url(%23linear-gradient); %7D .cls-5 %7B isolation: isolate; opacity: .5; %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='264.72' y1='675.62' x2='265.72' y2='675.62' gradientTransform='translate(-456700.13 131556.97) scale(1726.19 -194.53)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2392389b'/%3E%3Cstop offset='1' stop-color='%23ffcec7'/%3E%3C/linearGradient%3E%3ClinearGradient id='linear-gradient-2' x1='264.82' y1='675.77' x2='265.82' y2='675.77' gradientTransform='translate(-587472.58 160386.63) scale(2218.37 -237.11)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%233f319f'/%3E%3Cstop offset='0' stop-color='%2340319e'/%3E%3Cstop offset='.09' stop-color='%235e339d'/%3E%3Cstop offset='.18' stop-color='%2375359c'/%3E%3Cstop offset='.28' stop-color='%2385369b'/%3E%3Cstop offset='.39' stop-color='%238e379b'/%3E%3Cstop offset='.53' stop-color='%2392389b'/%3E%3Cstop offset='1' stop-color='%23ffcec7'/%3E%3C/linearGradient%3E%3CclipPath id='clippath'%3E%3Crect class='cls-3' width='2220' height='272.16'/%3E%3C/clipPath%3E%3C/defs%3E%3Cpath id='Caminho_34617' data-name='Caminho 34617' class='cls-7' d='M1981.84,85.97V226.49H255.65V76.73c118.94-1.13,256.51-41.79,375.42-44.55,175.5-4.08,331.34,50.56,506.37,37.4,167.75-12.61,342.86-46.09,508.46-17.49,83.18,14.37,260.06,36.48,335.94,33.88Z'/%3E%3Cpath id='Caminho_34618' data-name='Caminho 34618' class='cls-1' d='M1.63,69.18c118.86,6.83,237.55-20.93,356.49-15.34,101.9,4.79,201.1,33.93,303.05,37.85,186.94,7.18,330.83-68.03,517.41-55.15,102.54,7.08,212.82,29.12,301.07,38.55,219.33,23.42,526.51-57.2,740.35-6.84v203.92H1.63V69.18Z'/%3E%3Cg id='Grupo_5183' data-name='Grupo 5183'%3E%3Cg id='Grupo_5181' data-name='Grupo 5181'%3E%3Cpath id='Caminho_34619' data-name='Caminho 34619' class='cls-2' d='M1571.4,162.18l-23-19.22c-2.32-1.94-5.78-1.64-7.72,.68-.83,.99-1.28,2.23-1.28,3.52v38.44c0,3.03,2.45,5.48,5.48,5.48,1.29,0,2.53-.45,3.52-1.28l23-19.22c2.32-1.94,2.63-5.4,.69-7.72-.21-.25-.44-.48-.69-.69Z'/%3E%3Cpath id='Caminho_34620' data-name='Caminho 34620' class='cls-4' d='M1599.19,164.08l-12.6-10.53c-1.27-1.07-3.16-.9-4.23,.37-.45,.54-.7,1.23-.7,1.93v21.06c0,1.66,1.34,3,3,3,.71,0,1.39-.25,1.93-.7l12.6-10.53c1.27-1.06,1.44-2.96,.38-4.23-.11-.14-.24-.26-.38-.37Z'/%3E%3C/g%3E%3Cg id='Grupo_5182' data-name='Grupo 5182'%3E%3Cpath id='Caminho_34621' data-name='Caminho 34621' class='cls-2' d='M700.24,162.18l-23-19.22c-2.32-1.94-5.78-1.64-7.72,.69-.83,.99-1.28,2.23-1.28,3.52v38.44c0,3.03,2.46,5.48,5.48,5.48,1.29,0,2.53-.45,3.52-1.28l23-19.22c2.32-1.94,2.63-5.4,.69-7.72-.21-.25-.44-.48-.69-.69Z'/%3E%3Cpath id='Caminho_34622' data-name='Caminho 34622' class='cls-4' d='M728.03,164.08l-12.6-10.53c-1.27-1.07-3.16-.9-4.23,.37-.45,.54-.7,1.23-.7,1.93v21.06c0,1.66,1.34,3,3,3,.71,0,1.39-.25,1.93-.7l12.6-10.53c1.27-1.07,1.43-2.96,.37-4.23-.11-.13-.23-.26-.37-.37Z'/%3E%3C/g%3E%3C/g%3E%3Cg id='Grupo_5185' data-name='Grupo 5185'%3E%3Cg class='cls-6'%3E%3Cg id='Grupo_5184' data-name='Grupo 5184'%3E%3Cpath id='Caminho_34623' data-name='Caminho 34623' class='cls-5' d='M-89.35,100.15C5.08,146.19,121.03,139.57,228.38,126.58s218.67-30.78,322.34-3.39c23.72,6.27,48.11,15.91,61.05,34.21,23.21,32.82-3.53,76.15-55.13,75.21-44.47-.81-73.13-50.27-46.29-80.94,10.86-12.41,27.45-20.21,44.49-25.21,58.71-17.24,181.68-10.2,238.54,11.19s109.15,51.31,166.84,70.97c138.3,47.12,234.81,31.36,376.8-9.65,140.48-40.58,143.95-95.41,420.84-92.09,133.08,1.59,343.84,86.07,476.85,81.52,109.01-3.73,216.42-37.11,303.26-94.23'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+            center
+            bottom
+            no-repeat;
+
+          background-size: 100vw auto;
+        }
       }
     }
   }

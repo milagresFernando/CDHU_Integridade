@@ -218,7 +218,7 @@
           // Abre e Fecha Menu
           &.menu-aberto {
             opacity: 1;
-            height: calc(100% - 140px);
+            height: 100%;
             overflow-y: visible;
 
             .menuBG {

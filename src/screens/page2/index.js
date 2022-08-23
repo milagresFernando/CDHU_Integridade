@@ -34,10 +34,7 @@ function Page2() {
 
       <Wrapper className="">
         <ProgramaIntegridade sectionTitle="PROGRAMA DE INTEGRIDADE DA CDHU" />
-        <MonitoramentoPrograma
-          sectionTitle="Monitoramento do Programa de Integridade
-"
-        />
+        <MonitoramentoPrograma sectionTitle="Monitoramento do Programa de Integridade" />
       </Wrapper>
       <Footer className="" />
     </Fragment>

@@ -16,14 +16,14 @@ import BlocoVideoIntroducao3 from "./blocoVideoIntroducao3";
 
 function Introducao(props) {
   return (
-    <section className="relative">
+    <section className="relative gradientBlueEnd">
       <ParallaxGrafAzul />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-4"
+              className="titleSection mb-5"
               content={<Fragment>{props.sectionTitle}</Fragment>}
             >
               <span className="ballTitle"></span>
