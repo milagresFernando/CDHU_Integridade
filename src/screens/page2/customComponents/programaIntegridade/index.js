@@ -4,25 +4,21 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
-import BlocoVideoIntroducao from "./blocoVideoIntroducao";
-import BlocoImportante from "./blocoImportante";
-import BlocoFinalizou from "./blocoFinalizou";
-import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
-
+import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
 import BlocoVideoIntroducao2 from "./blocoVideoIntroducao2";
+import Bloco3Cards from "./bloco3Cards";
 
 //Imagens
 
 function ProgramaIntegridade(props) {
   return (
     <section className="relative">
-      <ParallaxGrafAzul />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-4"
+              className="titleSection mb-5"
               content={<Fragment>{props.sectionTitle}</Fragment>}
             >
               <span className="ballTitle"></span>
@@ -30,10 +26,12 @@ function ProgramaIntegridade(props) {
           </Col>
         </Row>
         <BlocoVideoIntroducao2 />
-        {/* <BlocoVideoIntroducao2 />
-        <BlocoVideoIntroducao3 /> */}
+      </Container>
 
-        <BlocoFinalizou />
+      <ParallaxOndas />
+
+      <Container>
+        <Bloco3Cards />
       </Container>
     </section>
   );

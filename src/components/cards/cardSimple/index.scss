@@ -24,6 +24,29 @@
       border: 2px solid $cor1;
       overflow: hidden;
 
+      &.tela2 {
+        margin-top: 20px;
+        border: none;
+        border-radius: 0;
+        background-color: $cor5;
+
+        overflow: initial;
+        .imgTela2 {
+          margin: 0 auto;
+          max-width: 150px;
+          position: relative;
+          top: -20px;
+        }
+        .card-body {
+          padding-top: 0;
+          .card-text {
+            .textBlock {
+              color: #374c8c;
+            }
+          }
+        }
+      }
+
       .img-content {
         width: 100%;
       }
@@ -440,6 +463,13 @@
             .textBlock {
               padding: 0.5rem 1rem 1rem 1rem;
             }
+          }
+        }
+      }
+      @media #{$bp-phone} {
+        &.tela2 {
+          .imgTela2 {
+            max-width: 110px;
           }
         }
       }

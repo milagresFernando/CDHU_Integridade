@@ -14,10 +14,22 @@ import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
 function ParallaxCapa(props) {
+  let cabecaValueDesk = -10;
+  let cabecaValueTablet = -5;
+  let cabecaValueMobile = -4;
+
+  let linhaValueDesk = 20;
+  let linhaValueTablet = 10;
+  let linhaValueMobile = 3;
+
+  let ondaValueDesk = 30;
+  let ondaValueTablet = 15;
+  let ondaValueMobile = 6;
+
   const [monitoraMudanca, setMonitoraMudanca] = useState(false);
-  const [cabecaValue, setCabecaValue] = useState({ speed: -10 });
-  const [linhaValue, setLinhaValue] = useState({ speed: 20 });
-  const [ondaValeu, setOndaValue] = useState({ speed: 30 });
+  const [cabecaValue, setCabecaValue] = useState({ speed: cabecaValueDesk });
+  const [linhaValue, setLinhaValue] = useState({ speed: linhaValueDesk });
+  const [ondaValeu, setOndaValue] = useState({ speed: ondaValueDesk });
 
   const capaCabeca = useParallax(cabecaValue);
   const capaLinha = useParallax(linhaValue);
@@ -29,13 +41,13 @@ function ParallaxCapa(props) {
         window.innerWidth <= setBreakPoint("lg") &&
         window.innerWidth > setBreakPoint("sm")
       ) {
-        setCabecaValue({ speed: -5 });
-        setLinhaValue({ speed: 10 });
-        setOndaValue({ speed: 15 });
+        setCabecaValue({ speed: cabecaValueTablet });
+        setLinhaValue({ speed: linhaValueTablet });
+        setOndaValue({ speed: ondaValueTablet });
       } else if (window.innerWidth <= setBreakPoint("sm")) {
-        setCabecaValue({ speed: -4 });
-        setLinhaValue({ speed: 3 });
-        setOndaValue({ speed: 6 });
+        setCabecaValue({ speed: cabecaValueMobile });
+        setLinhaValue({ speed: linhaValueMobile });
+        setOndaValue({ speed: ondaValueMobile });
       }
       setMonitoraMudanca(!monitoraMudanca);
     }, 500);
@@ -51,13 +63,13 @@ function ParallaxCapa(props) {
       window.innerWidth <= setBreakPoint("lg") &&
       window.innerWidth > setBreakPoint("sm")
     ) {
-      setCabecaValue({ speed: -5 });
-      setLinhaValue({ speed: 10 });
-      setOndaValue({ speed: 15 });
+      setCabecaValue({ speed: cabecaValueTablet });
+      setLinhaValue({ speed: linhaValueTablet });
+      setOndaValue({ speed: ondaValueTablet });
     } else if (window.innerWidth <= setBreakPoint("sm")) {
-      setCabecaValue({ speed: -4 });
-      setLinhaValue({ speed: 3 });
-      setOndaValue({ speed: 6 });
+      setCabecaValue({ speed: cabecaValueMobile });
+      setLinhaValue({ speed: linhaValueMobile });
+      setOndaValue({ speed: ondaValueMobile });
     }
     setMonitoraMudanca(!monitoraMudanca);
   }, []);

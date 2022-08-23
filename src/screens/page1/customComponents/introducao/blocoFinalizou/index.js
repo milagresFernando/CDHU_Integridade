@@ -37,7 +37,7 @@ function BlocoFinalizou(props) {
     },
   ];
   return (
-    <Row className="justify-content-center">
+    <Row className="justify-content-center mb-5">
       <Col lg="10">
         <TextBlock textsBlock={textsBlock1} />
       </Col>
