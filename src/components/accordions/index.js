@@ -13,6 +13,7 @@ import FlexImgWithText from "../images/flexImgWithText";
 function Accordions(props) {
   const [accordionIsImgFull, setAccordionIsImgFull] = useState(false);
   const [idAtual, setidAtual] = useState();
+  const [classeItem, setClasseItem] = useState("");
   //type pode ser "full", "fullLeft" ou "fullRight"
   //imgSide pode ser "top", "left", "bottom" ,"right" "fullRight" ou "fullLeft"
 
@@ -30,17 +31,29 @@ function Accordions(props) {
     } else {
       setAccordionIsImgFull(false);
     }
+
+    if (id == idAtual && classeItem == "ativo") {
+      setClasseItem("");
+      return;
+    } else {
+      setClasseItem("ativo");
+      return;
+    }
   }
 
   const accordionItens = props.accordionItens.map((accordionItem, id) => {
     return (
-      <Accordion.Item eventKey={id} key={id}>
+      <Accordion.Item
+        eventKey={id}
+        key={id}
+        className={id == idAtual && classeItem}
+      >
         <Accordion.Header
           onClick={() => handleClickAccordion(accordionItem.images, id)}
           as={`h${accordionItem.title.tagTitle}`}
           className={`${props.type ? "typeFull" : ""} ${props.type} ${
             accordionItem.title.titleClassName
-          }`}
+          }title`}
         >
           {accordionItem.title.titleContent}
         </Accordion.Header>

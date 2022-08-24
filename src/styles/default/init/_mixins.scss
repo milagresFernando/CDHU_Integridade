@@ -82,22 +82,28 @@
 }
 
 // SETA
-@mixin arrow($direction: up, $width: 10px, $color: #fff) {
-  width: 0;
-  height: 0;
-  border: $width solid transparent;
+@mixin arrow($direction: up, $width: 3px, $color: #fff) {
+  // width: 0;
+  // height: 0;
+  // border: $width solid transparent;
+
+  border: solid $color;
+  border-width: 0 $width $width 0;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 3px;
 
   @if ($direction == left) {
-    border-right-color: $color;
-    border-left: 0;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
   } @else if($direction == right) {
-    border-left-color: $color;
-    border-right: 0;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
   } @else if($direction == down) {
-    border-top-color: $color;
-    border-bottom: 0;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
   } @else {
-    border-bottom-color: $color;
-    border-top: 0;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
   }
 }

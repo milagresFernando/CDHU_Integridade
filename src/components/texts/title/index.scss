@@ -159,6 +159,15 @@
             font-weight: 400;
             margin: 0;
           }
+
+          &.accordion-header {
+            margin: 0;
+            .accordion-button {
+              font-size: 1.3rem;
+              font-weight: 700;
+              font-family: $fonte2;
+            }
+          }
         }
 
         @media #{$bp-tablet} {
@@ -175,6 +184,11 @@
           }
           &.subTitleHeader {
             font-size: 1.3rem;
+          }
+          &.accordion-header {
+            .accordion-button {
+              font-size: 1rem;
+            }
           }
         }
 
@@ -206,6 +220,11 @@
           }
           &.subTitleHeader {
             font-size: 1rem;
+          }
+          &.accordion-header {
+            .accordion-button {
+              font-size: 0.9rem;
+            }
           }
         }
       }

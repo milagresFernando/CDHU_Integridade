@@ -24,4 +24,11 @@
     text-decoration: none;
   }
   color: $cor-texto;
+
+  @media #{$bp-phone} {
+    &.accordion-text {
+      font-size: 0.9rem;
+      font-family: $fonte1;
+    }
+  }
 }
