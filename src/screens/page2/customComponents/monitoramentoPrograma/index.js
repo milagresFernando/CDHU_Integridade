@@ -10,6 +10,7 @@ import BlocoFinalizou from "./blocoFinalizou";
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 
 import BlocoVideoIntroducao3 from "./blocoVideoIntroducao3";
+import BotoesNavegacao from "./botoesNavegacao";
 
 //Imagens
 
@@ -32,6 +33,7 @@ function MonitoramentoPrograma(props) {
         <BlocoVideoIntroducao3 />
         <BlocoSaibaMais />
         <BlocoFinalizou />
+        <BotoesNavegacao />
       </Container>
     </section>
   );

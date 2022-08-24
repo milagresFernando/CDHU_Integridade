@@ -17,10 +17,12 @@ function Page2() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   useEffect(() => {
     if (temaCor) {
-      document.body.classList.value.search("ios") !== -1
-        ? (document.body.className = "ios")
+      console.log(document.body.classList.value);
+      document.body.classList.value.search("ios safari") !== -1
+        ? (document.body.className = "ios safari")
         : (document.body.className = "");
 
       document.body.classList.add(temaCor);
@@ -36,7 +38,6 @@ function Page2() {
         <ProgramaIntegridade sectionTitle="PROGRAMA DE INTEGRIDADE DA CDHU" />
         <MonitoramentoPrograma sectionTitle="Monitoramento do Programa de Integridade" />
       </Wrapper>
-      <Footer className="" />
     </Fragment>
   );
 }

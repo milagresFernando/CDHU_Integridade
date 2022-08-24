@@ -82,7 +82,6 @@ function ParallaxOndas(props) {
 
   return (
     <Fragment>
-      {/* <SvgInterativo className="" svgName="Fundo" isParallaxSvg={true} /> */}
       <div className="relative ondasWrapper">
         <SvgParallax
           svgName="OndaFrente"

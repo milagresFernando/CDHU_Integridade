@@ -2,7 +2,7 @@ import * as React from "react";
 
 function Estatico(props) {
   return (
-    <svg id="Layer_1" x={0} y={0} viewBox="0 0 940 1030" xmlSpace="preserve">
+    <svg id="EstaticoId" x={0} y={0} viewBox="0 0 940 1030" xmlSpace="preserve">
       <style>
         {
           "#Estatico .st1{fill:#fff}#Estatico .st2,#Estatico .st3{fill:none;stroke:#fff;stroke-width:10;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}#Estatico .st3{stroke:#e7e5bd;stroke-width:22.5442}#Estatico .st4{fill:none}#Estatico .st5{font-family:Asap}#Estatico .st6{font-size:18px}#Estatico .st7{fill:#d6d9c4}#Estatico .st8{font-family:Montserrat;font-weight:700}#Estatico .st9{font-size:40px}#Estatico .st10{font-size:22px}#Estatico .st12{fill:none;stroke:#fff;stroke-width:5;stroke-miterlimit:10}#Estatico .st13{fill:#fff;stroke:#fff;stroke-miterlimit:10}#Estatico .st15,#Estatico .st16{fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10}#Estatico .st16{stroke-width:3}"

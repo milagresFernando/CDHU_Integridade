@@ -35,9 +35,13 @@ function Guide() {
     window.scrollTo(0, 0);
   }, []);
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  useEffect(() => {
     if (temaCor) {
-      document.body.classList.value.search("ios") !== -1
-        ? (document.body.className = "ios")
+      console.log(document.body.classList.value);
+      document.body.classList.value.search("ios safari") !== -1
+        ? (document.body.className = "ios safari")
         : (document.body.className = "");
 
       document.body.classList.add(temaCor);
@@ -46,15 +50,17 @@ function Guide() {
 
   return (
     <Fragment>
-      <ProgressPage className="textBar" />
-      <Header hideOnScroll setTemaCor={setTemaCor} className="" />
+      {/* <ProgressPage className="textBar" /> */}
+      <Header hideOnScroll setTemaCor={setTemaCor} className="" pageAtual={1} />
       <Wrapper>
         <Title typeH="1" className="" content={<Fragment>Page 1</Fragment>} />
         <hr />
+        <CaixasRetrateis sectionTitle="Caixa Retrátil" />
+        <CaixasDestaque sectionTitle="Caixas de Destaque" />
+
         <TituloTextos sectionTitle="Títulos e textos" />
         <Imagens sectionTitle="Imagens" />
-        <CaixasDestaque sectionTitle="Caixas de Destaque" />
-        <CaixasRetrateis sectionTitle="Caixa Retrátil" />
+
         <Cards sectionTitle="Cards" />
         <FlipCards sectionTitle="Flip cards" menuoption />
         <Abas sectionTitle="Abas" />

@@ -34,7 +34,7 @@ function App() {
     if (isSafari) {
       document.body.classList.add("safari");
     }
-  });
+  }, []);
 
   async function loadData() {
     const data = await PagesService.getPages();

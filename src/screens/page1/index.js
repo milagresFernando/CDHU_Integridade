@@ -18,8 +18,9 @@ function Page1() {
   }, []);
   useEffect(() => {
     if (temaCor) {
-      document.body.classList.value.search("ios") !== -1
-        ? (document.body.className = "ios")
+      console.log(document.body.classList.value);
+      document.body.classList.value.search("ios safari") !== -1
+        ? (document.body.className = "ios safari")
         : (document.body.className = "");
 
       document.body.classList.add(temaCor);
@@ -34,7 +35,6 @@ function Page1() {
       <Wrapper className="pt-2 pt-md-5">
         <Introducao sectionTitle="Introdução" />
       </Wrapper>
-      <Footer className="" />
     </Fragment>
   );
 }

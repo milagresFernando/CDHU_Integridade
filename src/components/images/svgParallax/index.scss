@@ -53,8 +53,8 @@
       $i: $i + 5;
     }
 
-    &.ondaFrente {
-    }
+    // &.ondaFrente {
+    // }
     &.ondasBg {
       width: 100%;
       height: 800px;
@@ -68,9 +68,6 @@
       @media #{$bp-phone} {
         top: -10%;
       }
-    }
-    &.ondaTras {
-      opacity: 0.5;
     }
 
     &.grafismoRoxoVideo {
@@ -230,7 +227,9 @@
     height: 450px;
   }
 }
-.safari {
+.safari,
+.ios,
+.custom {
   .capa {
     .svgParallax {
       .svgParallaxInner {

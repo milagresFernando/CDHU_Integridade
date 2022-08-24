@@ -3,7 +3,7 @@ import * as React from "react";
 function Interacao_01_xs(props) {
   return (
     <svg
-      id="Interacao_01_xs"
+      id="Interacao_01_xsId1"
       x={0}
       y={0}
       viewBox="0 0 1140 500"
@@ -11,11 +11,11 @@ function Interacao_01_xs(props) {
     >
       <style>
         {
-          "#Interacao_01_xs .st0{fill:#00a075}#Interacao_01_xs .st2,#Interacao_01_xs .st3{fill:none;stroke:#001030;stroke-width:4;stroke-miterlimit:10}#Interacao_01_xs .st3{stroke:#004a4c;stroke-dasharray:6,4}#Interacao_01_xs .st4{fill:#004a4c}#Interacao_01_xs .st5{fill:#001030}#Interacao_01_xs .st6{fill:#fff}#Interacao_01_xs .st7{font-family:Montserrat;font-weight:700}#Interacao_01_xs .st8{font-size:18px}#Interacao_01_xs .st9{fill:#fff;stroke:#001030;stroke-width:4;stroke-miterlimit:10}#Interacao_01_xs .st10{fill:none}#Interacao_01_xs .st11{font-size:16px}#Interacao_01_xs .st12{enable-background:new}#Interacao_01_xs .st13{fill:none}#Interacao_01_xs .st13,#Interacao_01_xs .st14{stroke:#000;stroke-width:4;stroke-miterlimit:10}"
+          "#Interacao_01_xsId1 .st0{fill:#00a075}#Interacao_01_xsId1 .st2,#Interacao_01_xsId1 .st3{fill:none;stroke:#001030;stroke-width:4;stroke-miterlimit:10}#Interacao_01_xsId1 .st3{stroke:#004a4c;stroke-dasharray:6,4}#Interacao_01_xsId1 .st4{fill:#004a4c}#Interacao_01_xsId1 .st5{fill:#001030}#Interacao_01_xsId1 .st6{fill:#fff}#Interacao_01_xsId1 .st7{font-family:Montserrat;font-weight:700}#Interacao_01_xsId1 .st8{font-size:18px}#Interacao_01_xsId1 .st9{fill:#fff;stroke:#001030;stroke-width:4;stroke-miterlimit:10}#Interacao_01_xsId1 .st10{fill:none}#Interacao_01_xsId1 .st11{font-size:16px}#Interacao_01_xsId1 .st12{enable-background:new}#Interacao_01_xsId1 .st13{fill:none}#Interacao_01_xsId1 .st13,#Interacao_01_xsId1 .st14{stroke:#000;stroke-width:4;stroke-miterlimit:10}"
         }
       </style>
-      <g id="Layer_5">
-        <g id="Ilustra">
+      <g id="Interacao_01_xsId2">
+        <g id="Interacao_01_xsId3">
           <path
             className="st0"
             d="M250.1 175.2c-35.9 0-64.9 29.1-64.9 64.9 0 13.9 4.4 26.8 11.9 37.4 1.4-1.2 3.2-1.9 5.2-1.9 4.5 0 8.1 3.6 8.1 8.1 0 2.2-.9 4.3-2.4 5.8 11.4 9.7 26.1 15.6 42.2 15.6 35.8-.1 64.8-29.1 64.8-65 0-35.8-29-64.9-64.9-64.9zM416.8 41.2c-1.5 1.5-3.5 2.5-5.8 2.5-3.4 0-6.3-2.1-7.5-5-1.9-.2-3.8-.3-5.7-.3-35.9 0-64.9 29.1-64.9 64.9s29.1 64.9 64.9 64.9 64.9-29.1 64.9-64.9c0-29.2-19.3-54-45.9-62.1z"
