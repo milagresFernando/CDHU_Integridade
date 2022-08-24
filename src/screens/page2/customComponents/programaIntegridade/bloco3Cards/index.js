@@ -134,7 +134,6 @@ function Bloco3Cards() {
           </Row>
         </Col>
       </Row>
-      <hr />
     </Fragment>
   );
 }

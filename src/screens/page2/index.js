@@ -17,10 +17,12 @@ function Page2() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   useEffect(() => {
     if (temaCor) {
-      document.body.classList.value.search("ios") !== -1
-        ? (document.body.className = "ios")
+      console.log(document.body.classList.value);
+      document.body.classList.value.search("ios safari") !== -1
+        ? (document.body.className = "ios safari")
         : (document.body.className = "");
 
       document.body.classList.add(temaCor);

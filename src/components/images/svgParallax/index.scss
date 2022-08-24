@@ -230,11 +230,28 @@
     height: 450px;
   }
 }
-.safari {
-  .capa {
+.safari,
+.ios,
+.custom {
+  .capa,
+  .ondasWrapper {
     .svgParallax {
       .svgParallaxInner {
         display: block;
+      }
+    }
+  }
+}
+
+.safari,
+.ios,
+.custom {
+  .ondasWrapper {
+    .svgParallax {
+      .svgParallaxInner {
+        &.ondaTras {
+          opacity: 1;
+        }
       }
     }
   }
