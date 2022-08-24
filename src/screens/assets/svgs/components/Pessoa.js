@@ -2,7 +2,7 @@ import * as React from "react";
 
 function Pessoa(props) {
   return (
-    <svg id="prefix__pessoa" viewBox="0 0 1920 2500">
+    <svg id="PessoaId1" viewBox="0 0 1920 2500">
       <defs>
         <style>
           {

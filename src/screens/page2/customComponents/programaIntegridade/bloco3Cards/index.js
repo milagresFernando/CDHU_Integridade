@@ -107,7 +107,7 @@ function Bloco3Cards() {
           <TextBlock textsBlock={textsBlock1} />
         </Col>
       </Row>
-      <Row className="justify-content-center mt-5">
+      <Row className="justify-content-center my-5">
         <Col lg="10">
           <Row>
             <Col xs="12" sm="6" md="4" className="d-flex">

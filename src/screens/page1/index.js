@@ -35,7 +35,6 @@ function Page1() {
       <Wrapper className="pt-2 pt-md-5">
         <Introducao sectionTitle="Introdução" />
       </Wrapper>
-      <Footer className="" />
     </Fragment>
   );
 }

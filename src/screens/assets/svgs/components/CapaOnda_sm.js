@@ -2,7 +2,11 @@ import * as React from "react";
 
 function CapaOnda_sm(props) {
   return (
-    <svg data-name="capa_tablet_0002_Onda\xA0Image" viewBox="0 0 992 1230">
+    <svg
+      data-name="capa_tablet_0002_Onda\xA0Image"
+      viewBox="0 0 992 1230"
+      id="CapaOnda_sm"
+    >
       <image
         data-name="capa_tablet_0002_Onda\xA0Image"
         width={992}

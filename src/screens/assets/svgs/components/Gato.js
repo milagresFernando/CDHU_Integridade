@@ -2,7 +2,7 @@ import * as React from "react";
 
 function Gato(props) {
   return (
-    <svg id="prefix__gato" viewBox="0 0 1920 2500">
+    <svg id="GatoId" viewBox="0 0 1920 2500">
       <defs>
         <style>{".prefix__cls-3{fill:#3b3b4c}"}</style>
       </defs>

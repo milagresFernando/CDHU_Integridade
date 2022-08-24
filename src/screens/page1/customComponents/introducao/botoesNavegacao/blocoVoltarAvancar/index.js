@@ -13,7 +13,7 @@ function BlocoVoltarAvancar(props) {
   // passe para o middleItem, algum texto que você queira que fique entre os dois números
   return (
     <Fragment>
-      <NextScreen className="" size="lg" />
+      <NextScreen className="mt-lg-5 mt-3" size="lg" />
     </Fragment>
   );
 }

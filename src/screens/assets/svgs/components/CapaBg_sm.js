@@ -1,7 +1,11 @@
 import * as React from "react";
 function CapaBg_sm(props) {
   return (
-    <svg data-name="capa_tablet_0003_BG\xA0Image" viewBox="0 0 992 1230">
+    <svg
+      data-name="capa_tablet_0003_BG\xA0Image"
+      viewBox="0 0 992 1230"
+      id="CapaBg_sm"
+    >
       <image
         data-name="capa_tablet_0003_BG\xA0Image"
         width={992}

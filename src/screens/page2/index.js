@@ -38,7 +38,6 @@ function Page2() {
         <ProgramaIntegridade sectionTitle="PROGRAMA DE INTEGRIDADE DA CDHU" />
         <MonitoramentoPrograma sectionTitle="Monitoramento do Programa de Integridade" />
       </Wrapper>
-      <Footer className="" />
     </Fragment>
   );
 }

@@ -53,8 +53,8 @@
       $i: $i + 5;
     }
 
-    &.ondaFrente {
-    }
+    // &.ondaFrente {
+    // }
     &.ondasBg {
       width: 100%;
       height: 800px;
@@ -68,9 +68,6 @@
       @media #{$bp-phone} {
         top: -10%;
       }
-    }
-    &.ondaTras {
-      opacity: 0.5;
     }
 
     &.grafismoRoxoVideo {
@@ -233,25 +230,10 @@
 .safari,
 .ios,
 .custom {
-  .capa,
-  .ondasWrapper {
+  .capa {
     .svgParallax {
       .svgParallaxInner {
         display: block;
-      }
-    }
-  }
-}
-
-.safari,
-.ios,
-.custom {
-  .ondasWrapper {
-    .svgParallax {
-      .svgParallaxInner {
-        &.ondaTras {
-          opacity: 1;
-        }
       }
     }
   }

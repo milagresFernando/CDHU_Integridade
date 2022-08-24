@@ -2,7 +2,11 @@ import * as React from "react";
 
 function CapaLinha_xs(props) {
   return (
-    <svg data-name="capa_mobile_0000_Linha_Cima\xA0Image" viewBox="0 0 576 752">
+    <svg
+      data-name="capa_mobile_0000_Linha_Cima\xA0Image"
+      viewBox="0 0 576 752"
+      id="CapaLinha_xs"
+    >
       <image
         data-name="capa_mobile_0000_Linha_Cima\xA0Image"
         width={576}

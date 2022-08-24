@@ -3,7 +3,7 @@ import * as React from "react";
 function Interacao_02(props) {
   return (
     <svg
-      id="Interacao_02"
+      id="Interacao_02Id1"
       x={0}
       y={0}
       viewBox="0 0 1140 600"
@@ -11,10 +11,10 @@ function Interacao_02(props) {
     >
       <style>
         {
-          "#Interacao_02 .st0{fill:#00a075}#Interacao_02 .st1{fill:none;stroke:#0a0d33;stroke-width:3;stroke-miterlimit:10}#Interacao_02 .st2{font-family:&apos;ArialMT&apos;}#Interacao_02 .st3{font-size:12px}#Interacao_02 .st4{fill:#fff}#Interacao_02 .st5{font-family:Montserrat;font-weight:700}#Interacao_02 .st6{font-size:17px}#Interacao_02 .st7{fill:#004a4c}#Interacao_02 .st8{enable-background:new}#Interacao_02 .st9{fill:#001030}"
+          "#Interacao_02Id1 .st0{fill:#00a075}#Interacao_02Id1 .st1{fill:none;stroke:#0a0d33;stroke-width:3;stroke-miterlimit:10}#Interacao_02Id1 .st2{font-family:&apos;ArialMT&apos;}#Interacao_02Id1 .st3{font-size:12px}#Interacao_02Id1 .st4{fill:#fff}#Interacao_02Id1 .st5{font-family:Montserrat;font-weight:700}#Interacao_02Id1 .st6{font-size:17px}#Interacao_02Id1 .st7{fill:#004a4c}#Interacao_02Id1 .st8{enable-background:new}#Interacao_02Id1 .st9{fill:#001030}"
         }
       </style>
-      <g id="Ilustra">
+      <g id="Interacao_02Id2">
         <path
           className="st0"
           d="M239.7 283.3v-221C141.9 64.4 59.2 128.1 29 216.1l210.7 67.2zM253.7 283.3l210.4-68c-30.5-87.7-112.9-151-210.4-153.1v221.1zM257.8 295.8l130.1 178.7c54.6-41.7 89.8-107.4 89.8-181.3 0-22.7-3.3-44.6-9.5-65.3l-210.4 67.9zM236.6 296.9L26 229.6c-6 20.5-9.3 42.1-9.3 64.5 0 74.5 35.7 140.7 91 182.3l128.9-179.5zM246.7 304.7L117.8 484.3c36.7 25.2 81 39.9 128.9 39.9 48.4 0 93.2-15.1 130.1-40.8L246.7 304.7z"

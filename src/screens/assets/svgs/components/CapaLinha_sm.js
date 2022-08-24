@@ -5,6 +5,7 @@ function CapaLinha_sm(props) {
     <svg
       data-name="capa_tablet_0000_Linha_Cima\xA0Image"
       viewBox="0 0 992 1230"
+      id="CapaLinha_sm"
     >
       <image
         data-name="capa_tablet_0000_Linha_Cima\xA0Image"

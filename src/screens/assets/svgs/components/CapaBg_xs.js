@@ -2,7 +2,11 @@ import * as React from "react";
 
 function CapaBg_xs(props) {
   return (
-    <svg data-name="capa_mobile_0003_BG\xA0Image" viewBox="0 0 576 752">
+    <svg
+      data-name="capa_mobile_0003_BG\xA0Image"
+      viewBox="0 0 576 752"
+      id="CapaBg_xs"
+    >
       <image
         data-name="capa_mobile_0003_BG\xA0Image"
         width={576}
