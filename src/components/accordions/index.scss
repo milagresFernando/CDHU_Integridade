@@ -34,6 +34,7 @@
         padding: 0;
         position: relative;
         @include box-shadow(none);
+        @include transition(all 0.4s ease-in);
 
         &.ativo {
           margin-top: 20px;
@@ -184,6 +185,7 @@
         }
       }
       .accordion-collapse {
+        @include transition(all 0.4s ease-in);
         background-color: $cor5;
         border: 0;
         border-radius: 0;
