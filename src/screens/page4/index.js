@@ -28,7 +28,7 @@ function Page4() {
   return (
     <Fragment>
       {/* <ProgressPage className="textBar" /> */}
-      <Header setTemaCor={setTemaCor} pageAtual={2} className="" />
+      <Header setTemaCor={setTemaCor} pageAtual={4} className="" />
 
       <Wrapper className="">
         <OperacoesDocumentos sectionTitle="OPERAÇÕES E DOCUMENTOS" />

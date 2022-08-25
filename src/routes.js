@@ -2,7 +2,7 @@ import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import React from "react";
 import { useEffect, useContext } from "react";
 import Page1 from "./screens/page1";
-// import Guide from "./screens/guide";
+import Guide from "./screens/guide";
 import Page2 from "./screens/page2";
 import Page3 from "./screens/page3";
 import Page4 from "./screens/page4";
@@ -10,7 +10,7 @@ import Quizz from "./screens/quizz";
 import GlobalState from "./contexts/globalState";
 
 function ScreenRoutes(props) {
-  const pagesArray = [Page1, Page2, Page3, Page4]; // adicione as chamadas de pagina desse array
+  const pagesArray = [Page1, Page2, Page3, Page4, Guide]; // adicione as chamadas de pagina desse array
   const { pagesData, setPagesData } = useContext(GlobalState);
 
   const allPages = pagesArray.map((Page, id) => {

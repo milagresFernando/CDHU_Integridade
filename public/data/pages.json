@@ -24,6 +24,10 @@
 				{					
 					"route": "lgpd",
 					"titulo": "LGPD"
+				},
+				{					
+					"route": "guide",
+					"titulo": "guide"
 				}
 				
 			]
