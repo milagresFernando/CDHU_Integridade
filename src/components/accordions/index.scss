@@ -51,6 +51,14 @@
             left: 50%;
             @include transform(translateX(-50%));
           }
+
+          .title {
+            &.accordion-header {
+              .accordion-button {
+                font-size: 1.25rem;
+              }
+            }
+          }
         }
 
         .accordion-header {
@@ -157,6 +165,9 @@
                   $cor7
                 );
                 color: #fff;
+                &::after {
+                  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='65.375' height='65.375' viewBox='0 0 65.375 65.375'%3E%3Cg id='Grupo_2116' data-name='Grupo 2116' transform='translate(-754 -42.299)'%3E%3Ccircle id='Elipse_14' data-name='Elipse 14' cx='32.687' cy='32.687' r='32.687' transform='translate(754 42.299)' fill='rgba(143,143,143,0.13)'/%3E%3Cpath id='Path' d='M28.619,3.564A2.088,2.088,0,0,0,25.666.612L14.615,11.662,3.564.612A2.088,2.088,0,0,0,.612,3.564L13.139,16.092a2.088,2.088,0,0,0,2.953,0Z' transform='translate(772.364 68.449)' fill=%27%23fff%27/%3E%3C/g%3E%3C/svg%3E%0A");
+                }
               }
 
               &::before {
@@ -248,8 +259,31 @@
         }
       }
 
+      @media #{$bp-tablet} {
+        .accordion-item {
+          &.ativo {
+            .title {
+              &.accordion-header {
+                .accordion-button {
+                  font-size: 1.05rem;
+                }
+              }
+            }
+          }
+        }
+      }
+
       @media #{$bp-phone} {
         .accordion-item {
+          &.ativo {
+            .title {
+              &.accordion-header {
+                .accordion-button {
+                  font-size: 0.95rem;
+                }
+              }
+            }
+          }
           .accordion-header {
             .accordion-button {
               padding: 30px 40px 30px 30px;
