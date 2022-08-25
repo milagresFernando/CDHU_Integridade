@@ -4,6 +4,7 @@ import { Col, Row } from "react-bootstrap";
 
 // Components
 import Accordions from "../../../../../components/accordions";
+import TextBlock from "../../../../../components/texts/text_block";
 import Title from "../../../../../components/texts/title";
 import imgUrl from "../../../../assets/images/img-Float.jpg";
 import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
@@ -11,6 +12,19 @@ import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
 //Imagens
 
 function BlocoAccordionUmPorVez() {
+  const textsBlock1 = [
+    {
+      tagElement: "p",
+      className: "mb-0",
+      content: (
+        <Fragment>
+          Destacamos, também, conforme artigo 6º, que as{" "}
+          <strong>atividades de tratamento de dados pessoais</strong> deverão
+          observar a boa-fé e os seguintes <strong>princípios</strong>:
+        </Fragment>
+      ),
+    },
+  ];
   const accordionItens = [
     {
       title: {
@@ -340,6 +354,7 @@ function BlocoAccordionUmPorVez() {
     <Fragment>
       <Row className="justify-content-center">
         <Col lg="10">
+          <TextBlock textsBlock={textsBlock1} />
           <Accordions
             className=""
             accordionItens={accordionItens}
