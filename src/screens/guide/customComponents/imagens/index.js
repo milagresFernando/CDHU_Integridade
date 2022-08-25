@@ -11,7 +11,7 @@ import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 // Imagens
 import imgFull from "../../../assets/images/img-Full.jpg";
-import BlocoListaComImgFlex from "./BlocoListaComImgFlex";
+import BlocoListaComImgFlex from "./blocoListaComImgFlex";
 
 function Imagens(props) {
   return (

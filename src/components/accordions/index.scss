@@ -13,6 +13,7 @@
   $cor7: map-get($cor, color7);
   $cor8: map-get($cor, color8);
   $cor9: map-get($cor, color9);
+  $cor10: map-get($cor, color10);
 
   $svg1: str_slice(#{$cor1}, 2, 7);
   $svg2: str_slice(#{$cor2}, 2, 7);
@@ -28,7 +29,7 @@
       .accordion-item {
         background-color: transparent;
         border: 0;
-        border-bottom: 2px solid $cor3;
+        border-bottom: 2px solid $cor10;
         border-radius: 0;
         margin: 0 auto 0px;
         padding: 0;

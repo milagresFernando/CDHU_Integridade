@@ -49,7 +49,7 @@
 
         &::before {
           counter-increment: foo;
-          color: $cor3;
+          color: $cor7;
           content: counter(foo) ". ";
           display: inline-block;
           font-weight: 700;
@@ -76,6 +76,7 @@
   $cor3: map-get($cor, color3);
   $cor4: map-get($cor, color4);
   $cor5: map-get($cor, color5);
+  $cor7: map-get($cor, color7);
 
   $svg1: str_slice(#{$cor1}, 2, 7);
   $svg2: str_slice(#{$cor2}, 2, 7);
@@ -89,7 +90,7 @@
         ul#{&} {
           li {
             &::before {
-              color: $cor3;
+              color: $cor7;
             }
           }
         }
@@ -98,7 +99,7 @@
           &.list {
             li {
               &::before {
-                color: $cor3;
+                color: $cor7;
               }
             }
           }

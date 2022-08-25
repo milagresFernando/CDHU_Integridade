@@ -4,34 +4,37 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
+
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
-import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
-import BlocoUnicaResposta from "./blocoQuizzUnicaResposta";
-import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
-import BlocoSaibaMais from "./blocoSaibaMais";
+import BlocoCarrosselPadrao from "./blocoCarrosselPadrao";
+import BlocoListaComImgFlex from "./blocoListaComImgFlex";
+
+import BlocoVideoIntroducao4 from "./blocoVideoIntroducao4";
 
 //Imagens
 
-function OperacoesDocumentos(props) {
+function CodigoConduta(props) {
   return (
-    <section className="relative">
+    <section className="relative gradientBlueEnd">
       <ParallaxGrafAzul />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-4"
+              className="titleSection mb-5"
               content={<Fragment>{props.sectionTitle}</Fragment>}
             >
               <span className="ballTitle"></span>
             </Title>
           </Col>
         </Row>
-        <BlocoAccordionUmPorVez />
+        <BlocoVideoIntroducao4 />
+        <BlocoListaComImgFlex />
+        <BlocoCarrosselPadrao />
       </Container>
     </section>
   );
 }
 
-export default OperacoesDocumentos;
+export default CodigoConduta;
