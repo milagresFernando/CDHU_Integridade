@@ -231,6 +231,25 @@ function FlexImgWithText(props) {
             : ""
         }`}
         className={`${
+          props.imgSide === "top" ||
+          props.imgSide === "bottom" ||
+          props.imgSide === "fullTop" ||
+          props.imgSide === "fullBottom"
+            ? ""
+            : props.offsetSm ||
+              props.offsetMd ||
+              props.offsetLg ||
+              props.offsetXl ||
+              props.offsetXXl
+            ? `${props.offsetSm ? `offset-sm-${props.offsetSm}` : ""} ${
+                props.offsetMd ? `offset-md-${props.offsetMd}` : ""
+              } ${props.offsetLg ? `offset-lg-${props.offsetLg}` : ""} ${
+                props.offsetXl ? `offset-xl-${props.offsetXl}` : ""
+              } ${
+                props.offsetXXl ? `offset-xxl-${props.offsetXXl}` : ""
+              } offset-0 `
+            : ""
+        }${
           props.breakContent
             ? props.imgSide === "top"
               ? `order-${props.breakContent}-1 px-0 px-${props.breakContent}-4 mb-3`
@@ -374,14 +393,18 @@ function FlexImgWithText(props) {
               {props.formGroupOneAnswer}
             </Fragment>
           ) : (
-            props.textsBlock && <TextBlock textsBlock={props.textsBlock} />
-          )}
-          {props.listItens && (
-            <List
-              tagElement={props.tagList}
-              listItens={props.listItens}
-              className={`${props.listClassName ? props.listClassName : ""}`}
-            />
+            <Fragment>
+              {props.textsBlock && <TextBlock textsBlock={props.textsBlock} />}
+              {props.listItens && (
+                <List
+                  tagElement={props.tagList}
+                  listItens={props.listItens}
+                  className={`${
+                    props.listClassName ? props.listClassName : ""
+                  }`}
+                />
+              )}
+            </Fragment>
           )}
         </div>
       </Col>

@@ -419,6 +419,11 @@ function OneAnswer(props) {
           colLg={actualQuestion.answersImages.colLg}
           colXl={actualQuestion.answersImages.colXl}
           colXXl={actualQuestion.answersImages.colXXl}
+          offsetSm={actualQuestion.answersImages.offsetSm}
+          offsetMd={actualQuestion.answersImages.offsetMd}
+          offsetLg={actualQuestion.answersImages.offsetLg}
+          offsetXl={actualQuestion.answersImages.offsetXl}
+          offsetXXl={actualQuestion.answersImages.offsetXXl}
           isQuizzOneAnswer={true}
           questionCounter={questionCounter}
           breakContent={props.options.breakContent} // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".

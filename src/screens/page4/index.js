@@ -33,7 +33,6 @@ function Page4() {
       <Wrapper className="">
         <OperacoesDocumentos sectionTitle="OPERAÇÕES E DOCUMENTOS" />
       </Wrapper>
-      <Footer className="" />
     </Fragment>
   );
 }

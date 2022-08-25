@@ -8,7 +8,7 @@ import OneAnswer from "../../../../../components/quizz/oneAnswer";
 //Imagens
 import imgQuestion1 from "../../../../assets/images/img-Float.jpg";
 import imgQuestion1Break from "../../../../assets/images/img-Full.jpg";
-import imgAnswer1 from "../../../../assets/images/img-Float.jpg";
+import imgAnswer1 from "../../../../assets/images/icoQuestionQuizz.svg";
 import imgAnswer1Break from "../../../../assets/images/img-Full.jpg";
 import imgFeed1_1 from "../../../../assets/images/img-Float.jpg";
 import imgFeed1_1_1Break from "../../../../assets/images/img-Full.jpg";
@@ -41,8 +41,8 @@ function BlocoQuizzUnicaResposta(props) {
         imgUrl: imgAnswer1,
         imgUrlBreak: imgAnswer1,
         imgSide: "left",
-        colMd: "3",
-        colLg: "3",
+        colLg: "2",
+        offsetLg: "1",
       },
       answers: [
         {
