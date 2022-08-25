@@ -16,8 +16,8 @@ function BlocoSaibaMais() {
           <a href="https://www.cdhu.sp.gov.br/" target="_blank">
             <strong>Clique aqui</strong>
           </a>{" "}
-          para acessar o Programa de Integridade da CDHU na íntegra e saber mais{" "}
-          <strong>detalhes de sua estrutura e aplicação.</strong>
+          para acessar o <strong>Código de Conduta e Integridade</strong> na
+          íntegra e se apropriar melhor do conteúdo.
         </Fragment>
       ),
     },

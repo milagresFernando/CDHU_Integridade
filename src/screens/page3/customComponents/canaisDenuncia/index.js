@@ -7,6 +7,7 @@ import Title from "../../../../components/texts/title";
 
 import BlocoSaibaMais from "../canaisDenuncia/blocoSaibaMais";
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
+import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 //Imagens
 
@@ -26,7 +27,10 @@ function CanaisDenuncia(props) {
             </Title>
           </Col>
         </Row>
-        <BlocoSaibaMais />
+        <Container>
+          <BlocoTextoComImgFlex />
+          <BlocoSaibaMais />
+        </Container>
       </Container>
     </section>
   );
