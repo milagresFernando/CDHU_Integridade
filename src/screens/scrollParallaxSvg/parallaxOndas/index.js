@@ -14,6 +14,27 @@ import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
 function ParallaxOndas(props) {
+  let ondaFrenteSvg = "";
+  let ondaTrasSvg = "";
+  // props.type seta a cor do svg de ondas, pode ser azul, roxo ou laranja
+  switch (props.type) {
+    case "azul":
+      ondaFrenteSvg = "OndaFrenteAzul";
+      ondaTrasSvg = "OndaTrasAzul";
+      break;
+    case "roxo":
+      ondaFrenteSvg = "OndaFrenteRoxo";
+      ondaTrasSvg = "OndaTrasRoxo";
+      break;
+    case "laranja":
+      ondaFrenteSvg = "OndaFrenteLaranja";
+      ondaTrasSvg = "OndaTrasLaranja";
+      break;
+    default:
+      ondaFrenteSvg = "OndaFrenteLaranja";
+      ondaTrasSvg = "OndaTrasLaranja";
+      break;
+  }
   let linhaOndasValueDesk = -8;
   let linhaOndasValueTablet = -5;
   let linhaOndasValueMobile = -5;
@@ -84,7 +105,7 @@ function ParallaxOndas(props) {
     <Fragment>
       <div className="relative ondasWrapper">
         <SvgParallax
-          svgName="OndaFrente"
+          svgName={ondaFrenteSvg}
           svgParallaxClassName="zindex3"
           className="ondasBg ondaFrente top10"
           parallaxRef={ondaFrente.ref}
@@ -98,7 +119,7 @@ function ParallaxOndas(props) {
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="OndaTras"
+          svgName={ondaTrasSvg}
           svgParallaxClassName="zindex1"
           className="ondasBg ondaTras "
           parallaxRef={ondaTras.ref}

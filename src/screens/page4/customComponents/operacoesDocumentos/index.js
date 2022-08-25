@@ -6,6 +6,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
+import BlocoUnicaResposta from "./blocoUnicaResposta";
+import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
 
 //Imagens
 
@@ -26,6 +28,12 @@ function OperacoesDocumentos(props) {
           </Col>
         </Row>
         <BlocoAccordionUmPorVez />
+      </Container>
+
+      <ParallaxOndas type="laranja" />
+
+      <Container>
+        <BlocoUnicaResposta />
       </Container>
     </section>
   );
