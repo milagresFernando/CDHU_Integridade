@@ -8,6 +8,7 @@ import { useState, useRef, useEffect, memo } from "react";
 // Components
 import { Image } from "react-bootstrap";
 import TextBlock from "../../texts/text_block";
+import List from "../../texts/lists";
 import Title from "../../texts/title";
 import { Row, Col, Form, Card } from "react-bootstrap";
 import Check from "../../forms/check";
@@ -373,7 +374,14 @@ function FlexImgWithText(props) {
               {props.formGroupOneAnswer}
             </Fragment>
           ) : (
-            <TextBlock textsBlock={props.textsBlock} />
+            props.textsBlock && <TextBlock textsBlock={props.textsBlock} />
+          )}
+          {props.listItens && (
+            <List
+              tagElement={props.tagList}
+              listItens={props.listItens}
+              className={`${props.listClassName ? props.listClassName : ""}`}
+            />
           )}
         </div>
       </Col>

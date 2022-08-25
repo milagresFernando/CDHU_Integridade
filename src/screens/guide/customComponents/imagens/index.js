@@ -11,6 +11,7 @@ import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 // Imagens
 import imgFull from "../../../assets/images/img-Full.jpg";
+import BlocoListaComImgFlex from "./BlocoListaComImgFlex";
 
 function Imagens(props) {
   return (
@@ -38,6 +39,7 @@ function Imagens(props) {
           </Col>
         </Row>
 
+        <BlocoListaComImgFlex />
         <BlocoTextoComImgFlex />
 
         <Row className="">
