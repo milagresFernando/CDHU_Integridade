@@ -279,12 +279,16 @@ function OneAnswer(props) {
 
   const questionTexts = (
     <div className="questionWrapper" key={"questionWrapper"}>
-      <Row className="align-items-center">
-        <Col md="2" className="questionNumber">
-          <p> {questionNumber}</p>
+      <Row className="justify-content-center">
+        <Col lg="10" className="questionNumber">
+          <Title
+            typeH="3"
+            className={"title titleSection"}
+            content={<Fragment>{`Pergunta ${questionNumber}`}</Fragment>}
+          />
         </Col>
 
-        <Col className="question">
+        <Col lg="10" className="question">
           <Title
             typeH={titleQuestion.tagTitle}
             className={titleQuestion.titleClassName}

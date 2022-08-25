@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
-import BlocoUnicaResposta from "./blocoUnicaResposta";
+import BlocoUnicaResposta from "./blocoQuizzUnicaResposta";
 import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
 import BlocoSaibaMais from "./blocoSaibaMais";
 
