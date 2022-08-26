@@ -82,7 +82,7 @@ function BlocoTextoComImgFlex() {
       </Row>
       <FlexImgWithText
         rowClasses="align-items-center"
-        imgSide="fullRight"
+        imgSide="bottom"
         imgUrl={imgUrl}
         imgUrlBreak={imgUrlBreak}
         colMd="5"

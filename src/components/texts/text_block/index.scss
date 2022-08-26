@@ -25,6 +25,11 @@
   }
   color: $cor-texto;
 
+  &.carousel-text {
+    font-family: $fonte1;
+    color: $cor6;
+  }
+
   @media #{$bp-phone} {
     &.accordion-text {
       font-size: 0.9rem;

@@ -28,7 +28,7 @@ function ProgramaIntegridade(props) {
         <BlocoVideoIntroducao2 />
       </Container>
 
-      <ParallaxOndas type="laranja" />
+      <ParallaxOndas type="azul" />
 
       <Container>
         <Bloco3Cards />

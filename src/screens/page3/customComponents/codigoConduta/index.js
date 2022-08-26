@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
-import BlocoCarrosselPadrao from "./blocoCarrosselPadrao";
+import BlocoCarouselComImgEstatica from "./blocoCarouselComImgEstatica";
 import BlocoListaComImgFlex from "./blocoListaComImgFlex";
 
 import BlocoVideoIntroducao4 from "./blocoVideoIntroducao4";
@@ -31,7 +31,7 @@ function CodigoConduta(props) {
         </Row>
         <BlocoVideoIntroducao4 />
         <BlocoListaComImgFlex />
-        <BlocoCarrosselPadrao />
+        <BlocoCarouselComImgEstatica />
       </Container>
     </section>
   );

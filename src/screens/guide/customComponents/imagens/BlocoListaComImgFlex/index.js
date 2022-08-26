@@ -53,7 +53,8 @@ function BlocoListaComImgFlex() {
       <Row>
         <Col>
           <Title
-            typeH="4"
+            t
+            ypeH="4"
             className=""
             content={<Fragment>Lista e imagens flex</Fragment>}
           />
