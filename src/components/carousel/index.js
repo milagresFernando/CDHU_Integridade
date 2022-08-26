@@ -201,6 +201,7 @@ function CarouselBootsrap(props) {
               titleClassName={carouselItem.title.titleClassName}
               title={carouselItem.title.titleContent}
               textsBlock={carouselItem.contents.textBlocks}
+              hasImage={carouselItem.images}
               imgSide={carouselItem.images.imgSide}
               imgUrl={carouselItem.images.imgUrl}
               imgUrlBreak={carouselItem.images.imgUrlBreak}

@@ -81,7 +81,7 @@ function BlocoListaComImgFlex() {
             colMd="5"
             colLg="6"
             tagList="ul"
-            listClassName=""
+            listClassName="column2"
             listItens={listItens1}
             breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
           />
