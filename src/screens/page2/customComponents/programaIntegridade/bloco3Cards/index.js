@@ -102,14 +102,14 @@ function Bloco3Cards() {
 
   return (
     <Fragment>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center mt-5">
         <Col xs="10">
           <TextBlock textsBlock={textsBlock1} />
         </Col>
       </Row>
       <Row className="justify-content-center my-5">
         <Col lg="10">
-          <Row>
+          <Row className="justify-content-center">
             <Col xs="12" sm="6" md="4" className="d-flex">
               <CardSimple
                 className="tela2"

@@ -7,7 +7,7 @@ import Title from "../../../../components/texts/title";
 
 import BlocoSaibaMais from "./blocoSaibaMais";
 import BlocoFinalizou from "./blocoFinalizou";
-import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
+import ParallaxGrafAmarelo from "../../../scrollParallaxSvg/parallaxGrafAmarelo";
 
 import BlocoVideoIntroducao3 from "./blocoVideoIntroducao3";
 import BotoesNavegacao from "./botoesNavegacao";
@@ -17,7 +17,7 @@ import BotoesNavegacao from "./botoesNavegacao";
 function MonitoramentoPrograma(props) {
   return (
     <section className="relative gradientBlueEnd">
-      <ParallaxGrafAzul />
+      <ParallaxGrafAmarelo />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">

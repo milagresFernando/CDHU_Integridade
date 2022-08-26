@@ -11,17 +11,17 @@ import SvgParallax from "../../../components/images/svgParallax";
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
-function ParallaxGrafAzul(props) {
+function ParallaxGrafAmarelo(props) {
   let valueDesk = 50;
   let valueTablet = 25;
   let valueMobile = 12;
 
-  const [grafismoAzulValue, setGrafismoAzulValue] = useState({
+  const [grafismoAmareloValue, setGrafismoAmareloValue] = useState({
     speed: valueDesk,
   });
   const [monitoraMudanca, setMonitoraMudanca] = useState(false);
 
-  const grafismoAzul = useParallax(grafismoAzulValue);
+  const grafismoAmarelo = useParallax(grafismoAmareloValue);
 
   useEffect(() => {
     const debouncedHandleResize = debounceTimeOut(function handleResize() {
@@ -29,9 +29,9 @@ function ParallaxGrafAzul(props) {
         window.innerWidth <= setBreakPoint("lg") &&
         window.innerWidth > setBreakPoint("sm")
       ) {
-        setGrafismoAzulValue({ speed: valueTablet });
+        setGrafismoAmareloValue({ speed: valueTablet });
       } else if (window.innerWidth <= setBreakPoint("sm")) {
-        setGrafismoAzulValue({ speed: valueMobile });
+        setGrafismoAmareloValue({ speed: valueMobile });
       }
       setMonitoraMudanca(!monitoraMudanca);
     }, 500);
@@ -47,9 +47,9 @@ function ParallaxGrafAzul(props) {
       window.innerWidth <= setBreakPoint("lg") &&
       window.innerWidth > setBreakPoint("sm")
     ) {
-      setGrafismoAzulValue({ speed: valueTablet });
+      setGrafismoAmareloValue({ speed: valueTablet });
     } else if (window.innerWidth <= setBreakPoint("sm")) {
-      setGrafismoAzulValue({ speed: valueMobile });
+      setGrafismoAmareloValue({ speed: valueMobile });
     }
     setMonitoraMudanca(!monitoraMudanca);
   }, []);
@@ -57,13 +57,13 @@ function ParallaxGrafAzul(props) {
   return (
     <Fragment>
       <SvgParallax
-        svgName="GrafismoAzul"
-        className="grafismoAzul left0 top20"
-        parallaxRef={grafismoAzul.ref}
+        svgName="GrafismoAmarelo"
+        className="grafismoAmarelo left0 top20"
+        parallaxRef={grafismoAmarelo.ref}
         monitoraMudanca={monitoraMudanca}
       />
     </Fragment>
   );
 }
 
-export default ParallaxGrafAzul;
+export default ParallaxGrafAmarelo;
