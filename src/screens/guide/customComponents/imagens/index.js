@@ -8,10 +8,10 @@ import BlocoTextoComImgFloat from "./blocoTextoComImgFloat";
 import BlocoSliderComparativoComTexto from "./blocoSliderComparativoComTexto";
 import BlocoParallaxComTexto from "./blocoParallaxComTexto";
 import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
+import BlocoListaComImgFlex from "./blocoListaComImgFlex";
 
 // Imagens
 import imgFull from "../../../assets/images/img-Full.jpg";
-import BlocoListaComImgFlex from "./blocoListaComImgFlex";
 
 function Imagens(props) {
   return (

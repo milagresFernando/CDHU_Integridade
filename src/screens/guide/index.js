@@ -51,7 +51,7 @@ function Guide() {
   return (
     <Fragment>
       {/* <ProgressPage className="textBar" /> */}
-      <Header hideOnScroll setTemaCor={setTemaCor} className="" pageAtual={5} />
+      <Header hideOnScroll setTemaCor={setTemaCor} className="" pageAtual={6} />
       <Wrapper>
         <Title typeH="1" className="" content={<Fragment>Page 1</Fragment>} />
         <hr />
