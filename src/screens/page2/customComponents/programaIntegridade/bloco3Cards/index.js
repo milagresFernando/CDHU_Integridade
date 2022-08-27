@@ -102,7 +102,7 @@ function Bloco3Cards() {
 
   return (
     <Fragment>
-      <Row className="justify-content-center mt-5">
+      <Row className="justify-content-center">
         <Col xs="10">
           <TextBlock textsBlock={textsBlock1} />
         </Col>

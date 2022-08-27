@@ -17,7 +17,7 @@
   }
 
   .svgParallaxInner {
-    display: flex;
+    display: block;
     position: absolute;
 
     width: 100%;
@@ -53,12 +53,9 @@
       $i: $i + 5;
     }
 
-    // &.ondaFrente {
-    // }
     &.ondasBg {
       width: 100%;
-
-      height: 800px;
+      height: 100%;
     }
     &.linhaOndas {
       top: -30%;
@@ -223,26 +220,27 @@
 }
 
 .ondasWrapper {
-  margin-top: -100px;
-  height: 400px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  height: 220px;
 
   z-index: -1;
 
   @media #{$bp-tablet} {
-    margin-top: -100px;
-    height: 400px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    height: 150px;
   }
   @media #{$bp-phone} {
-    margin-top: -310px;
-    height: 450px;
+    height: 60px;
+    margin-bottom: 30px;
   }
 }
-.safari,
-.ios,
-.custom {
-  .svgParallax {
-    .svgParallaxInner {
-      display: block;
-    }
-  }
-}
+// .safari,
+// .ios {
+//   .svgParallax {
+//     .svgParallaxInner {
+//       display: block;
+//     }
+//   }
+// }

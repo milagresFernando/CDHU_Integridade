@@ -9,6 +9,7 @@ import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
 import BlocoUnicaResposta from "./blocoQuizzUnicaResposta";
 import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
 import BlocoSaibaMais from "./blocoSaibaMais";
+import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";
 
 //Imagens
 
@@ -29,6 +30,7 @@ function OperacoesDocumentos(props) {
           </Col>
         </Row>
         <BlocoAccordionUmPorVez />
+        <BlocoQuizzUnicaResposta />
       </Container>
     </section>
   );
