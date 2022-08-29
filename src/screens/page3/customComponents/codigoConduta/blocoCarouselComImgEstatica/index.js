@@ -124,7 +124,7 @@ function BlocoCarouselComImgEstatica() {
   ];
   return (
     <Fragment>
-      <Row className="justify-content-center pb90">
+      <Row className="justify-content-center mb-md-5 pb-md-5 mb-5">
         <Col lg="5" className="order-lg-1 order-2">
           <CarouselWithoutImg
             carouselItens={carouselItens}
