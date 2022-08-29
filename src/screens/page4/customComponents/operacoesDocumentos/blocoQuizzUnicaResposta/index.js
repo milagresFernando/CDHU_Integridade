@@ -10,7 +10,7 @@ import imgQuestion1 from "../../../../assets/images/img-Float.jpg";
 import imgQuestion1Break from "../../../../assets/images/img-Full.jpg";
 import imgAnswer1 from "../../../../assets/images/icoQuestionQuizz.svg";
 import imgAnswer1Break from "../../../../assets/images/img-Full.jpg";
-import imgFeed1_1 from "../../../../assets/images/img-Float.jpg";
+import imgFeed from "../../../../assets/images/icoFeedPositivo.svg";
 import imgFeed1_1_1Break from "../../../../assets/images/img-Full.jpg";
 
 function BlocoQuizzUnicaResposta(props) {
@@ -22,7 +22,7 @@ function BlocoQuizzUnicaResposta(props) {
 
   const options = {
     answersType: "upper-alpha",
-    breakContent: "md",
+    breakContent: "sm",
     randomQuestions: false,
     randomAnswers: false,
     // maxQuestions: 3,
@@ -31,7 +31,8 @@ function BlocoQuizzUnicaResposta(props) {
   const questions = [
     {
       title: {
-        titleContent: "Q1 Exercer influência é uma forma poderosa de, EXCETO:",
+        titleContent:
+          "Um visitante deseja entrar no edifício sede da CDHU pela primeira vez e é informado de que precisa fazer um cadastro na recepção do condomínio. Como ele deve proceder?",
         tagTitle: "4",
         titleClassName: "",
       },
@@ -42,7 +43,7 @@ function BlocoQuizzUnicaResposta(props) {
         imgUrlBreak: imgAnswer1,
         imgSide: "left",
         colLg: "2",
-        offsetLg: "1",
+        colMd: "3",
       },
       answers: [
         {
@@ -50,7 +51,138 @@ function BlocoQuizzUnicaResposta(props) {
             {
               tagElement: "p",
               className: "",
-              content: <Fragment>alt1 Criar aliados.</Fragment>,
+              content: (
+                <Fragment>
+                  Informar todos os dados pessoais (nome, número de documentos
+                  pessoais, endereço residencial, data de nascimento, entre
+                  outros).
+                </Fragment>
+              ),
+            },
+          ],
+
+          correct: "wrong",
+        },
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: <Fragment>Não informar nenhum dado pessoal. </Fragment>,
+            },
+          ],
+          correct: "wrong",
+        },
+
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>Recusar-se a fazer o cadastro na recepção.</Fragment>
+              ),
+            },
+          ],
+          correct: "wrong",
+        },
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Informar apenas o nome e o número do RG e permitir tirar uma
+                  foto do rosto.
+                </Fragment>
+              ),
+            },
+          ],
+          correct: "correct",
+        },
+      ],
+      feedbacks: {
+        correct: {
+          title: {
+            titleContent: "PARABÉNS! VOCÊ ACERTOU!",
+            tagTitle: "4",
+            titleClassName: "",
+          },
+          images: {
+            rowClasses: "align-items-center feedCdhu",
+            imgUrl: imgFeed,
+            imgUrlBreak: imgFeed,
+            imgSide: "left",
+            colMd: "2",
+          },
+          contents: {
+            contentClassName: "",
+            textBlocks: [
+              {
+                tagElement: "p",
+                className: "",
+                content: (
+                  <Fragment>
+                    Para realizar o cadastro na recepção, devem ser coletados o
+                    nome completo e o número do Registro Geral (RG), além de uma
+                    foto do rosto do visitante.
+                  </Fragment>
+                ),
+              },
+              {
+                tagElement: "p",
+                className: "",
+                content: (
+                  <Fragment>
+                    De acordo com o artigo 6 da LGPD, o princípio da necessidade
+                    é a limitação do tratamento ao mínimo necessário para a
+                    realização de suas finalidades, com abrangência dos dados
+                    pertinentes, proporcionais e não excessivos em relação às
+                    finalidades do tratamento de dados.
+                  </Fragment>
+                ),
+              },
+            ],
+          },
+        },
+
+        wrong: {
+          title: {
+            titleContent: "NÃO FOI DESTA VEZ!",
+            tagTitle: "4",
+            titleClassName: "",
+          },
+        },
+      },
+    },
+    {
+      title: {
+        titleContent:
+          "O representante do departamento fiscal de um município do estado de São Paulo entrou em contato com a CDHU para solicitar a relação dos proprietários das unidades habitacionais entregues recentemente, com a finalidade de cadastro naquele órgão para a cobrança de IPTU. O pedido pode ser atendido?",
+        tagTitle: "4",
+        titleClassName: "",
+      },
+
+      answersImages: {
+        rowClasses: "align-items-center",
+        imgUrl: imgAnswer1,
+        imgUrlBreak: imgAnswer1,
+        imgSide: "left",
+        colLg: "2",
+        colMd: "3",
+      },
+      answers: [
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Não, porque os dados pessoais dos mutuários são sigilosos.
+                </Fragment>
+              ),
             },
           ],
 
@@ -62,7 +194,10 @@ function BlocoQuizzUnicaResposta(props) {
               tagElement: "p",
               className: "",
               content: (
-                <Fragment>alt2 Construir um ambiente de competição.</Fragment>
+                <Fragment>
+                  Sim, devendo ser fornecidas somente as informações essenciais
+                  para o cadastro na prefeitura.
+                </Fragment>
               ),
             },
           ],
@@ -75,77 +210,44 @@ function BlocoQuizzUnicaResposta(props) {
               tagElement: "p",
               className: "",
               content: (
-                <Fragment>alt3 Alcançar resultados consistentes.</Fragment>
+                <Fragment>
+                  Não, porque o compartilhamento de dados pessoais dos mutuários
+                  é proibido.
+                </Fragment>
               ),
             },
           ],
-          correct: "neutral",
+          correct: "wrong",
+        },
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Sim, devendo ser fornecidos todos os dados cadastrais dos
+                  mutuários.
+                </Fragment>
+              ),
+            },
+          ],
+          correct: "wrong",
         },
       ],
       feedbacks: {
         correct: {
           title: {
-            titleContent: "Muito Bem",
+            titleContent: "PARABÉNS! VOCÊ ACERTOU!",
             tagTitle: "4",
             titleClassName: "",
           },
           images: {
-            rowClasses: "align-items-center",
-            imgUrl: imgFeed1_1,
-            imgUrlBreak: imgFeed1_1_1Break,
-            imgSide: "fullRight",
-            colMd: "5",
-            colLg: "6",
-          },
-          contents: {
-            contentClassName: "",
-            textBlocks: [
-              {
-                tagElement: "p",
-                className: "",
-                content: <Fragment>Resposta correta</Fragment>,
-              },
-            ],
-          },
-        },
-        neutral: {
-          title: {
-            titleContent: "Talvez",
-            tagTitle: "4",
-            titleClassName: "",
-          },
-          images: {
-            rowClasses: "align-items-center",
-            imgUrl: imgFeed1_1,
-            imgUrlBreak: imgFeed1_1_1Break,
-            imgSide: "fullRight",
-            colMd: "5",
-            colLg: "6",
-          },
-          contents: {
-            contentClassName: "",
-            textBlocks: [
-              {
-                tagElement: "p",
-                className: "",
-                content: <Fragment>Resposta neutra.</Fragment>,
-              },
-            ],
-          },
-        },
-        wrong: {
-          title: {
-            titleContent: "Atenção!",
-            tagTitle: "4",
-            titleClassName: "",
-          },
-          images: {
-            rowClasses: "align-items-center",
-            imgUrl: imgFeed1_1,
-            imgUrlBreak: imgFeed1_1_1Break,
-            imgSide: "fullRight",
-            colMd: "5",
-            colLg: "6",
+            rowClasses: "align-items-center feedCdhu",
+            imgUrl: imgFeed,
+            imgUrlBreak: imgFeed,
+            imgSide: "left",
+            colMd: "2",
           },
           contents: {
             contentClassName: "",
@@ -155,12 +257,35 @@ function BlocoQuizzUnicaResposta(props) {
                 className: "",
                 content: (
                   <Fragment>
-                    A influência é uma forma poderosa de construir um ambiente
-                    de colaboração e não de competição.
+                    A relação dos mutuários deverá conter: nome completo e CPF
+                    do titular da unidade habitacional, além do endereço
+                    completo do imóvel.
+                  </Fragment>
+                ),
+              },
+              {
+                tagElement: "p",
+                className: "",
+                content: (
+                  <Fragment>
+                    De acordo com o artigo 26 da LGPD, o uso compartilhado de
+                    dados pessoais pelo Poder Público deve atender a finalidades
+                    específicas de execução de políticas públicas e atribuição
+                    legal pelos órgãos e pelas entidades públicas, respeitados
+                    os princípios de proteção de dados pessoais elencados no
+                    artigo 6 dessa Lei.
                   </Fragment>
                 ),
               },
             ],
+          },
+        },
+
+        wrong: {
+          title: {
+            titleContent: "NÃO FOI DESTA VEZ!",
+            tagTitle: "4",
+            titleClassName: "",
           },
         },
       },

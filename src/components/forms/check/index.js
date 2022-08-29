@@ -22,11 +22,11 @@ function Check(props) {
     ) {
       props.setChecked(props.checkedInitial);
     }
-  }, [props.questionCounter]);
+  }, [props.questionCounter, props.clickNext, props.typeFeed]);
 
   useEffect(() => {
     setCheckedState(props.checked);
-  }, [props.checked]);
+  }, [props.checked, props.clickNext]);
 
   let cloneCheckedTF = [...checkedState];
 
@@ -66,6 +66,7 @@ function Check(props) {
     } else {
       setCheckedState(newChecks);
       props.setChecked(newChecks);
+      console.log(newChecks, props.checked);
     }
   }
 

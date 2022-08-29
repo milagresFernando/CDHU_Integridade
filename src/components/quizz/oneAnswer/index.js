@@ -32,6 +32,7 @@ function OneAnswer(props) {
   const [showFeed, setShowFeed] = useState(false);
   const [showFinalFeed, setShowFinalFeed] = useState(false);
   const [typeFeed, setTypeFeed] = useState("");
+
   const [feedBackItems, setFeedBackItems] = useState("");
   const [finalFeedBackItems, setFinalFeedBackItems] = useState("");
   const [breakResponsiveQuestion, setBreakResponsiveQuestion] = useState(false);
@@ -144,11 +145,11 @@ function OneAnswer(props) {
 
   //seta o estado inicial dos checks
   useEffect(() => {
-    if (checkedInitial != "") {
+    if (checkedInitial != "" || typeFeed == "wrong") {
       setLoad(true);
       setChecked(checkedInitial);
     }
-  }, [checkedInitial]);
+  }, [checkedInitial, typeFeed, clickNext]);
 
   // atualiza no resize
   useEffect(() => {
@@ -243,6 +244,7 @@ function OneAnswer(props) {
 
   function handleConfirm() {
     let cloneAnswers = [...answers];
+
     answers.forEach((answer, id) => {
       if (answer.correct == "correct") {
         cloneAnswers[id].feedIco = "iconCorrect";
@@ -257,6 +259,7 @@ function OneAnswer(props) {
         cloneAnswers[id].feedIco = "iconIncorrect";
       }
     });
+
     setShowFeed(true);
     setDisable(true);
     setAnswers(cloneAnswers);
@@ -350,31 +353,27 @@ function OneAnswer(props) {
 
   const formGroup = (
     <div className="answersWrapper notImg" key={"answersWrapper"}>
-      <Row>
-        <Col>
-          <Form.Group
-            className={`${disable ? "defaultCursor" : ""}  formAnswers`}
-          >
-            <Check
-              className={`${
-                props.options.answersType
-                  ? props.options.answersType
-                  : "upper-roman"
-              } ${
-                disable ? "defaultCursor" : ""
-              } radio-option answers defaultCursor`}
-              type="radioCustom"
-              iconFeed={props.options.iconFeed}
-              checkItems={answers}
-              setChecked={setChecked}
-              checked={checked}
-              disable={disable}
-              questionCounter={questionCounter}
-              checkedInitial={checkedInitial}
-            />
-          </Form.Group>
-        </Col>
-      </Row>
+      <Form.Group className={`${disable ? "defaultCursor" : ""}  formAnswers `}>
+        <Check
+          className={`${
+            props.options.answersType
+              ? props.options.answersType
+              : "upper-roman"
+          } ${
+            disable ? "defaultCursor" : ""
+          } radio-option answers defaultCursor`}
+          type="radioCustom"
+          iconFeed={props.options.iconFeed}
+          checkItems={answers}
+          setChecked={setChecked}
+          checked={checked}
+          disable={disable}
+          questionCounter={questionCounter}
+          checkedInitial={checkedInitial}
+          typeFeed={typeFeed}
+          clickNext={clickNext}
+        />
+      </Form.Group>
     </div>
   );
 
@@ -450,27 +449,56 @@ function OneAnswer(props) {
       <Fragment>
         <div className="oneAnswer">
           {questionItems}
-          {quizzItems}
-          <ButtonQuizz
-            className=""
-            btnFunction={handleConfirm}
-            showButton={showButtonConfirm}
-            content="Confirmar"
-          />
+          <Row className="justify-content-center">
+            <Col lg="10">{quizzItems}</Col>
+          </Row>
 
-          <FeedBack
-            typeFeed={typeFeed}
-            showFeed={showFeed}
-            feedBackItems={feedBackItems}
-            breakContent={props.options.breakContent}
-          />
-          <ButtonQuizz
-            className=""
-            btnFunction={handleNext}
-            showButton={showButtonNext}
-            content="Próxima"
-          />
-          <FeedBack
+          <Row className="justify-content-center ">
+            <Col xl="10">
+              <ButtonQuizz
+                className=""
+                btnFunction={handleConfirm}
+                showButton={showButtonConfirm}
+                content="Confirmar"
+              />
+            </Col>
+          </Row>
+          <Row className="justify-content-center ">
+            <Col xl="10">
+              <FeedBack
+                typeFeed={typeFeed}
+                showFeed={showFeed}
+                feedBackItems={feedBackItems}
+                breakContent={props.options.breakContent}
+                setShowFeed={setShowFeed}
+                setDisable={setDisable}
+                setShowButtonNext={setShowButtonNext}
+                setCheckedInitial={setCheckedInitial}
+                checkedInitial={checkedInitial}
+                setChecked={setChecked}
+                checked={checked}
+                setInitialCheckedArray={setInitialCheckedArray}
+                answers={answers}
+                setQuestionCounter={setQuestionCounter}
+                questionCounter={questionCounter}
+                setClickNext={setClickNext}
+                clickNext={clickNext}
+              />
+            </Col>
+          </Row>
+
+          <Row className="justify-content-center ">
+            <Col xl="10">
+              <ButtonQuizz
+                className=""
+                btnFunction={handleNext}
+                showButton={showButtonNext}
+                content="Próxima"
+              />
+            </Col>
+          </Row>
+
+          {/* <FeedBack
             typeFeed={"finalFeed"}
             showFeed={showFinalFeed}
             feedBackItems={finalFeedBackItems}
@@ -478,7 +506,7 @@ function OneAnswer(props) {
             showFinalFeed={showFinalFeed}
             isLastQuestion={isLastQuestion}
             totalQuestions={questions.length}
-          />
+          /> */}
 
           {counterBar}
         </div>
