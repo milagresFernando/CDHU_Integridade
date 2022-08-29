@@ -87,6 +87,7 @@
   $cor3: map-get($cor, color3);
   $cor4: map-get($cor, color4);
   $cor5: map-get($cor, color5);
+  $cor7: map-get($cor, color7);
 
   $svg1: str_slice(#{$cor1}, 2, 7);
   $svg2: str_slice(#{$cor2}, 2, 7);
@@ -126,9 +127,33 @@
               position: absolute;
               bottom: -15%;
               left: 22%;
-              background-color: #374c8c;
+              background-color: $cor9;
               height: 1px;
               width: 70%;
+            }
+
+            &.type2 {
+              text-align: end;
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: -20%;
+                right: -10%;
+                left: initial;
+                background-color: $cor7;
+                height: 8px;
+                width: 30%;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                bottom: -15%;
+                right: 22%;
+                left: initial;
+                background-color: $cor9;
+                height: 1px;
+                width: 70%;
+              }
             }
           }
 
@@ -209,6 +234,25 @@
               height: 1px;
               width: 55%;
             }
+
+            &.type2 {
+              &::before {
+                content: "";
+                bottom: -26%;
+                right: -5%;
+                left: initial;
+                height: 6px;
+                width: 53%;
+              }
+              &::after {
+                content: "";
+                bottom: -14%;
+                left: -5%;
+                right: initial;
+                height: 1px;
+                width: 55%;
+              }
+            }
           }
 
           &.titleHeader {
@@ -236,6 +280,7 @@
       height: 15px;
       border-radius: 50%;
       display: inline-block;
+      margin: 0 10px 0 0px;
     }
   }
 }

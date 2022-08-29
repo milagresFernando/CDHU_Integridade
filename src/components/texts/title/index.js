@@ -10,11 +10,20 @@ function Title(props) {
     }
   }
 
-  return (
-    <CustomTitle className={`title ${props.className}`}>
-      {props.content} {props.children}
-    </CustomTitle>
-  );
+  if (props.ballLeft) {
+    return (
+      <CustomTitle className={`title ${props.className}`}>
+        <span className="ballTitle"></span>
+        {props.content} {props.children}
+      </CustomTitle>
+    );
+  } else {
+    return (
+      <CustomTitle className={`title ${props.className}`}>
+        {props.content} {props.children}
+      </CustomTitle>
+    );
+  }
 }
 
 export default Title;
