@@ -125,17 +125,17 @@
             background-color: lighten($cor7, 10%);
             border: solid 2px transparent;
             border-radius: 50%;
-            height: 10px;
+            height: 7px;
             margin: 0 5px;
             padding: 0;
             position: relative;
             outline: none;
-            width: 10px;
+            width: 7px;
 
             &.active {
               background-color: $cor7;
-              width: 20px;
-              height: 20px;
+              width: 14px;
+              height: 14px;
             }
           }
         }
@@ -196,7 +196,7 @@
         }
 
         .carousel-control-prev {
-          left: 68%;
+          left: calc(100% - 160px);
           .carousel-control-prev-icon {
             background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25.243' viewBox='0 0 24 25.243'%3E%3Cg id='Icon_feather-arrow-right' data-name='Icon feather-arrow-right' transform='translate(1.5 2.121)'%3E%3Cpath id='Caminho_1665' data-name='Caminho 1665' d='M28.5,18H7.5' transform='translate(-7.5 -7.5)' fill='none' stroke='%232d5ad6' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath id='Caminho_1666' data-name='Caminho 1666' d='M28.5,7.5,18,18,28.5,28.5' transform='translate(-18 -7.5)' fill='none' stroke='%232d5ad6' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
             @include transition(all 0.4s);
@@ -204,7 +204,7 @@
         }
 
         .carousel-control-next {
-          left: 122%;
+          left: calc(100% - -120px);
           .carousel-control-next-icon {
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25.243' viewBox='0 0 24 25.243'%3E%3Cg id='Icon_feather-arrow-right' data-name='Icon feather-arrow-right' transform='translate(-6 -5.379)'%3E%3Cpath id='Caminho_1665' data-name='Caminho 1665' d='M7.5,18h21' fill='none' stroke='%232d5ad6' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3Cpath id='Caminho_1666' data-name='Caminho 1666' d='M18,7.5,28.5,18,18,28.5' fill='none' stroke='%232d5ad6' stroke-linecap='round' stroke-linejoin='round' stroke-width='3'/%3E%3C/g%3E%3C/svg%3E%0A");
             @include transition(all 0.4s);
@@ -506,15 +506,26 @@
         }
 
         @media #{$bp-tablet} {
+          .carousel-inner {
+            .carousel-item {
+              .carousel-caption {
+                justify-content: center;
+              }
+            }
+          }
           /* INDICATORS */
           .carousel-indicators {
             bottom: 10px;
+            left: 50%;
+            @include transform(translateX(-50%));
 
             button {
-              border: solid 1px transparent;
-              height: 16px;
               margin: 0 3px;
-              width: 16px;
+
+              &.active {
+                width: 14px;
+                height: 14px;
+              }
             }
           }
 
@@ -529,12 +540,22 @@
           .carousel-control-prev,
           .carousel-control-next {
             width: 8%;
+            bottom: 14px;
 
             .carousel-control-prev-icon,
             .carousel-control-next-icon {
               height: 2.5em;
-              width: 2.5em;
+              width: 3em;
             }
+          }
+
+          .carousel-control-prev {
+            left: 24%;
+          }
+
+          .carousel-control-next {
+            left: initial;
+            right: 24%;
           }
 
           // INNER
@@ -622,21 +643,29 @@
           /* INDICATORS */
           .carousel-indicators {
             button {
-              height: 12px;
-              width: 12px;
+              // height: 12px;
+              // width: 12px;
             }
           }
 
           /* CONTROLS */
           .carousel-control-prev,
           .carousel-control-next {
-            width: 10%;
+            width: 13%;
 
             .carousel-control-prev-icon,
             .carousel-control-next-icon {
-              height: 2em;
-              width: 2em;
+              height: 2.5em;
+              width: 4em;
             }
+          }
+
+          .carousel-control-prev {
+            left: 6%;
+          }
+
+          .carousel-control-next {
+            right: 6%;
           }
 
           // INNER
