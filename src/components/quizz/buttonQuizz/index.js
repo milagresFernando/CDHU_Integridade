@@ -12,10 +12,16 @@ import Btn from "../../buttons";
 
 function ButtonQuizz(props) {
   return (
-    <Row className={`button-wrapper ${props.showButton ? "showButton" : ""}`}>
+    <Row
+      className={`justify-content-center button-wrapper ${
+        props.showButton ? "showButton" : ""
+      } ${props.type == "tenteNovamente" ? props.type : ""}`}
+    >
       <Col className="button-content ">
         <Btn
-          className={`btn-padrao ${props.className ? props.className : ""}`}
+          className={`btn-padrao btn-rounded ${
+            props.className ? props.className : ""
+          }`}
           size="md"
           onClick={() => props.btnFunction()}
         >

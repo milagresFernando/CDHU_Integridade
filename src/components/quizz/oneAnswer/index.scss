@@ -166,11 +166,11 @@
       .answersWrapper {
         background-color: transparent;
         cursor: pointer;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         &.notImg {
           padding-top: 1rem;
           padding-left: 0.75rem;
-          padding-right: 0.75rem;
+          //   padding-right: 0.75rem;
         }
 
         &.bodyWithImg {
@@ -261,9 +261,13 @@
 
         .flexImgWithText {
           background-color: transparent;
+          img {
+            max-width: 150px;
+          }
 
           .p-default {
             padding: 0.75rem;
+            padding-right: 0;
           }
         }
 
@@ -463,9 +467,6 @@
         // PERGUNTA
         .questionWrapper {
           .questionNumber {
-            width: 60px;
-            height: 60px;
-
             p {
               font-size: 32px;
             }
@@ -480,30 +481,27 @@
           // LETRAS / ALTERNATIVAS
           .formAnswers {
             .answers {
-              $sizeBoxAnswer: 3.5rem;
-              input {
-                + label {
-                  &::after {
-                    left: calc($sizeBoxAnswer/4);
-                    height: calc($sizeBoxAnswer/2);
-                    width: calc($sizeBoxAnswer/2);
-                    line-height: calc($sizeBoxAnswer/2);
-                    font-size: calc($sizeBoxAnswer/2);
-                  }
-
-                  &::before {
-                    margin-right: 1rem;
-                    height: $sizeBoxAnswer;
-                    width: $sizeBoxAnswer;
-                  }
-                }
-              }
               //ICONES FEED
               .iconFeed {
                 width: 25px;
                 height: 25px;
-                margin-right: calc($sizeBoxAnswer/4);
               }
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .answersWrapper {
+          &.notImg {
+            padding-left: 0;
+          }
+          .flexImgWithText {
+            .p-default {
+              padding-left: 0;
+            }
+            img {
+              display: none !important;
             }
           }
         }
@@ -514,9 +512,6 @@
         .questionWrapper {
           margin-bottom: 0.5rem;
           .questionNumber {
-            width: 40px;
-            height: 40px;
-
             p {
               font-size: 28px;
             }
@@ -547,28 +542,6 @@
 
           .formAnswers {
             .answers {
-              $sizeBoxAnswer: 2.5rem;
-              input {
-                + label {
-                  &::after {
-                    left: calc($sizeBoxAnswer/4);
-                    height: calc($sizeBoxAnswer/2);
-                    width: calc($sizeBoxAnswer/2);
-                    line-height: calc($sizeBoxAnswer/2);
-                    font-size: calc($sizeBoxAnswer/2);
-                  }
-
-                  &::before {
-                    margin-right: 0.75rem;
-                    height: $sizeBoxAnswer;
-                    width: $sizeBoxAnswer;
-                  }
-                }
-              }
-              //ICONES FEED
-              .iconFeed {
-                margin-right: calc($sizeBoxAnswer/4);
-              }
             }
           }
           .flexImgWithText {
