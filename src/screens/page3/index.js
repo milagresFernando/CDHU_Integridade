@@ -10,6 +10,7 @@ import Footer from "../../components/footer";
 import CanaisDenuncia from "./customComponents/canaisDenuncia";
 
 import CodigoConduta from "./customComponents/codigoConduta";
+import AgoraSuaVez from "./customComponents/agoraSuaVez";
 
 function Page3() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
@@ -37,6 +38,7 @@ function Page3() {
       <Wrapper className="">
         <CodigoConduta sectionTitle="CÓDIGO DE CONDUTA E INTEGRIDADE DA CDHU" />
         <CanaisDenuncia sectionTitle="CANAIS DE DENÚNCIA" />
+        <AgoraSuaVez sectionTitle="AGORA É SUA VEZ!" />
       </Wrapper>
     </Fragment>
   );
