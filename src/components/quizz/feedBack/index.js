@@ -31,7 +31,7 @@ function FeedBack(props) {
       }
       setLoad(true);
     }
-  }, [props.feedBackItems]);
+  }, [props.feedBackItems, props.showFeed]);
 
   // atualiza no resize
   useEffect(() => {
@@ -57,16 +57,12 @@ function FeedBack(props) {
   }
 
   function handleTryAgain() {
+    props.setShowFeed(false);
     props.setDisable(false);
-    props.setShowButtonNext(false);
-
-    // props.setQuestionCounter(props.questionCounter);
-    // props.setCheckedInitial(props.setInitialCheckedArray(props.answers));
-
-    props.setChecked([false, false, false, false]);
-
-    props.setClickNext(!props.clickNext);
-    //props.setShowFeed(false);
+    props.answers.forEach((answer, id) => {
+      answer.inputClassName = "";
+    });
+    props.setCheckedInitial(props.setInitialCheckedArray(props.answers));
   }
 
   const feedBackItems =

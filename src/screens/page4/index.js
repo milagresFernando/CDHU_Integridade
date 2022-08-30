@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
 import Footer from "../../components/footer";
+import AgoraSuaVez from "./customComponents/agoraSuaVez";
 
 import OperacoesDocumentos from "./customComponents/operacoesDocumentos";
 
@@ -32,6 +33,7 @@ function Page4() {
 
       <Wrapper className="">
         <OperacoesDocumentos sectionTitle="OPERAÇÕES E DOCUMENTOS" />
+        <AgoraSuaVez sectionTitle="AGORA É SUA VEZ!" />
       </Wrapper>
     </Fragment>
   );

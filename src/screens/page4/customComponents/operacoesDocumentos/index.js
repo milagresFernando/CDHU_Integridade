@@ -4,19 +4,13 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
-import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
-import BlocoUnicaResposta from "./blocoQuizzUnicaResposta";
-import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
-import BlocoSaibaMais from "./blocoSaibaMais";
-import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";
 
 //Imagens
 
 function OperacoesDocumentos(props) {
   return (
     <section className="relative">
-      <ParallaxGrafAzul />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
@@ -30,7 +24,6 @@ function OperacoesDocumentos(props) {
           </Col>
         </Row>
         <BlocoAccordionUmPorVez />
-        <BlocoQuizzUnicaResposta />
       </Container>
     </section>
   );

@@ -145,11 +145,11 @@ function OneAnswer(props) {
 
   //seta o estado inicial dos checks
   useEffect(() => {
-    if (checkedInitial != "" || typeFeed == "wrong") {
+    if (checkedInitial != "") {
       setLoad(true);
       setChecked(checkedInitial);
     }
-  }, [checkedInitial, typeFeed, clickNext]);
+  }, [checkedInitial]);
 
   // atualiza no resize
   useEffect(() => {
@@ -200,13 +200,15 @@ function OneAnswer(props) {
 
   //seta o feed final e ajusta os contadores desse feed
   useEffect(() => {
-    if (showFinalFeed) {
-      if (props.setCorrectCounter && props.setTotalQuestions) {
-        props.setCorrectCounter(addZero(correctCounter));
-        props.setTotalQuestions(addZero(questions.length));
-      }
+    if (props.finalFeed) {
+      if (showFinalFeed) {
+        if (props.setCorrectCounter && props.setTotalQuestions) {
+          props.setCorrectCounter(addZero(correctCounter));
+          props.setTotalQuestions(addZero(questions.length));
+        }
 
-      setFinalFeedBackItems(props.finalFeed[0]);
+        setFinalFeedBackItems(props.finalFeed[0]);
+      }
     }
   }, [finalFeedBackItems, showFinalFeed]);
 
@@ -286,7 +288,7 @@ function OneAnswer(props) {
         <Col lg="10" className="questionNumber">
           <Title
             typeH="3"
-            className={"title titleSection"}
+            className={"title titleSection mb-5"}
             content={<Fragment>{`Pergunta ${questionNumber}`}</Fragment>}
           />
         </Col>
@@ -370,8 +372,6 @@ function OneAnswer(props) {
           disable={disable}
           questionCounter={questionCounter}
           checkedInitial={checkedInitial}
-          typeFeed={typeFeed}
-          clickNext={clickNext}
         />
       </Form.Group>
     </div>
@@ -449,14 +449,14 @@ function OneAnswer(props) {
       <Fragment>
         <div className="oneAnswer">
           {questionItems}
-          <Row className="justify-content-center">
+          <Row className="justify-content-center mb-3">
             <Col lg="10">{quizzItems}</Col>
           </Row>
 
           <Row className="justify-content-center ">
-            <Col xl="10">
+            <Col lg="10">
               <ButtonQuizz
-                className=""
+                className="mb-5"
                 btnFunction={handleConfirm}
                 showButton={showButtonConfirm}
                 content="Confirmar"
@@ -464,7 +464,7 @@ function OneAnswer(props) {
             </Col>
           </Row>
           <Row className="justify-content-center ">
-            <Col xl="10">
+            <Col lg="10">
               <FeedBack
                 typeFeed={typeFeed}
                 showFeed={showFeed}
@@ -474,21 +474,14 @@ function OneAnswer(props) {
                 setDisable={setDisable}
                 setShowButtonNext={setShowButtonNext}
                 setCheckedInitial={setCheckedInitial}
-                checkedInitial={checkedInitial}
-                setChecked={setChecked}
-                checked={checked}
                 setInitialCheckedArray={setInitialCheckedArray}
                 answers={answers}
-                setQuestionCounter={setQuestionCounter}
-                questionCounter={questionCounter}
-                setClickNext={setClickNext}
-                clickNext={clickNext}
               />
             </Col>
           </Row>
 
           <Row className="justify-content-center ">
-            <Col xl="10">
+            <Col lg="10">
               <ButtonQuizz
                 className=""
                 btnFunction={handleNext}
