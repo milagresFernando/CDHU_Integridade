@@ -34,7 +34,9 @@ function AudioJs(props) {
         download={audioFileName}
         target="_blank"
         title="Transcrição do áudio"
-      ></a>
+      >
+        Baixar Transcrição
+      </a>
     </div>
   );
   const downloadButton = (
@@ -52,7 +54,7 @@ function AudioJs(props) {
 
   const downloadTranscriptionWrapper = (
     <div className="dTWrapper">
-      {downloadButton}
+      {/* {downloadButton} */}
       {transcriptionButton}
     </div>
   );
@@ -64,24 +66,26 @@ function AudioJs(props) {
   const volumeMute = <span className="muteButton"></span>;
 
   return (
-    <AudioPlayer
-      className={` ${props.className ? props.className : ""}`}
-      header={headerItems}
-      src={props.src}
-      autoPlay={false}
-      layout="horizontal-reverse"
-      showJumpControls={false}
-      customIcons={{ play, pause, forward, rewind, volume, volumeMute }}
-      customControlsSection={["MAIN_CONTROLS"]}
-      customProgressBarSection={[
-        "PROGRESS_BAR",
-        "CURRENT_TIME",
-        <span className="rhap_time">/</span>,
-        "DURATION",
-        "VOLUME_CONTROLS",
-        downloadTranscriptionWrapper,
-      ]}
-    />
+    <Fragment>
+      <AudioPlayer
+        className={` ${props.className ? props.className : ""}`}
+        header={headerItems}
+        src={props.src}
+        autoPlay={false}
+        autoPlayAfterSrcChange={false}
+        layout="horizontal-reverse"
+        showJumpControls={false}
+        customIcons={{ play, pause, forward, rewind, volume, volumeMute }}
+        customControlsSection={["MAIN_CONTROLS"]}
+        customProgressBarSection={[
+          "CURRENT_TIME",
+          <span className="rhap_time">|</span>,
+          "DURATION",
+          "PROGRESS_BAR",
+        ]}
+      />
+      {downloadTranscriptionWrapper}
+    </Fragment>
   );
 }
 

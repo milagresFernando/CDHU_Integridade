@@ -5,6 +5,9 @@ import { useState, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TextBlock from "../../../../components/texts/text_block";
 import Title from "../../../../components/texts/title";
+import ParallaxGrafismoBolaRabisco from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco";
+import ParallaxGrafismoLinhaEnrolada from "../../../scrollParallaxSvg/parallaxGrafismoLinhaEnrolada";
+import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";
 
 //Imagens
 
@@ -29,19 +32,24 @@ function AgoraSuaVez(props) {
     },
   ];
   return (
-    <Container>
-      <Row className="justify-content-center">
-        <Col lg="10">
-          <Title
-            typeH="3"
-            className="titleSection mb-5 type2"
-            content={<Fragment>{props.sectionTitle}</Fragment>}
-            ballLeft="true"
-          ></Title>
-          <TextBlock textsBlock={textsBlock} />
-        </Col>
-      </Row>
-    </Container>
+    <section className="relative">
+      <Container>
+        <Row className="justify-content-center">
+          <Col lg="10">
+            <Title
+              typeH="3"
+              className="titleSection mb-5 type2"
+              content={<Fragment>{props.sectionTitle}</Fragment>}
+              ballLeft="true"
+            ></Title>
+            <TextBlock textsBlock={textsBlock} />
+          </Col>
+        </Row>
+      </Container>
+      <ParallaxGrafismoBolaRabisco />
+      <ParallaxGrafismoLinhaEnrolada />
+      <BlocoQuizzUnicaResposta />
+    </section>
   );
 }
 
