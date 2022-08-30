@@ -44,11 +44,11 @@
     }
 
     h4#{&} {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
 
     h5#{&} {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
 
     h6#{&} {
@@ -66,10 +66,10 @@
         font-size: 1.5rem;
       }
       h4#{&} {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
       h5#{&} {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
       h6#{&} {
         font-size: 1rem;
@@ -107,7 +107,7 @@
         h4#{&},
         h5#{&},
         h6 #{&} {
-          color: $cor3;
+          color: $cor9;
 
           &.titleSection {
             text-transform: uppercase;
@@ -208,6 +208,9 @@
               font-weight: 700;
               font-family: $fonte2;
             }
+          }
+          &.corTextoClaro {
+            color: $cor4;
           }
         }
 
