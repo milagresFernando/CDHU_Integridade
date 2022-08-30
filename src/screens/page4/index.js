@@ -9,6 +9,8 @@ import Footer from "../../components/footer";
 import AgoraSuaVez from "./customComponents/agoraSuaVez";
 
 import OperacoesDocumentos from "./customComponents/operacoesDocumentos";
+import AplicacaoLGPD from "./customComponents/aplicacaoLGPD";
+import PapeisEnvolvidos from "./customComponents/papeisEnvolvidos";
 
 function Page4() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
@@ -32,6 +34,8 @@ function Page4() {
       <Header setTemaCor={setTemaCor} pageAtual={4} className="" />
 
       <Wrapper className="">
+        <AplicacaoLGPD sectionTitle="APLICAÇÃO DA LGPD NA CDHU" />
+        <PapeisEnvolvidos sectionTitle="PAPÉIS ENVOLVIDOS" />
         <OperacoesDocumentos sectionTitle="OPERAÇÕES E DOCUMENTOS" />
         <AgoraSuaVez sectionTitle="AGORA É SUA VEZ!" />
       </Wrapper>

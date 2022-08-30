@@ -61,6 +61,17 @@ body {
   z-index: 0;
 }
 
+.gradientPurplePink {
+  background: rgb(55, 76, 140);
+  background: linear-gradient(
+    146deg,
+    rgba(55, 76, 140, 1) 0%,
+    rgba(63, 49, 159, 1) 38%,
+    rgba(146, 56, 155, 1) 84%,
+    rgba(233, 183, 238, 1) 100%
+  );
+}
+
 .overflow {
   overflow: hidden;
 }
@@ -250,4 +261,8 @@ $intervalP: 0;
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+
+.corTextoClaro {
+  color: $cor4;
 }
