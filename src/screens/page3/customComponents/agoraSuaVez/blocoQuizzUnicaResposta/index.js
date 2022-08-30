@@ -12,6 +12,7 @@ import audioFile1 from "../../../../assets/audio/audioQ1.mp3";
 import transcricao1 from "../../../../assets/audio/audioQ1.pdf";
 import audioFile2 from "../../../../assets/audio/audioQ2.mp3";
 import transcricao2 from "../../../../assets/audio/audioQ2.pdf";
+import ParallaxGrafismoBolaRabisco from "../../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco";
 
 function BlocoQuizzUnicaResposta(props) {
   // caso deseje importar uma imagem sem usar os imports acima, utilize a funcão require(caminho da imagem), direto no array de questions
@@ -318,7 +319,8 @@ function BlocoQuizzUnicaResposta(props) {
   ];
 
   return (
-    <Fragment>
+    <div className="relative overflow">
+      <ParallaxGrafismoBolaRabisco />
       <OneAnswerWithAudio
         options={options}
         questions={questions}
@@ -326,7 +328,7 @@ function BlocoQuizzUnicaResposta(props) {
         setTotalQuestions={setTotalQuestions}
         correctCounter={correctCounter}
       />
-    </Fragment>
+    </div>
   );
 }
 

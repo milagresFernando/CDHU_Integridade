@@ -12,7 +12,7 @@ import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
 function ParallaxGrafismoBolaRabisco(props) {
-  let valueDesk = -5;
+  let valueDesk = 15;
   let valueTablet = 5;
   let valueMobile = 2;
 
@@ -57,7 +57,7 @@ function ParallaxGrafismoBolaRabisco(props) {
     <Fragment>
       <SvgParallax
         svgName="GrafismoBolaRabisco"
-        className="grafismoBolaRabisco right-20 top0"
+        className="grafismoBolaRabisco right-20 top-20"
         parallaxRef={grafismoBolaRabisco.ref}
         monitoraMudanca={monitoraMudanca}
       />

@@ -5,7 +5,7 @@ import { useState, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TextBlock from "../../../../components/texts/text_block";
 import Title from "../../../../components/texts/title";
-import ParallaxGrafismoBolaRabisco from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco";
+
 import ParallaxGrafismoLinhaEnrolada from "../../../scrollParallaxSvg/parallaxGrafismoLinhaEnrolada";
 import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";
 
@@ -46,7 +46,6 @@ function AgoraSuaVez(props) {
           </Col>
         </Row>
       </Container>
-      <ParallaxGrafismoBolaRabisco />
       <ParallaxGrafismoLinhaEnrolada />
       <BlocoQuizzUnicaResposta />
     </section>

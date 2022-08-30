@@ -2,7 +2,7 @@ import * as React from "react";
 
 function GrafismoAzul(props) {
   return (
-    <svg data-name="Layer 1" viewBox="0 0 261.95 982">
+    <svg data-name="GrafismoAzul" viewBox="0 0 261.95 982">
       <image
         data-name="Elemento Lateral azul"
         width={398}
