@@ -27,6 +27,7 @@ function BlocoQuizzUnicaResposta(props) {
     randomAnswers: false,
     // maxQuestions: 3,
     iconFeed: false,
+    scrollAnimated: true,
   };
   const questions = [
     {

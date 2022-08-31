@@ -2,7 +2,7 @@
 import "./index.scss";
 
 // React Elements/Hooks
-import { useState, Fragment, useEffect } from "react";
+import { useState, Fragment, useEffect, useRef } from "react";
 
 // Components
 import { Container, Row, Col, Form } from "react-bootstrap";
@@ -46,6 +46,9 @@ function OneAnswer(props) {
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [checkedInitial, setCheckedInitial] = useState([]);
   const [clickNext, setClickNext] = useState(false);
+
+  const situacao = useRef(null);
+  const scrollTo = (element) => element.current.scrollIntoView();
 
   //executa quando a páginna é carregada.verifica se possui limite de questoes, se sim, busca as questões de forma aleatória, senão, só preenche o state de questões
   useEffect(() => {
@@ -280,10 +283,11 @@ function OneAnswer(props) {
     setQuestionCounter(questionCounter + 1);
     setCheckedInitial(setInitialCheckedArray(answers));
     setClickNext(!clickNext);
+    props.options.scrollAnimated && scrollTo(situacao);
   }
 
   const questionTexts = (
-    <div className="questionWrapper" key={"questionWrapper"}>
+    <div className="questionWrapper" key={"questionWrapper"} ref={situacao}>
       <Row className="justify-content-center">
         <Col lg="10" className="questionNumber">
           <Title
@@ -449,7 +453,7 @@ function OneAnswer(props) {
       <Fragment>
         <div className="oneAnswer">
           {questionItems}
-          <Row className="justify-content-center mb-3">
+          <Row className="justify-content-center">
             <Col lg="10">{quizzItems}</Col>
           </Row>
 
@@ -463,7 +467,7 @@ function OneAnswer(props) {
               />
             </Col>
           </Row>
-          <Row className="justify-content-center ">
+          <Row className="justify-content-center my-5">
             <Col lg="10">
               <FeedBack
                 typeFeed={typeFeed}
@@ -476,6 +480,7 @@ function OneAnswer(props) {
                 setCheckedInitial={setCheckedInitial}
                 setInitialCheckedArray={setInitialCheckedArray}
                 answers={answers}
+                scrollAnimated={props.options.scrollAnimated}
               />
             </Col>
           </Row>
