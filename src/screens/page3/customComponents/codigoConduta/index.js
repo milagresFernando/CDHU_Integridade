@@ -15,13 +15,13 @@ import BlocoVideoIntroducao4 from "./blocoVideoIntroducao4";
 
 function CodigoConduta(props) {
   return (
-    <section className="relative ">
+    <section className="relative spacingSection">
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-5"
+              className="titleSection mb-3"
               content={<Fragment>{props.sectionTitle}</Fragment>}
             >
               <span className="ballTitle"></span>
@@ -31,7 +31,7 @@ function CodigoConduta(props) {
         <BlocoVideoIntroducao4 />
       </Container>
       <ParallaxOndas type="roxo" />
-      <Container>
+      <Container className="spacingContainer">
         <BlocoListaComImgFlex />
         <BlocoCarouselComImgEstatica />
       </Container>

@@ -32,7 +32,7 @@ function Page1() {
       {/* <ProgressPage className="textBar" /> */}
       <Header setTemaCor={setTemaCor} pageAtual={1} className="" />
       <Capa />
-      <Wrapper className="pt-2 pt-md-5">
+      <Wrapper className="pb-0">
         <Introducao sectionTitle="Introdução" />
       </Wrapper>
     </Fragment>

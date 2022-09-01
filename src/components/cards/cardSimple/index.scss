@@ -33,7 +33,7 @@
         overflow: initial;
         .imgTela2 {
           margin: 0 auto;
-          max-width: 150px;
+          max-width: 100px;
           position: relative;
           top: -20px;
         }
@@ -469,7 +469,7 @@
       @media #{$bp-phone} {
         &.tela2 {
           .imgTela2 {
-            max-width: 110px;
+            max-width: 90px;
           }
         }
       }

@@ -10,7 +10,7 @@ import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
 
 function OperacoesDocumentos(props) {
   return (
-    <section className="relative">
+    <section className="relative spacingSection">
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">

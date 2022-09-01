@@ -13,7 +13,7 @@ import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 function CanaisDenuncia(props) {
   return (
-    <section className="relative">
+    <section className="relative spacingSection">
       <ParallaxGrafAzul />
       <Container>
         <Row className="justify-content-center">
