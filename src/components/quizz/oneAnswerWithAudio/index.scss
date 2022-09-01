@@ -465,7 +465,8 @@
 
       .audioWrapper {
         position: relative;
-        padding: 100px 0;
+        padding-top: 100px;
+        padding-bottom: 100px;
         margin-bottom: 100px;
 
         .textBlock {
@@ -494,6 +495,20 @@
           .icoImg {
             margin-bottom: -50px;
           }
+        }
+      }
+
+      .audioFeedWrapper {
+        .icoAndPlayer {
+          align-items: baseline;
+          .icoImg {
+            margin-bottom: -70px;
+          }
+        }
+        .textQuestionAudio {
+          color: #3c4c88;
+          font-size: 1.25rem;
+          font-family: $fonte2;
         }
       }
 
@@ -530,6 +545,16 @@
             }
           }
         }
+        .audioFeedWrapper {
+          .icoAndPlayer {
+            .icoImg {
+              margin-bottom: -70px;
+            }
+          }
+          .textQuestionAudio {
+            font-size: 1.125rem;
+          }
+        }
       }
 
       @media only screen and (max-width: 768px) {
@@ -551,6 +576,13 @@
           .icoAndPlayer {
             .icoImg {
               margin-bottom: -80px;
+            }
+          }
+        }
+        .audioFeedWrapper {
+          .icoAndPlayer {
+            .icoImg {
+              margin-bottom: -100px;
             }
           }
         }
@@ -602,9 +634,19 @@
 
         .audioWrapper {
           position: relative;
-          padding: 60px 0;
+          padding-top: 60px;
+          padding-bottom: 60px;
           margin-bottom: 60px;
 
+          .icoAndPlayer {
+            .icoImg {
+              margin-bottom: 20px;
+              max-height: 80px;
+            }
+          }
+        }
+
+        .audioFeedWrapper {
           .icoAndPlayer {
             .icoImg {
               margin-bottom: 20px;

@@ -47,6 +47,7 @@ function AgoraSuaVez(props) {
         </Row>
       </Container>
       <ParallaxGrafismoLinhaEnrolada />
+
       <BlocoQuizzUnicaResposta />
     </section>
   );

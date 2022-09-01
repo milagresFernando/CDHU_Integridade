@@ -2,7 +2,7 @@
 import "./index.scss";
 
 // React Elements/Hooks
-import { useState, Fragment, useEffect } from "react";
+import { useState, Fragment, useEffect, useRef } from "react";
 
 // Components
 import { Container, Row, Col } from "react-bootstrap";
@@ -20,6 +20,9 @@ import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 function FeedBack(props) {
   const [load, setLoad] = useState(false);
   const [breakResponsive, setBreakResponsive] = useState(false);
+
+  const feedBack = useRef(null);
+  const scrollTo = (element) => element.current.scrollIntoView();
 
   useEffect(() => {
     if (props.feedBackItems != "") {
@@ -46,6 +49,12 @@ function FeedBack(props) {
       };
     }
   }, [window.innerWidth, props.feedBackItems]);
+
+  useEffect(() => {
+    if (props.scrollAnimated && load && props.showFeed) {
+      scrollTo(feedBack);
+    }
+  }, [load, props.showFeed]);
 
   function ajustBreakContentResponsive(imgSide) {
     //seta a classe de break, quando o feedBack fica na versao tablet/mobile
@@ -166,7 +175,7 @@ function FeedBack(props) {
   if (!load) {
     return <Fragment> </Fragment>;
   } else {
-    return <Fragment>{feedBackItems}</Fragment>;
+    return <div ref={feedBack}>{feedBackItems}</div>;
   }
 }
 

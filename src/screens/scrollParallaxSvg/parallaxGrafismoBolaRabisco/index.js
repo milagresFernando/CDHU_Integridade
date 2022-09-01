@@ -12,9 +12,9 @@ import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
 function ParallaxGrafismoBolaRabisco(props) {
-  let valueDesk = 15;
-  let valueTablet = 5;
-  let valueMobile = 2;
+  let valueDesk = -15;
+  let valueTablet = -15;
+  let valueMobile = -15;
 
   const [grafismoBolaRabiscoValue, setGrafismoBolaRabiscoValue] = useState({
     speed: valueDesk,

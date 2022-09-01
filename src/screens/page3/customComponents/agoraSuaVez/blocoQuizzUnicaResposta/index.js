@@ -4,14 +4,31 @@ import React, { useState, Fragment, useEffect } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import OneAnswerWithAudio from "../../../../../components/quizz/oneAnswerWithAudio";
-//Imagens
 
+//Imagens, Audios e PDF
 import imgAnswer1 from "../../../../assets/images/icoQuestionQuizz.svg";
 import imgFeed from "../../../../assets/images/icoFeedPositivo.svg";
+
 import audioFile1 from "../../../../assets/audio/audioQ1.mp3";
+import audioFileFeed1 from "../../../../assets/audio/audioQ1.mp3";
 import transcricao1 from "../../../../assets/audio/audioQ1.pdf";
+import transcricaoFeed1 from "../../../../assets/audio/audioQ1.pdf";
+
 import audioFile2 from "../../../../assets/audio/audioQ2.mp3";
+import audioFileFeed2 from "../../../../assets/audio/audioQ2.mp3";
 import transcricao2 from "../../../../assets/audio/audioQ2.pdf";
+import transcricaoFeed2 from "../../../../assets/audio/audioQ2.pdf";
+
+import audioFile3 from "../../../../assets/audio/audioQ2.mp3";
+import audioFileFeed3 from "../../../../assets/audio/audioQ2.mp3";
+import transcricao3 from "../../../../assets/audio/audioQ2.pdf";
+import transcricaoFeed3 from "../../../../assets/audio/audioQ2.pdf";
+
+import audioFile4 from "../../../../assets/audio/audioQ2.mp3";
+import audioFileFeed4 from "../../../../assets/audio/audioQ2.mp3";
+import transcricao4 from "../../../../assets/audio/audioQ2.pdf";
+import transcricaoFeed4 from "../../../../assets/audio/audioQ2.pdf";
+
 import ParallaxGrafismoBolaRabisco from "../../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco";
 
 function BlocoQuizzUnicaResposta(props) {
@@ -28,6 +45,7 @@ function BlocoQuizzUnicaResposta(props) {
     randomAnswers: false,
     // maxQuestions: 3,
     iconFeed: false,
+    scrollAnimated: true,
   };
   const questions = [
     {
@@ -169,6 +187,42 @@ function BlocoQuizzUnicaResposta(props) {
           },
         },
       },
+      audioFeed: {
+        textBlockAudio: [
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>Clique no play</strong> para ouvir a reação de Kaio.
+              </Fragment>
+            ),
+          },
+        ],
+
+        titleAudio: {
+          titleContent: "CONVERSA ENTRE IGOR E KAIO.",
+          tagTitle: "5",
+          titleClassName: "",
+        },
+        audioFile: audioFileFeed1,
+        transcricao: transcricaoFeed1,
+
+        textQuestionBlockAudio: [
+          {
+            tagElement: "p",
+            className: "textQuestionAudio",
+            content: (
+              <Fragment>
+                <strong>
+                  Assim como Igor, de que outras maneiras você também pode
+                  contribuir com a integridade na CDHU em seu dia a dia?
+                </strong>
+              </Fragment>
+            ),
+          },
+        ],
+      },
     },
     {
       audio: {
@@ -197,16 +251,16 @@ function BlocoQuizzUnicaResposta(props) {
             ),
           },
         ],
+
         titleAudio: {
           titleContent: "CONVERSA ENTRE EUNICE E LEANDRO.",
           tagTitle: "5",
           titleClassName: "",
         },
 
-        audioFile: audioFile2,
-        transcricao: transcricao2,
+        audioFile: audioFile1,
+        transcricao: transcricao1,
       },
-
       title: {
         titleContent: "O que Eunice deve fazer?",
         tagTitle: "4",
@@ -314,6 +368,408 @@ function BlocoQuizzUnicaResposta(props) {
             titleClassName: "",
           },
         },
+      },
+      audioFeed: {
+        textBlockAudio: [
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>Clique no play</strong> para ouvir a reação de Eunice.
+              </Fragment>
+            ),
+          },
+        ],
+
+        titleAudio: {
+          titleContent: "CONVERSA ENTRE	EUNICE E LEANDRO.",
+          tagTitle: "5",
+          titleClassName: "",
+        },
+        audioFile: audioFileFeed2,
+        transcricao: transcricaoFeed2,
+
+        textQuestionBlockAudio: [
+          {
+            tagElement: "p",
+            className: "textQuestionAudio",
+            content: (
+              <Fragment>
+                <strong>
+                  Assim como Eunice e Leandro, de que outras maneiras você
+                  também pode contribuir com a integridade na CDHU em seu dia a
+                  dia?
+                </strong>
+              </Fragment>
+            ),
+          },
+        ],
+      },
+    },
+    {
+      audio: {
+        textBlockAudio: [
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>
+                  Olívia é responsável pelos contratos da CDHU com fornecedores
+                  e parceiros. Certo dia, ela encontrou sua amiga Joana no
+                  corredor e as duas conversaram rapidamente.
+                </strong>
+              </Fragment>
+            ),
+          },
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>Clique no play</strong> para ouvir a conversa entre
+                Olivia e Joana.
+              </Fragment>
+            ),
+          },
+        ],
+
+        titleAudio: {
+          titleContent: "CONVERSA ENTRE OLIVIA E JOANA.",
+          tagTitle: "5",
+          titleClassName: "",
+        },
+
+        audioFile: audioFile3,
+        transcricao: transcricao3,
+      },
+      title: {
+        titleContent: "O que Olivia deve fazer?",
+        tagTitle: "4",
+        titleClassName: "",
+      },
+
+      answersImages: {
+        rowClasses: "align-items-center",
+        imgUrl: imgAnswer1,
+        imgUrlBreak: imgAnswer1,
+        imgSide: "left",
+        colLg: "2",
+        colMd: "3",
+      },
+      answers: [
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Nada. Afinal, não vale a pena acreditar em boatos e conversas
+                  de corredor.
+                </Fragment>
+              ),
+            },
+          ],
+
+          correct: "wrong",
+        },
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Manter-se atenta e acompanhar o desenrolar dos fatos, além de
+                  fazer um questionamento formal para verificar se as
+                  informações sobre as ocorrências trabalhistas na empresa são
+                  verdadeiras.
+                </Fragment>
+              ),
+            },
+          ],
+          correct: "correct",
+        },
+
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Se desesperar, ligar para a empresa e comentar que sua colega
+                  comentou sobre a denúncia, além de querer tirar satisfações
+                  com o presidente.
+                </Fragment>
+              ),
+            },
+          ],
+          correct: "wrong",
+        },
+      ],
+      feedbacks: {
+        correct: {
+          title: {
+            titleContent: "PARABÉNS! VOCÊ ACERTOU!",
+            tagTitle: "4",
+            titleClassName: "",
+          },
+          images: {
+            rowClasses: "align-items-center feedCdhu",
+            imgUrl: imgFeed,
+            imgUrlBreak: imgFeed,
+            imgSide: "left",
+            colMd: "2",
+          },
+          contents: {
+            contentClassName: "",
+            textBlocks: [
+              {
+                tagElement: "p",
+                className: "",
+                content: (
+                  <Fragment>
+                    A CDHU deve realizar parcerias/negócios somente com empresas
+                    que utilizam matéria-prima e mão de obra formal, conforme
+                    previsto nas legislações pertinentes. Assim sendo, são
+                    vedados negócios com organizações que utilizem trabalho
+                    infantil e/ou forçado ou cuja procedência dos produtos ou
+                    dos serviços fornecidos seja de origem duvidosa e/ou
+                    ilícita.
+                  </Fragment>
+                ),
+              },
+            ],
+          },
+        },
+
+        wrong: {
+          title: {
+            titleContent: "NÃO FOI DESTA VEZ!",
+            tagTitle: "4",
+            titleClassName: "",
+          },
+        },
+      },
+      audioFeed: {
+        textBlockAudio: [
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>Clique no play</strong> para ouvir a reação de Olivia.
+              </Fragment>
+            ),
+          },
+        ],
+
+        titleAudio: {
+          titleContent: "CONVERSA ENTRE OLIVIA E JOANA.",
+          tagTitle: "5",
+          titleClassName: "",
+        },
+        audioFile: audioFileFeed3,
+        transcricao: transcricaoFeed3,
+
+        textQuestionBlockAudio: [
+          {
+            tagElement: "p",
+            className: "textQuestionAudio",
+            content: (
+              <Fragment>
+                <strong>
+                  Assim como Olivia e Joana, de que outras maneiras você também
+                  pode contribuir com a integridade na CDHU em seu dia a dia?
+                </strong>
+              </Fragment>
+            ),
+          },
+        ],
+      },
+    },
+    {
+      audio: {
+        textBlockAudio: [
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>
+                  Flora trabalha em uma equipe em que muitos colaboradores
+                  realizam as mesmas atividades. Em um dia de trabalho, ela
+                  esqueceu a senha do sistema de cadastros e pediu um favor a
+                  Tales.
+                </strong>
+              </Fragment>
+            ),
+          },
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>Clique no play</strong> para ouvir a conversa entre
+                Flora e Tales.
+              </Fragment>
+            ),
+          },
+        ],
+
+        titleAudio: {
+          titleContent: "CONVERSA ENTRE FLORA E TALES.",
+          tagTitle: "5",
+          titleClassName: "",
+        },
+
+        audioFile: audioFile4,
+        transcricao: transcricao4,
+      },
+      title: {
+        titleContent: "O que Tales deve fazer?",
+        tagTitle: "4",
+        titleClassName: "",
+      },
+
+      answersImages: {
+        rowClasses: "align-items-center",
+        imgUrl: imgAnswer1,
+        imgUrlBreak: imgAnswer1,
+        imgSide: "left",
+        colLg: "2",
+        colMd: "3",
+      },
+      answers: [
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Passar seu login e senha para a Flora. É sempre bom ajudar os
+                  colegas quando eles precisam, ainda mais no ambiente de
+                  trabalho.
+                </Fragment>
+              ),
+            },
+          ],
+
+          correct: "wrong",
+        },
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Usar o login e a senha da Jussara, que está de férias, para
+                  poder emprestar seus dados para Flora.
+                </Fragment>
+              ),
+            },
+          ],
+          correct: "wrong",
+        },
+
+        {
+          text: [
+            {
+              tagElement: "p",
+              className: "",
+              content: (
+                <Fragment>
+                  Deve dizer a Flora que não emprestará seu login e sua senha,
+                  mas que a ajudará a entrar em contato com a área de TI para
+                  recuperar as informações.
+                </Fragment>
+              ),
+            },
+          ],
+          correct: "correct",
+        },
+      ],
+      feedbacks: {
+        correct: {
+          title: {
+            titleContent: "PARABÉNS! VOCÊ ACERTOU!",
+            tagTitle: "4",
+            titleClassName: "",
+          },
+          images: {
+            rowClasses: "align-items-center feedCdhu",
+            imgUrl: imgFeed,
+            imgUrlBreak: imgFeed,
+            imgSide: "left",
+            colMd: "2",
+          },
+          contents: {
+            contentClassName: "",
+            textBlocks: [
+              {
+                tagElement: "p",
+                className: "",
+                content: (
+                  <Fragment>
+                    Não é permitido ceder ou emprestar a terceiros, mesmo que
+                    temporariamente, senha/login/perfil de acesso a algum
+                    sistema ou software da CDHU, bem como crachá de acesso
+                    pessoal ou veículos.
+                  </Fragment>
+                ),
+              },
+            ],
+          },
+        },
+
+        wrong: {
+          title: {
+            titleContent: "NÃO FOI DESTA VEZ!",
+            tagTitle: "4",
+            titleClassName: "",
+          },
+        },
+      },
+      audioFeed: {
+        textBlockAudio: [
+          {
+            tagElement: "p",
+            className: "",
+            content: (
+              <Fragment>
+                <strong>Clique no play</strong> para ouvir a reação de Tales.
+              </Fragment>
+            ),
+          },
+        ],
+
+        titleAudio: {
+          titleContent: "CONVERSA ENTRE FLORA E TALES.",
+          tagTitle: "5",
+          titleClassName: "",
+        },
+        audioFile: audioFileFeed4,
+        transcricao: transcricaoFeed4,
+
+        textQuestionBlockAudio: [
+          {
+            tagElement: "p",
+            className: "textQuestionAudio",
+            content: (
+              <Fragment>
+                <strong>
+                  Assim como Tales, de que outras maneiras você também pode
+                  contribuir com a integridade na CDHU em seu dia a dia?
+                </strong>
+              </Fragment>
+            ),
+          },
+        ],
       },
     },
   ];

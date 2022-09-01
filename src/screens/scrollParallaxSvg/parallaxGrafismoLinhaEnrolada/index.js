@@ -13,8 +13,8 @@ import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
 function ParallaxGrafismoLinhaEnrolada(props) {
   let valueDesk = 10;
-  let valueTablet = 5;
-  let valueMobile = 2;
+  let valueTablet = 7;
+  let valueMobile = 5;
 
   const [grafismoLinhaEnroladaValue, setGrafismoLinhaEnroladaValue] = useState({
     speed: valueDesk,

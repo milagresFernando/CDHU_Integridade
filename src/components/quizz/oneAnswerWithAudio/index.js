@@ -2,7 +2,7 @@
 import "./index.scss";
 
 // React Elements/Hooks
-import { useState, Fragment, useEffect } from "react";
+import { useState, Fragment, useEffect, useRef } from "react";
 
 // Components
 import { Container, Row, Col, Form, Image } from "react-bootstrap";
@@ -23,6 +23,7 @@ import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
 //Imagens
 import IcoPodcast from "../../../screens/assets/images/icoPodcast.svg";
+import IcoPodcastFeed from "../../../screens/assets/images/icoPodcast2.svg";
 
 function OneAnswerWithAudio(props) {
   const [load, setLoad] = useState(false);
@@ -51,6 +52,9 @@ function OneAnswerWithAudio(props) {
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [checkedInitial, setCheckedInitial] = useState([]);
   const [clickNext, setClickNext] = useState(false);
+
+  const situacao = useRef(null);
+  const scrollTo = (element) => element.current.scrollIntoView();
 
   //executa quando a páginna é carregada.verifica se possui limite de questoes, se sim, busca as questões de forma aleatória, senão, só preenche o state de questões
   useEffect(() => {
@@ -285,9 +289,10 @@ function OneAnswerWithAudio(props) {
     setQuestionCounter(questionCounter + 1);
     setCheckedInitial(setInitialCheckedArray(answers));
     setClickNext(!clickNext);
+    props.options.scrollAnimated && scrollTo(situacao);
   }
   const audioBlock = load && actualQuestion.audio && (
-    <div className="audioWrapper" key={"audioWrapper"}>
+    <Container className="audioWrapper" key={"audioWrapper"} ref={situacao}>
       <Row className="justify-content-center">
         <Col lg="10" className="questionNumber">
           <Title
@@ -322,8 +327,50 @@ function OneAnswerWithAudio(props) {
           </Row>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
+
+  const audioFeed = actualQuestion.audioFeed &&
+    typeFeed == "correct" &&
+    showFeed && (
+      <Container className="audioFeedWrapper" key={"audioFeedWrapper"}>
+        <Row className="justify-content-center mt-5">
+          <Col lg="10" className="mt-4">
+            <hr></hr>
+            <TextBlock textsBlock={actualQuestion.audioFeed.textBlockAudio} />
+          </Col>
+          <Col lg="10" className="">
+            <Row className="icoAndPlayer">
+              <Col md="2" sm="3">
+                <Image
+                  src={IcoPodcastFeed}
+                  className={"d-block mx-auto icoImg"}
+                  loading="lazy"
+                  alt=""
+                  fluid
+                />
+              </Col>
+
+              <Col>
+                <AudioJs
+                  className="mb-3 audioFeed"
+                  src={actualQuestion.audioFeed.audioFile}
+                  transcricao={actualQuestion.audioFeed.transcricao}
+                  titleSetings={actualQuestion.audioFeed.titleAudio}
+                />
+              </Col>
+            </Row>
+          </Col>
+
+          <Col lg="10" className="mt-4">
+            <TextBlock
+              textsBlock={actualQuestion.audioFeed.textQuestionBlockAudio}
+            />
+          </Col>
+          <hr></hr>
+        </Row>
+      </Container>
+    );
 
   const questionTexts = (
     <div className="questionWrapper" key={"questionWrapper"}>
@@ -484,50 +531,53 @@ function OneAnswerWithAudio(props) {
       <Fragment>
         <div className="oneAnswerWithAudio">
           {audioBlock}
-          {questionItems}
-          <Row className="justify-content-center mb-3">
-            <Col lg="10">{quizzItems}</Col>
-          </Row>
+          <Container>
+            {questionItems}
+            <Row className="justify-content-center ">
+              <Col lg="10">{quizzItems}</Col>
+            </Row>
 
-          <Row className="justify-content-center ">
-            <Col lg="10">
-              <ButtonQuizz
-                className="mb-5"
-                btnFunction={handleConfirm}
-                showButton={showButtonConfirm}
-                content="Confirmar"
-              />
-            </Col>
-          </Row>
-          <Row className="justify-content-center ">
-            <Col lg="10">
-              <FeedBack
-                typeFeed={typeFeed}
-                showFeed={showFeed}
-                feedBackItems={feedBackItems}
-                breakContent={props.options.breakContent}
-                setShowFeed={setShowFeed}
-                setDisable={setDisable}
-                setShowButtonNext={setShowButtonNext}
-                setCheckedInitial={setCheckedInitial}
-                setInitialCheckedArray={setInitialCheckedArray}
-                answers={answers}
-              />
-            </Col>
-          </Row>
+            <Row className="justify-content-center ">
+              <Col lg="10">
+                <ButtonQuizz
+                  className="mb-5"
+                  btnFunction={handleConfirm}
+                  showButton={showButtonConfirm}
+                  content="Confirmar"
+                />
+              </Col>
+            </Row>
+            <Row className="justify-content-center mt-5">
+              <Col lg="10">
+                <FeedBack
+                  typeFeed={typeFeed}
+                  showFeed={showFeed}
+                  feedBackItems={feedBackItems}
+                  breakContent={props.options.breakContent}
+                  setShowFeed={setShowFeed}
+                  setDisable={setDisable}
+                  setShowButtonNext={setShowButtonNext}
+                  setCheckedInitial={setCheckedInitial}
+                  setInitialCheckedArray={setInitialCheckedArray}
+                  answers={answers}
+                  scrollAnimated={props.options.scrollAnimated}
+                />
+              </Col>
+              {audioFeed}
+            </Row>
 
-          <Row className="justify-content-center ">
-            <Col lg="10">
-              <ButtonQuizz
-                className=""
-                btnFunction={handleNext}
-                showButton={showButtonNext}
-                content="Próxima"
-              />
-            </Col>
-          </Row>
+            <Row className="justify-content-center ">
+              <Col lg="10">
+                <ButtonQuizz
+                  className=""
+                  btnFunction={handleNext}
+                  showButton={showButtonNext}
+                  content="Próxima"
+                />
+              </Col>
+            </Row>
 
-          {/* <FeedBack
+            {/* <FeedBack
             typeFeed={"finalFeed"}
             showFeed={showFinalFeed}
             feedBackItems={finalFeedBackItems}
@@ -537,7 +587,8 @@ function OneAnswerWithAudio(props) {
             totalQuestions={questions.length}
           /> */}
 
-          {counterBar}
+            {counterBar}
+          </Container>
         </div>
       </Fragment>
     );

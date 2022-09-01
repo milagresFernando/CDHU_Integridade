@@ -217,6 +217,98 @@
           }
         }
       }
+
+      &.audioFeed {
+        $playButton: "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cg id='play'%3E%3Cpolygon points='4.4 14.97 4.4 1.57 16 8.27 27.6 14.97 16 21.77 4.4 28.47 4.4 14.97' style='fill: %23" +
+          $svg4 +
+          ";'/%3E%3C/g%3E%3C/svg%3E";
+
+        $pauseButton: "data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cg id='pause'%3E%3Crect x='3.55' y='1.57' width='7.9' height='26.9' style='fill: %23" +
+          $svg4 +
+          ";'/%3E%3Crect x='18.55' y='1.57' width='7.9' height='26.9' style='fill: %23" +
+          $svg4 +
+          ";'/%3E%3C/g%3E%3C/svg%3E";
+        .rhap_header {
+          .title {
+            color: #3c4c88;
+          }
+        }
+
+        .rhap_horizontal-reverse {
+          //PLAY E PAUSE BUTTONS
+          .rhap_controls-section {
+            .rhap_play-pause-button {
+              background: $cor8;
+
+              .play,
+              .pause {
+              }
+              .play {
+                background: url($playButton) center no-repeat;
+              }
+              .pause {
+                background: url($pauseButton) center no-repeat;
+              }
+            }
+          }
+
+          //BARRA DE PROGRESSO
+          .rhap_progress-section {
+            .rhap_progress-container {
+              // COR DA BARRA DE TRAS
+              .rhap_progress-bar {
+                &.rhap_progress-bar-show-download {
+                  background: $cor8;
+                  background: linear-gradient(
+                    90deg,
+                    rgba(87, 146, 251, 1) 0%,
+                    rgba(29, 243, 253, 1) 100%
+                  );
+                }
+                // COR DA BARRA DO DOWNLOAD
+                .rhap_download-progress {
+                  background: rgb(87, 146, 251);
+                  background: linear-gradient(
+                    90deg,
+                    rgba(87, 146, 251, 1) 0%,
+                    rgba(29, 243, 253, 1) 100%
+                  );
+                }
+                // COR DA BARRA VISTA
+                .rhap_progress-filled {
+                  background: $cor8;
+                }
+                // COR DA BOLINHA DA PONTA DA BARRA
+                .rhap_progress-indicator {
+                  background: $cor8;
+                }
+              }
+            }
+            //  CONTADORES DE TEMPO
+            .rhap_time {
+              color: $cor8;
+            }
+            // VOLUME
+            .rhap_volume-container {
+              .volumeButton {
+                background: url($volumeButton) center no-repeat;
+              }
+              .muteButton {
+                background: url($muteButton) center no-repeat;
+              }
+
+              .rhap_volume-bar-area {
+                .rhap_volume-bar {
+                  background-color: rgba(255, 255, 255, 1);
+                  .rhap_volume-indicator {
+                    background: linear-gradient(to right, $cor4, $cor4);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     // DOWNLOAD E TRANCRICAO
@@ -243,7 +335,8 @@
       }
       .transcricao {
         display: block;
-        background: linear-gradient(to right, #2d5ad6, #384e8a, #92389b);
+        background: linear-gradient(to right, #92389b, #2d5ad6, #1df3fd);
+
         background-size: 300% 100%;
         border-radius: 10px;
         text-transform: initial;
