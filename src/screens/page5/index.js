@@ -6,13 +6,9 @@ import { useState, useEffect } from "react";
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
 import Footer from "../../components/footer";
+import Referencias from "./customComponents/referencias";
 
-import CanaisDenuncia from "./customComponents/canaisDenuncia";
-
-import CodigoConduta from "./customComponents/codigoConduta";
-import AgoraSuaVez from "./customComponents/agoraSuaVez";
-
-function Page3() {
+function Page5() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
 
   useEffect(() => {
@@ -33,15 +29,13 @@ function Page3() {
   return (
     <Fragment>
       {/* <ProgressPage className="textBar" /> */}
-      <Header setTemaCor={setTemaCor} pageAtual={3} className="" />
+      <Header setTemaCor={setTemaCor} pageAtual={5} className="" />
 
       <Wrapper className="">
-        <CodigoConduta sectionTitle="CÓDIGO DE CONDUTA E INTEGRIDADE DA CDHU" />
-        <CanaisDenuncia sectionTitle="CANAIS DE DENÚNCIA" />
-        <AgoraSuaVez sectionTitle="AGORA É SUA VEZ!" />
+        <Referencias sectionTitle="REFERÊNCIAS BIBLIOGRÁFICAS" />
       </Wrapper>
     </Fragment>
   );
 }
 
-export default Page3;
+export default Page5;

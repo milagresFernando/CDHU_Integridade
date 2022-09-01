@@ -5,6 +5,8 @@ import { useState, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TextBlock from "../../../../components/texts/text_block";
 import Title from "../../../../components/texts/title";
+import BlocoFinalizou from "../../../page2/customComponents/monitoramentoPrograma/blocoFinalizou";
+import BotoesNavegacao from "../../../page2/customComponents/monitoramentoPrograma/botoesNavegacao";
 
 import ParallaxGrafismoLinhaEnrolada from "../../../scrollParallaxSvg/parallaxGrafismoLinhaEnrolada";
 import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";
@@ -32,7 +34,7 @@ function AgoraSuaVez(props) {
     },
   ];
   return (
-    <section className="relative">
+    <section className="relative gradientBlueEnd">
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
@@ -49,6 +51,11 @@ function AgoraSuaVez(props) {
       <ParallaxGrafismoLinhaEnrolada />
 
       <BlocoQuizzUnicaResposta />
+
+      <Container>
+        <BlocoFinalizou />
+        <BotoesNavegacao />
+      </Container>
     </section>
   );
 }

@@ -285,12 +285,12 @@ function FlexImgWithText(props) {
             : props.imgSide === "fullBottom"
             ? "order-2 px-0 mt-3"
             : ""
-        }`}
+        } relative`}
       >
         {/* caso seja um card horizontal ele entra aqui */}
         {props.isCard ? (
           props.setImgCard(imgStyle)
-        ) : (
+        ) : props.type != "customElement" ? (
           <Fragment>
             <Image
               style={imgStyle}
@@ -312,6 +312,8 @@ function FlexImgWithText(props) {
               fluid
             />
           </Fragment>
+        ) : (
+          props.customElement
         )}
       </Col>
       <Col

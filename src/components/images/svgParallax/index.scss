@@ -91,6 +91,17 @@
         width: 400px;
       }
     }
+    &.grafismoBolaRabisco2 {
+      width: 640px;
+      height: auto;
+
+      @media #{$bp-tablet} {
+        width: 450px;
+      }
+      @media #{$bp-phone} {
+        width: 400px;
+      }
+    }
 
     &.grafismoRoxoVideo {
       width: 350px;
@@ -239,6 +250,37 @@
       @media #{$bp-phone} {
         display: none;
       }
+    }
+
+    &.ilutrasBase {
+      max-width: calc(100% - 1.5rem);
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+      height: auto;
+
+      @media #{$bp-tablet} {
+        max-width: calc(100% - 2rem);
+      }
+
+      @media only screen and (max-width: 768px) {
+        max-width: calc(70% - 1.5rem);
+      }
+
+      @media #{$bp-phone} {
+      }
+    }
+  }
+}
+
+.baseSize {
+  &.IlutraTratamento {
+    min-height: 250px;
+
+    @media #{$bp-tablet} {
+    }
+    @media #{$bp-phone} {
+      min-height: 200px;
     }
   }
 }
