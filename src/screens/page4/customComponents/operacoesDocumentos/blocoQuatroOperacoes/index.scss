@@ -16,4 +16,78 @@
   .bgWhite {
     // background-color: rgba($color: #fff, $alpha: 0.7);
   }
+
+  @media only screen and (max-width: 768px) {
+    &::before {
+      display: none;
+    }
+    .linhaMobile1 {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -20%;
+        max-height: 320px;
+        height: 100%;
+        min-width: 100%;
+        z-index: -1;
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-946bd73e-52b4-4aee-be88-7095edbf0740' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 218.16 537.72'%3E%3Cdefs%3E%3Cstyle%3E .uuid-eceae368-df21-4c64-8681-becb25ec31a4 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-ec783729-b123-40d7-a3a7-daf7275a9a24' data-name='Caminho 35013' class='uuid-eceae368-df21-4c64-8681-becb25ec31a4' d='M186.51,2.56c-25.73-5.92-79.67,8.17-100.28,41.47s-8.72,73.73-5.55,97.51,0,61.05-30.92,61.84-25.52-27.02-3.17-30.13c17.76-2.47,43.6,4.79,42.02,30.14s-59.83,60.62-75.32,87.99c-22.66,40.05-16.65,118.13,46.78,135.57s132.4,61.05,156.98,110.2'/%3E%3C/svg%3E")
+          right no-repeat;
+      }
+    }
+    .linhaMobile2 {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20%;
+        max-height: 320px;
+        height: 100%;
+        min-width: 100%;
+        z-index: -1;
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-5dde00cf-6721-47df-a065-c6fae1e683c1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 171.1 429.3'%3E%3Cdefs%3E%3Cstyle%3E .uuid-b250b1da-d586-44bf-9068-e64897f15a19 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-bfa182a1-54b1-40f5-8c2b-989970bea353' data-name='Caminho 35014' class='uuid-b250b1da-d586-44bf-9068-e64897f15a19' d='M1.24,.15S14.97,110.42,90.69,102.19c0,0,24.1-1.06,28.39-25.51s-30.89-13.24-26.53,9.94c4.05,21.54,24.51,26.64,37.12,36.62,17.03,13.47,25.04,37.55,6.24,61.89s-15.1,39.67,1.72,50.37,44.25,35.74,26.41,74.52-106.5,52.87-136.52,118.76'/%3E%3C/svg%3E")
+          left no-repeat;
+      }
+    }
+    .linhaMobile3 {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20%;
+        max-height: 320px;
+        height: 100%;
+        min-width: 100%;
+        z-index: -1;
+
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-f076619f-c9f4-47f8-8de1-4c0b08206539' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 168.45 573.87'%3E%3Cdefs%3E%3Cstyle%3E .uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-f38c129a-0522-4c21-87bd-0b67c3bd28f5' data-name='Caminho 35416' class='uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5' d='M167.21,.16s-15.14,119.2-59.6,153.26S16.79,226.26,5.43,265.05s1.89,52.98,21.76,74.74,22.7,36.9,24.6,61.49-13.25,62.44,37.84,92.71,59.6,49.19,70.01,79.47'/%3E%3C/svg%3E")
+          right no-repeat;
+      }
+    }
+    .linhaMobile4 {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -20%;
+        max-height: 320px;
+        height: 100%;
+        min-width: 100%;
+        z-index: -1;
+
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-f076619f-c9f4-47f8-8de1-4c0b08206539' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 168.45 573.87'%3E%3Cdefs%3E%3Cstyle%3E .uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-f38c129a-0522-4c21-87bd-0b67c3bd28f5' data-name='Caminho 35416' class='uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5' d='M167.21,.16s-15.14,119.2-59.6,153.26S16.79,226.26,5.43,265.05s1.89,52.98,21.76,74.74,22.7,36.9,24.6,61.49-13.25,62.44,37.84,92.71,59.6,49.19,70.01,79.47'/%3E%3C/svg%3E")
+          left no-repeat;
+      }
+    }
+  }
+  @media #{$bp-phone} {
+    .linhaMobile1 {
+      &::before {
+        content: "";
+
+        right: -5%;
+        max-height: 190px;
+      }
+    }
+  }
 }

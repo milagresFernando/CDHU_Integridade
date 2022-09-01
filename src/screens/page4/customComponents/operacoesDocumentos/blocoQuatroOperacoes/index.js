@@ -158,8 +158,8 @@ function BlocoQuatroOperacoes(props) {
         </Col>
       </Row>
       <div className="linhaOperacoes">
-        <Row className="justify-content-center">
-          <Col lg="10">
+        <Row className="justify-content-center relative">
+          <Col lg="10" className="linhaMobile1">
             <FlexImgWithText
               rowClasses="align-items-center"
               imgSide="left"
@@ -171,8 +171,8 @@ function BlocoQuatroOperacoes(props) {
             />
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col lg="10">
+        <Row className="justify-content-center relative">
+          <Col lg="10" className="linhaMobile2">
             <FlexImgWithText
               rowClasses="align-items-center"
               imgSide="right"
@@ -184,8 +184,8 @@ function BlocoQuatroOperacoes(props) {
             />
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col lg="10">
+        <Row className="justify-content-center relative">
+          <Col lg="10" className="linhaMobile3">
             <FlexImgWithText
               rowClasses="align-items-center"
               imgSide="left"
@@ -197,8 +197,8 @@ function BlocoQuatroOperacoes(props) {
             />
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col lg="10">
+        <Row className="justify-content-center relative">
+          <Col lg="10" className="linhaMobile4">
             <FlexImgWithText
               rowClasses="align-items-center"
               imgSide="right"
@@ -210,8 +210,8 @@ function BlocoQuatroOperacoes(props) {
             />
           </Col>
         </Row>
-        <Row className="justify-content-center">
-          <Col lg="10">
+        <Row className="justify-content-center relative">
+          <Col lg="10" className="linhaMobile1">
             <FlexImgWithText
               rowClasses="align-items-center"
               imgSide="left"
@@ -223,8 +223,8 @@ function BlocoQuatroOperacoes(props) {
             />
           </Col>
         </Row>
-        <Row className="justify-content-center mb-5">
-          <Col lg="10">
+        <Row className="justify-content-center mb-5 relative">
+          <Col lg="10" className="linhaMobile2">
             <FlexImgWithText
               rowClasses="align-items-center"
               imgSide="right"
