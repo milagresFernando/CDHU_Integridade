@@ -55,8 +55,8 @@ body {
   background: rgb(189, 232, 242);
   background: linear-gradient(
     0deg,
-    rgba(189, 232, 242, 1) 25%,
-    rgba(189, 232, 242, 0) 100%
+    rgba(189, 232, 242, 1) 5%,
+    rgba(189, 232, 242, 0) 50%
   );
   z-index: 0;
 }
@@ -99,6 +99,28 @@ strong {
 .defaultCursor {
   cursor: default !important;
 }
+
+.spacingSection {
+  padding-top: 80px;
+  @media #{$bp-tablet} {
+    padding-top: 60px;
+  }
+}
+
+.spacingContainer {
+  padding-top: 150px;
+
+  @media #{$bp-xlDesktop} {
+    padding-top: 80px;
+  }
+  @media #{$bp-tablet} {
+    padding-top: 60px;
+  }
+  @media #{$bp-phone} {
+    padding-top: 60px;
+  }
+}
+
 /*******************************
 MARGENS
 ********************************/

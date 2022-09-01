@@ -14,7 +14,7 @@ import BotoesNavegacao from "./botoesNavegacao";
 
 function AgoraSuaVez(props) {
   return (
-    <section className="relative">
+    <section className="relative spacingSection">
       <ParallaxOndas type="laranja" />
 
       <Container>

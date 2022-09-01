@@ -13,13 +13,13 @@ import BlocoVideoIntroducao5 from "./blocoVideoIntroducao5";
 
 function AplicacaoLGPD(props) {
   return (
-    <section className="relative">
+    <section className="relative spacingSection">
       <Container>
         <Row className="justify-content-center mb-5">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-5"
+              className="titleSection mb-3"
               content={<Fragment>{props.sectionTitle}</Fragment>}
               ballLeft="true"
             ></Title>
@@ -28,7 +28,7 @@ function AplicacaoLGPD(props) {
         <BlocoVideoIntroducao5 />
       </Container>
       <ParallaxOndas type="azul" />
-      <Container>
+      <Container className="spacingContainer">
         <BlocoTextoComImgFlex />
       </Container>
     </section>

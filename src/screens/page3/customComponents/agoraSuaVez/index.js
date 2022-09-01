@@ -34,7 +34,7 @@ function AgoraSuaVez(props) {
     },
   ];
   return (
-    <section className="relative gradientBlueEnd">
+    <section className="relative spacingSection gradientBlueEnd">
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">

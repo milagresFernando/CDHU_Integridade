@@ -12,13 +12,13 @@ import Bloco3Cards from "./bloco3Cards";
 
 function ProgramaIntegridade(props) {
   return (
-    <section className="relative">
+    <section className="relative spacingSection">
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-5"
+              className="titleSection mb-3"
               content={<Fragment>{props.sectionTitle}</Fragment>}
             >
               <span className="ballTitle"></span>
@@ -30,7 +30,7 @@ function ProgramaIntegridade(props) {
 
       <ParallaxOndas type="laranja" />
 
-      <Container>
+      <Container className="spacingContainer">
         <Bloco3Cards />
       </Container>
     </section>

@@ -11,7 +11,7 @@ import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 function PapeisEnvolvidos(props) {
   return (
-    <section className="relative gradientPurplePink pt-5 pb-5">
+    <section className="relative gradientPurplePink mt60 pb-3 spacingSection">
       <Container>
         <Row className="justify-content-center mb-5">
           <Col lg="10">

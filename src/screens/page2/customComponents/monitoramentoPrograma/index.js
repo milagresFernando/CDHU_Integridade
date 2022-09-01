@@ -16,14 +16,14 @@ import BotoesNavegacao from "./botoesNavegacao";
 
 function MonitoramentoPrograma(props) {
   return (
-    <section className="relative gradientBlueEnd">
+    <section className="relative gradientBlueEnd spacingSection">
       <ParallaxGrafAmarelo />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-5"
+              className="titleSection mb-3"
               content={<Fragment>{props.sectionTitle}</Fragment>}
             >
               <span className="ballTitle"></span>
