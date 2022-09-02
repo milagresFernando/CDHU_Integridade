@@ -6,11 +6,12 @@ import Guide from "./screens/guide";
 import Page2 from "./screens/page2";
 import Page3 from "./screens/page3";
 import Page4 from "./screens/page4";
+import Page5 from "./screens/page5";
 import Quizz from "./screens/quizz";
 import GlobalState from "./contexts/globalState";
 
 function ScreenRoutes(props) {
-  const pagesArray = [Page1, Page2, Page3, Page4, Page4, Guide]; // adicione as chamadas de pagina desse array
+  const pagesArray = [Page1, Page2, Page3, Page4, Page5, Guide]; // adicione as chamadas de pagina desse array
   const { pagesData, setPagesData } = useContext(GlobalState);
 
   const allPages = pagesArray.map((Page, id) => {

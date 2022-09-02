@@ -62,14 +62,23 @@ body {
 }
 
 .gradientPurplePink {
-  background: rgb(55, 76, 140);
-  background: linear-gradient(
-    146deg,
-    rgba(55, 76, 140, 1) 0%,
-    rgba(63, 49, 159, 1) 38%,
-    rgba(146, 56, 155, 1) 84%,
-    rgba(233, 183, 238, 1) 100%
-  );
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    background: rgb(63, 49, 159);
+    background: linear-gradient(
+      43deg,
+      rgba(63, 49, 159, 1) 0%,
+      rgba(146, 56, 155, 1) 50%,
+      rgba(255, 206, 199, 1) 100%
+    );
+  }
 }
 
 .overflow {
