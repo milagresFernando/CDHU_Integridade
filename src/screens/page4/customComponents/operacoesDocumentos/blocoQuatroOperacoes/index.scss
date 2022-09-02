@@ -26,12 +26,13 @@
         content: "";
         position: absolute;
         top: 0;
-        right: -20%;
+        left: 50%;
+        @include transform(translateX(-50%));
         max-height: 320px;
         height: 100%;
-        min-width: 100%;
+        min-width: 100vw;
         z-index: -1;
-        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-946bd73e-52b4-4aee-be88-7095edbf0740' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 218.16 537.72'%3E%3Cdefs%3E%3Cstyle%3E .uuid-eceae368-df21-4c64-8681-becb25ec31a4 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-ec783729-b123-40d7-a3a7-daf7275a9a24' data-name='Caminho 35013' class='uuid-eceae368-df21-4c64-8681-becb25ec31a4' d='M186.51,2.56c-25.73-5.92-79.67,8.17-100.28,41.47s-8.72,73.73-5.55,97.51,0,61.05-30.92,61.84-25.52-27.02-3.17-30.13c17.76-2.47,43.6,4.79,42.02,30.14s-59.83,60.62-75.32,87.99c-22.66,40.05-16.65,118.13,46.78,135.57s132.4,61.05,156.98,110.2'/%3E%3C/svg%3E")
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-81b5c7d3-1dc1-44ab-b5d2-5706b6b49c9e' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 218.16 537.72'%3E%3Cdefs%3E%3Cstyle%3E .uuid-6b42bf42-c389-47e0-9090-8cbc13751355 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-acb54fe9-5a98-4962-9673-c7e15296e0a4' data-name='Caminho 35013' class='uuid-6b42bf42-c389-47e0-9090-8cbc13751355' d='M223.33,11.6c-36.05-16.25-116.49-.86-137.1,32.44s-8.72,73.73-5.55,97.51,0,61.05-30.92,61.84-25.52-27.02-3.17-30.13c17.76-2.47,43.6,4.79,42.02,30.14s-59.83,60.62-75.32,87.99c-22.66,40.05-16.65,118.13,46.78,135.57s128.39,100.37,160.14,109.87'/%3E%3C/svg%3E")
           right no-repeat;
       }
     }
@@ -40,12 +41,13 @@
         content: "";
         position: absolute;
         top: 0;
-        left: -20%;
-        max-height: 320px;
+        left: 50%;
+        @include transform(translateX(-50%));
+        max-height: 260px;
         height: 100%;
-        min-width: 100%;
+        min-width: 100vw;
         z-index: -1;
-        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-5dde00cf-6721-47df-a065-c6fae1e683c1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 171.1 429.3'%3E%3Cdefs%3E%3Cstyle%3E .uuid-b250b1da-d586-44bf-9068-e64897f15a19 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-bfa182a1-54b1-40f5-8c2b-989970bea353' data-name='Caminho 35014' class='uuid-b250b1da-d586-44bf-9068-e64897f15a19' d='M1.24,.15S14.97,110.42,90.69,102.19c0,0,24.1-1.06,28.39-25.51s-30.89-13.24-26.53,9.94c4.05,21.54,24.51,26.64,37.12,36.62,17.03,13.47,25.04,37.55,6.24,61.89s-15.1,39.67,1.72,50.37,44.25,35.74,26.41,74.52-106.5,52.87-136.52,118.76'/%3E%3C/svg%3E")
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-05813379-3aab-485e-a230-6db28b8d75f4' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 171.1 429.3'%3E%3Cdefs%3E%3Cstyle%3E .uuid-edd26f2e-f6e1-4286-8967-48682ce8281f %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-1c65268e-1fef-4c74-a3ad-309d908c5a3a' data-name='Caminho 35014' class='uuid-edd26f2e-f6e1-4286-8967-48682ce8281f' d='M.48,425.81c42.51-12.92,145.71-77.02,163.55-115.79s-9.59-63.81-26.41-74.52-20.52-26.03-1.72-50.37,10.79-48.41-6.24-61.89c-12.61-9.98-33.07-15.07-37.12-36.62-4.36-23.18,30.82-34.39,26.53-9.94s-28.39,25.51-28.39,25.51C14.97,110.42,10.69,10.61-1.5,2.06'/%3E%3C/svg%3E")
           left no-repeat;
       }
     }
@@ -53,14 +55,14 @@
       &::before {
         content: "";
         position: absolute;
-        top: 0;
-        left: -20%;
-        max-height: 320px;
+        left: 50%;
+        @include transform(translateX(-50%));
+        max-height: 300px;
         height: 100%;
-        min-width: 100%;
+        min-width: 100vw;
         z-index: -1;
 
-        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-f076619f-c9f4-47f8-8de1-4c0b08206539' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 168.45 573.87'%3E%3Cdefs%3E%3Cstyle%3E .uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-f38c129a-0522-4c21-87bd-0b67c3bd28f5' data-name='Caminho 35416' class='uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5' d='M167.21,.16s-15.14,119.2-59.6,153.26S16.79,226.26,5.43,265.05s1.89,52.98,21.76,74.74,22.7,36.9,24.6,61.49-13.25,62.44,37.84,92.71,59.6,49.19,70.01,79.47'/%3E%3C/svg%3E")
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-73a2ae84-0c92-4ac1-89aa-315a55f15f84' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 168.45 573.87'%3E%3Cdefs%3E%3Cstyle%3E .uuid-c5fc2d74-adb3-4bc3-8daf-78861248548f %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-a7af6fb4-6bc9-48e4-9d37-3bdc9ab0041e' data-name='Caminho 35416' class='uuid-c5fc2d74-adb3-4bc3-8daf-78861248548f' d='M169.8,1.58c-18.14,18.09-17.73,117.78-62.19,151.84S16.79,226.26,5.43,265.05s1.89,52.98,21.76,74.74,22.7,36.9,24.6,61.49-13.25,62.44,37.84,92.71,63.18,74.17,79.85,78.45'/%3E%3C/svg%3E")
           right no-repeat;
       }
     }
@@ -69,13 +71,14 @@
         content: "";
         position: absolute;
         top: 0;
-        left: -20%;
-        max-height: 320px;
+        left: 50%;
+        @include transform(translateX(-50%));
+        max-height: 2700px;
         height: 100%;
-        min-width: 100%;
+        min-width: 100vw;
         z-index: -1;
 
-        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-f076619f-c9f4-47f8-8de1-4c0b08206539' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 168.45 573.87'%3E%3Cdefs%3E%3Cstyle%3E .uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-f38c129a-0522-4c21-87bd-0b67c3bd28f5' data-name='Caminho 35416' class='uuid-24a23c58-56c5-4f6b-a0ff-c9f969c899d5' d='M167.21,.16s-15.14,119.2-59.6,153.26S16.79,226.26,5.43,265.05s1.89,52.98,21.76,74.74,22.7,36.9,24.6,61.49-13.25,62.44,37.84,92.71,59.6,49.19,70.01,79.47'/%3E%3C/svg%3E")
+        background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='uuid-fd931d59-1b21-4dd0-9663-203974194b9d' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 218.16 537.72'%3E%3Cdefs%3E%3Cstyle%3E .uuid-85fdfdf6-c735-4e8b-8d1a-e5e16a192d72 %7B fill: none; stroke: %23c13cdd; stroke-miterlimit: 10; stroke-width: 2.5px; %7D %3C/style%3E%3C/defs%3E%3Cpath id='uuid-0cbbec95-da1d-4da7-87c4-099a84095270' data-name='Caminho 35417' class='uuid-85fdfdf6-c735-4e8b-8d1a-e5e16a192d72' d='M-3.72,5.23C22-.69,111.32,10.74,131.93,44.04s8.72,73.73,5.55,97.51,0,61.05,30.92,61.84,25.52-27.02,3.17-30.13c-17.76-2.47-43.6,4.79-42.02,30.14s59.83,60.62,75.32,87.99c22.66,40.05,16.65,118.13-46.78,135.57S31.65,528.75-2.06,536.4'/%3E%3C/svg%3E")
           left no-repeat;
       }
     }
@@ -84,9 +87,30 @@
     .linhaMobile1 {
       &::before {
         content: "";
+        left: 45%;
 
-        right: -5%;
+        max-height: 220px;
+      }
+    }
+    .linhaMobile2 {
+      &::before {
+        content: "";
+        left: 45%;
         max-height: 190px;
+      }
+    }
+    .linhaMobile3 {
+      &::before {
+        content: "";
+        left: 45%;
+        max-height: 200px;
+      }
+    }
+    .linhaMobile4 {
+      &::before {
+        content: "";
+        left: 45%;
+        max-height: 200px;
       }
     }
   }

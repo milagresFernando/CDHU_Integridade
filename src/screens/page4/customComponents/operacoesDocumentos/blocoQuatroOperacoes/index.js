@@ -16,6 +16,12 @@ import imgUrl from "../../../../assets/images/img-Float.jpg";
 import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
 
 import ParallaxIlustraTratamento from "../../../../scrollParallaxSvg/parallaxIlustraTratamento";
+import ParallaxIlustraCompartilhado from "../../../../scrollParallaxSvg/parallaxIlustraCompartilhado";
+import ParallaxIlustraRelatorio from "../../../../scrollParallaxSvg/parallaxIlustraRelatorio";
+import ParallaxIlustraBancoDados from "../../../../scrollParallaxSvg/parallaxIlustraBancoDados";
+import ParallaxIlustraAnonimizacao from "../../../../scrollParallaxSvg/parallaxIlustraAnonimizacao";
+import ParallaxIlustraConsentimento from "../../../../scrollParallaxSvg/parallaxIlustraConsentimento";
+import ParallaxIlustraFimQuatroOperacoes from "../../../../scrollParallaxSvg/parallaxIlustraFimQuatroOperacoes";
 
 function BlocoQuatroOperacoes(props) {
   const textsBlock0 = [
@@ -177,7 +183,7 @@ function BlocoQuatroOperacoes(props) {
               rowClasses="align-items-center"
               imgSide="right"
               type="customElement"
-              customElement={<ParallaxIlustraTratamento />}
+              customElement={<ParallaxIlustraCompartilhado />}
               colMd="5"
               textsBlock={textsBlock2}
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
@@ -190,7 +196,7 @@ function BlocoQuatroOperacoes(props) {
               rowClasses="align-items-center"
               imgSide="left"
               type="customElement"
-              customElement={<ParallaxIlustraTratamento />}
+              customElement={<ParallaxIlustraRelatorio />}
               colMd="5"
               textsBlock={textsBlock3}
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
@@ -203,7 +209,7 @@ function BlocoQuatroOperacoes(props) {
               rowClasses="align-items-center"
               imgSide="right"
               type="customElement"
-              customElement={<ParallaxIlustraTratamento />}
+              customElement={<ParallaxIlustraBancoDados />}
               colMd="5"
               textsBlock={textsBlock4}
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
@@ -216,20 +222,20 @@ function BlocoQuatroOperacoes(props) {
               rowClasses="align-items-center"
               imgSide="left"
               type="customElement"
-              customElement={<ParallaxIlustraTratamento />}
+              customElement={<ParallaxIlustraAnonimizacao />}
               colMd="5"
               textsBlock={textsBlock5}
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
             />
           </Col>
         </Row>
-        <Row className="justify-content-center mb-5 relative">
+        <Row className="justify-content-center mb-md-5 relative">
           <Col lg="10" className="linhaMobile2">
             <FlexImgWithText
               rowClasses="align-items-center"
               imgSide="right"
               type="customElement"
-              customElement={<ParallaxIlustraTratamento />}
+              customElement={<ParallaxIlustraConsentimento />}
               colMd="5"
               textsBlock={textsBlock6}
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
@@ -237,6 +243,11 @@ function BlocoQuatroOperacoes(props) {
           </Col>
         </Row>
       </div>
+      <Row className="justify-content-center mb-md-5 relative">
+        <Col lg="10" className="">
+          <ParallaxIlustraFimQuatroOperacoes />
+        </Col>
+      </Row>
     </Fragment>
   );
 }

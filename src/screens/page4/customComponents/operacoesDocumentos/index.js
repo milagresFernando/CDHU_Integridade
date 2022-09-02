@@ -4,6 +4,8 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
+import ParallaxGrafAmarelo2 from "../../../scrollParallaxSvg/parallaxGrafAmarelo2";
+import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
 import BlocoQuatroOperacoes from "./blocoQuatroOperacoes";
 
@@ -12,6 +14,8 @@ import BlocoQuatroOperacoes from "./blocoQuatroOperacoes";
 function OperacoesDocumentos(props) {
   return (
     <section className="relative spacingSection">
+      <ParallaxGrafAzul />
+      <ParallaxGrafAmarelo2 />
       <Container>
         <Row className="justify-content-center">
           <Col lg="10">

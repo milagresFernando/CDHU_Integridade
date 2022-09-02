@@ -13,16 +13,16 @@ import SvgParallax from "../../../components/images/svgParallax";
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
-function ParallaxIlustraTratamento(props) {
-  let n1ValueDesk = 6;
+function ParallaxIlustraFimQuatroOperacoes(props) {
+  let n1ValueDesk = 10;
   let n1ValueTablet = 4;
   let n1ValueMobile = 4;
 
-  let n2ValueDesk = -3;
+  let n2ValueDesk = -7;
   let n2ValueTablet = -2;
   let n2ValueMobile = -2;
 
-  let n3ValueDesk = 1;
+  let n3ValueDesk = 5;
   let n3ValueTablet = 3;
   let n3ValueMobile = 3;
 
@@ -76,25 +76,25 @@ function ParallaxIlustraTratamento(props) {
 
   return (
     <Fragment>
-      <div className="baseSize ilustraTratamento">
+      <div className="baseSize ilustraFimQuatroOperacoes">
         <SvgParallax
-          svgName="IlustraTratamentoN1"
+          svgName="IlustraFimQuatroOperacoesN1"
           svgParallaxClassName="zindex3"
-          className="ilustrasBase"
+          className="ilustrasBase baseQuatroOperacoes"
           parallaxRef={n1.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="IlustraTratamentoN2"
+          svgName="IlustraFimQuatroOperacoesN2"
           svgParallaxClassName="zindex2"
-          className="ilustrasBase"
+          className="ilustrasBase baseQuatroOperacoes"
           parallaxRef={n2.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="IlustraTratamentoN3"
+          svgName="IlustraFimQuatroOperacoesN3"
           svgParallaxClassName="zindex1"
-          className="ilustrasBase"
+          className="ilustrasBase baseQuatroOperacoes"
           parallaxRef={n3.ref}
           monitoraMudanca={monitoraMudanca}
         />
@@ -103,4 +103,4 @@ function ParallaxIlustraTratamento(props) {
   );
 }
 
-export default ParallaxIlustraTratamento;
+export default ParallaxIlustraFimQuatroOperacoes;

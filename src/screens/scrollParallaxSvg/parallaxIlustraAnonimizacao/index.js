@@ -13,7 +13,7 @@ import SvgParallax from "../../../components/images/svgParallax";
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
-function ParallaxIlustraTratamento(props) {
+function ParallaxIlustraAnonimizacao(props) {
   let n1ValueDesk = 6;
   let n1ValueTablet = 4;
   let n1ValueMobile = 4;
@@ -76,23 +76,23 @@ function ParallaxIlustraTratamento(props) {
 
   return (
     <Fragment>
-      <div className="baseSize ilustraTratamento">
+      <div className="baseSize ilustraAnonimizacao">
         <SvgParallax
-          svgName="IlustraTratamentoN1"
+          svgName="IlustraAnonimizacaoN1"
           svgParallaxClassName="zindex3"
           className="ilustrasBase"
           parallaxRef={n1.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="IlustraTratamentoN2"
+          svgName="IlustraAnonimizacaoN2"
           svgParallaxClassName="zindex2"
           className="ilustrasBase"
           parallaxRef={n2.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="IlustraTratamentoN3"
+          svgName="IlustraAnonimizacaoN3"
           svgParallaxClassName="zindex1"
           className="ilustrasBase"
           parallaxRef={n3.ref}
@@ -103,4 +103,4 @@ function ParallaxIlustraTratamento(props) {
   );
 }
 
-export default ParallaxIlustraTratamento;
+export default ParallaxIlustraAnonimizacao;

@@ -53,6 +53,10 @@
       $i: $i + 5;
     }
 
+    &.rotate180 {
+      @include transform(rotate(180deg));
+    }
+
     &.ondasBg {
       width: 100%;
       height: 100%;
@@ -240,7 +244,7 @@
     }
     &.grafismoAzul,
     &.grafismoAmarelo {
-      width: 200px;
+      width: 150px;
       height: auto;
 
       @media #{$bp-tablet} {
@@ -252,7 +256,7 @@
       }
     }
 
-    &.ilutrasBase {
+    &.ilustrasBase {
       max-width: calc(100% - 1.5rem);
       top: 50%;
       left: 50%;
@@ -343,11 +347,21 @@
         }
       }
     }
+    &.baseQuatroOperacoes {
+      max-width: 70%;
+
+      @media #{$bp-tablet} {
+        max-width: 100%;
+      }
+      @media #{$bp-phone} {
+        max-width: 90%;
+      }
+    }
   }
 }
 
 .baseSize {
-  &.IlutraTratamento {
+  &.ilustraTratamento {
     min-height: 250px;
 
     @media #{$bp-tablet} {
@@ -406,6 +420,62 @@
     }
     @media only screen and (max-width: 768px) {
       min-height: 260px;
+    }
+  }
+  &.ilustraCompartilhado {
+    min-height: 250px;
+
+    @media #{$bp-tablet} {
+    }
+    @media #{$bp-phone} {
+      min-height: 200px;
+    }
+  }
+
+  &.ilustraRelatorio {
+    min-height: 250px;
+
+    @media #{$bp-tablet} {
+    }
+    @media #{$bp-phone} {
+      min-height: 200px;
+    }
+  }
+  &.ilustraBancoDados {
+    min-height: 250px;
+
+    @media #{$bp-tablet} {
+    }
+    @media #{$bp-phone} {
+      min-height: 200px;
+    }
+  }
+  &.ilustraAnonimizacao {
+    min-height: 250px;
+
+    @media #{$bp-tablet} {
+    }
+    @media #{$bp-phone} {
+      min-height: 200px;
+    }
+  }
+  &.ilustraConsentimento {
+    min-height: 250px;
+
+    @media #{$bp-tablet} {
+    }
+    @media #{$bp-phone} {
+      min-height: 200px;
+    }
+  }
+  &.ilustraFimQuatroOperacoes {
+    min-height: 600px;
+
+    @media #{$bp-tablet} {
+      min-height: 400px;
+    }
+    @media #{$bp-phone} {
+      min-height: 300px;
     }
   }
 }
