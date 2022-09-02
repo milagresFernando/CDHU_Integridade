@@ -9,6 +9,7 @@ import { Row, Col } from "react-bootstrap";
 // Imagens
 import imgUrl from "../../../../assets/images/img-Float.jpg";
 import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
+import ParallaxIlustraDenuncia from "../../../../scrollParallaxSvg/parallaxIlustraDenuncia";
 
 function BlocoTextoComImgFlex() {
   const textsBlock = [
@@ -60,8 +61,8 @@ function BlocoTextoComImgFlex() {
           <FlexImgWithText
             rowClasses="align-items-center"
             imgSide="fullLeft"
-            imgUrl={imgUrl}
-            imgUrlBreak={imgUrlBreak}
+            type="customElement"
+            customElement={<ParallaxIlustraDenuncia />}
             colMd="5"
             colLg="6"
             textsBlock={textsBlock}

@@ -11,6 +11,7 @@ import Title from "../../../../../components/texts/title";
 //Imagens
 import imgUrl from "../../../../assets/images/img-Float.jpg";
 import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
+import ParallaxIlustraCarousel from "../../../../scrollParallaxSvg/parallaxIlustraCarousel";
 
 function BlocoCarouselComImgEstatica() {
   const carouselItens = [
@@ -138,14 +139,8 @@ function BlocoCarouselComImgEstatica() {
             breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
           />
         </Col>
-        <Col lg="5" className="d-flex order-lg-2">
-          <Image
-            src={imgUrl}
-            className={"d-block mx-auto"}
-            loading="lazy"
-            alt=""
-            fluid
-          />
+        <Col lg="5" className="order-lg-2 relative">
+          <ParallaxIlustraCarousel />
         </Col>
       </Row>
     </Fragment>

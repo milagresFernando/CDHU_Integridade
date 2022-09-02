@@ -7,9 +7,8 @@ import FlexImgWithText from "../../../../../components/images/flexImgWithText";
 import { Row, Col } from "react-bootstrap";
 
 // Imagens
-import imgUrl from "../../../../assets/images/img-Float.jpg";
-import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
 import TextBlock from "../../../../../components/texts/text_block";
+import ParallaxIlustraList from "../../../../scrollParallaxSvg/parallaxIlustraList";
 
 function BlocoListaComImgFlex() {
   const textsBlock1 = [
@@ -76,14 +75,14 @@ function BlocoListaComImgFlex() {
           <FlexImgWithText
             rowClasses="align-items-center"
             imgSide="fullLeft"
-            imgUrl={imgUrl}
-            imgUrlBreak={imgUrlBreak}
+            type="customElement"
+            customElement={<ParallaxIlustraList />}
             colMd="5"
             colLg="6"
             tagList="ul"
             listClassName="column2"
             listItens={listItens1}
-            breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
+            breakContent="lg" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
           />
         </Col>
       </Row>

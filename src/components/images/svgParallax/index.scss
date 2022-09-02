@@ -269,6 +269,79 @@
 
       @media #{$bp-phone} {
       }
+
+      &.carouselBase {
+        @media #{$bp-tablet} {
+          max-width: calc(64% - 1.5rem);
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: calc(70% - 1.5rem);
+        }
+
+        @media #{$bp-phone} {
+          max-width: 350px;
+        }
+      }
+
+      &.aplicacaoBase {
+        @media #{$bp-tablet} {
+          max-width: calc(80% - 1.5rem);
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: calc(84% - 1.5rem);
+        }
+
+        @media #{$bp-phone} {
+          max-width: 350px;
+        }
+      }
+
+      &.listBase {
+        @media #{$bp-tablet} {
+          max-width: calc(64% - 1.5rem);
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: calc(70% - 1.5rem);
+        }
+
+        @media #{$bp-phone} {
+          max-width: 350px;
+        }
+      }
+
+      &.denunciaBase {
+        @media #{$bp-tablet} {
+          max-width: calc(64% - 1.5rem);
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: calc(70% - 1.5rem);
+        }
+
+        @media #{$bp-phone} {
+          max-width: 350px;
+        }
+      }
+
+      &.titularBase,
+      &.controladorBase,
+      &.operadorBase,
+      &.encarregadoBase {
+        @media #{$bp-tablet} {
+          max-width: calc(64% - 1.5rem);
+        }
+
+        @media only screen and (max-width: 768px) {
+          max-width: calc(70% - 1.5rem);
+        }
+
+        @media #{$bp-phone} {
+          max-width: 350px;
+        }
+      }
     }
   }
 }
@@ -281,6 +354,58 @@
     }
     @media #{$bp-phone} {
       min-height: 200px;
+    }
+  }
+  &.ilustraAplicacao {
+    min-height: 400px;
+    @media #{$bp-tablet} {
+      min-height: 400px;
+    }
+    @media only screen and (max-width: 768px) {
+      min-height: 280px;
+    }
+    @media #{$bp-phone} {
+      min-height: 220px;
+    }
+  }
+  &.ilustraCarousel {
+    min-height: 400px;
+    @media #{$bp-tablet} {
+      min-height: 400px;
+    }
+    @media only screen and (max-width: 768px) {
+      min-height: 300px;
+    }
+  }
+  &.ilustraList {
+    min-height: 400px;
+    @media #{$bp-tablet} {
+      min-height: 400px;
+    }
+    @media only screen and (max-width: 768px) {
+      min-height: 300px;
+    }
+  }
+  &.ilustraDenuncia {
+    min-height: 400px;
+    @media #{$bp-tablet} {
+      min-height: 400px;
+    }
+    @media only screen and (max-width: 768px) {
+      min-height: 300px;
+    }
+  }
+
+  &.ilustraTitular,
+  &.ilustraControlador,
+  &.ilustraOperador,
+  &.ilustraEncarregado {
+    min-height: 400px;
+    @media #{$bp-tablet} {
+      min-height: 300px;
+    }
+    @media only screen and (max-width: 768px) {
+      min-height: 260px;
     }
   }
 }

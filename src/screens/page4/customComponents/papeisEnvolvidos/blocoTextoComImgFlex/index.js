@@ -10,6 +10,10 @@ import { Row, Col } from "react-bootstrap";
 import imgUrl from "../../../../assets/images/img-Float.jpg";
 import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
 import TextBlock from "../../../../../components/texts/text_block";
+import ParallaxIlustraTitular from "../../../../scrollParallaxSvg/parallaxIlustraTitular";
+import ParallaxIlustraControlador from "../../../../scrollParallaxSvg/parallaxIlustraControlador";
+import ParallaxIlustraOperador from "../../../../scrollParallaxSvg/parallaxIlustraOperador";
+import ParallaxIlustraEncarregado from "../../../../scrollParallaxSvg/parallaxIlustraEncarregado";
 
 function BlocoTextoComImgFlex() {
   const textsBlock = [
@@ -110,8 +114,8 @@ function BlocoTextoComImgFlex() {
           <FlexImgWithText
             rowClasses="align-items-center"
             imgSide="top"
-            imgUrl={imgUrl}
-            imgUrlBreak={imgUrlBreak}
+            type="customElement"
+            customElement={<ParallaxIlustraTitular />}
             colLg="12"
             textsBlock={textsBlock1}
             breakContent="lg" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
@@ -121,8 +125,8 @@ function BlocoTextoComImgFlex() {
           <FlexImgWithText
             rowClasses="align-items-center"
             imgSide="top"
-            imgUrl={imgUrl}
-            imgUrlBreak={imgUrlBreak}
+            type="customElement"
+            customElement={<ParallaxIlustraControlador />}
             colLg="12"
             textsBlock={textsBlock2}
             breakContent="lg" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
@@ -132,8 +136,8 @@ function BlocoTextoComImgFlex() {
           <FlexImgWithText
             rowClasses="align-items-center"
             imgSide="top"
-            imgUrl={imgUrl}
-            imgUrlBreak={imgUrlBreak}
+            type="customElement"
+            customElement={<ParallaxIlustraOperador />}
             colLg="12"
             textsBlock={textsBlock3}
             breakContent="lg" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
@@ -143,8 +147,8 @@ function BlocoTextoComImgFlex() {
           <FlexImgWithText
             rowClasses="align-items-center"
             imgSide="top"
-            imgUrl={imgUrl}
-            imgUrlBreak={imgUrlBreak}
+            type="customElement"
+            customElement={<ParallaxIlustraEncarregado />}
             colLg="12"
             textsBlock={textsBlock4}
             breakContent="lg" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
