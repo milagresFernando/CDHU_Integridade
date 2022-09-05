@@ -9,6 +9,8 @@ import { Row, Col } from "react-bootstrap";
 // Imagens
 import TextBlock from "../../../../../components/texts/text_block";
 import ParallaxIlustraList from "../../../../scrollParallaxSvg/parallaxIlustraList";
+import ParallaxGrafismoBolaRabisco3 from "../../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco3";
+import ParallaxGrafismoBolaRabisco4 from "../../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco4";
 
 function BlocoListaComImgFlex() {
   const textsBlock1 = [
@@ -70,7 +72,9 @@ function BlocoListaComImgFlex() {
           <TextBlock textsBlock={textsBlock1} />
         </Col>
       </Row>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center relative">
+        <ParallaxGrafismoBolaRabisco3 />
+        <ParallaxGrafismoBolaRabisco4 />
         <Col lg="10">
           <FlexImgWithText
             rowClasses="align-items-center"

@@ -150,7 +150,7 @@ function BlocoListas() {
         <List tagElement="ul" listItens={listItens1} className="" />
       </Col>
 
-      <Col lg="10">
+      <Col lg="10" className="mb-5">
         <Title
           typeH="4"
           className=""

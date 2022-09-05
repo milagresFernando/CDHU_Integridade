@@ -31,8 +31,6 @@ function Introducao(props) {
           </Col>
         </Row>
         <BlocoVideoIntroducao />
-        {/* <BlocoVideoIntroducao2 />
-        <BlocoVideoIntroducao3 /> */}
         <BlocoImportante />
         <BlocoFinalizou />
         <BotoesNavegacao />

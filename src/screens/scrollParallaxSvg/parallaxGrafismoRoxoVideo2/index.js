@@ -57,7 +57,7 @@ function ParallaxGrafismoRoxoVideo2(props) {
     <Fragment>
       <SvgParallax
         svgName="GrafismoRoxoVideo2"
-        className="grafismoRoxoVideo2 right0 bottom20"
+        className="grafismoRoxoVideo2"
         parallaxRef={grafismoRoxoVideo.ref}
         monitoraMudanca={monitoraMudanca}
       />

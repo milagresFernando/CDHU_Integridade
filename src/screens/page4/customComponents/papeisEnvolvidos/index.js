@@ -5,6 +5,9 @@ import { useState, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import TextBlock from "../../../../components/texts/text_block";
 import Title from "../../../../components/texts/title";
+
+import ParallaxGrafismoBolaRabisco5 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco5";
+import ParallaxGrafismoBolaRabisco6 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco6";
 import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 //Imagens
@@ -17,7 +20,7 @@ function PapeisEnvolvidos(props) {
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-5 text-white"
+              className="titleSection mb-5 text-white type3"
               content={<Fragment>{props.sectionTitle}</Fragment>}
               ballLeft="true"
             ></Title>
@@ -25,6 +28,8 @@ function PapeisEnvolvidos(props) {
           </Col>
         </Row>
       </Container>
+      <ParallaxGrafismoBolaRabisco5 />
+      <ParallaxGrafismoBolaRabisco6 />
     </section>
   );
 }

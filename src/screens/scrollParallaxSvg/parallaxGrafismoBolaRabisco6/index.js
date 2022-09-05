@@ -10,15 +10,16 @@ import SvgParallax from "../../../components/images/svgParallax";
 //Funcoes
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
-function ParallaxGrafismoAmareloVideo(props) {
-  let valueDesk = -20;
-  let valueTablet = -10;
-  let valueMobile = -5;
 
-  const [grafismoAmareloVideoValue, setGrafismoAmareloVideoValue] = useState({
+function ParallaxGrafismoBolaRabisco6(props) {
+  let valueDesk = 15;
+  let valueTablet = 15;
+  let valueMobile = 15;
+
+  const [grafismoBolaRabiscoValue, setGrafismoBolaRabiscoValue] = useState({
     speed: valueDesk,
   });
-  const grafismoAmareloVideo = useParallax(grafismoAmareloVideoValue);
+  const grafismoBolaRabisco = useParallax(grafismoBolaRabiscoValue);
   const [monitoraMudanca, setMonitoraMudanca] = useState(false);
 
   useEffect(() => {
@@ -27,9 +28,9 @@ function ParallaxGrafismoAmareloVideo(props) {
         window.innerWidth <= setBreakPoint("lg") &&
         window.innerWidth > setBreakPoint("sm")
       ) {
-        setGrafismoAmareloVideoValue({ speed: valueTablet });
+        setGrafismoBolaRabiscoValue({ speed: valueTablet });
       } else if (window.innerWidth <= setBreakPoint("sm")) {
-        setGrafismoAmareloVideoValue({ speed: valueMobile });
+        setGrafismoBolaRabiscoValue({ speed: valueMobile });
       }
       setMonitoraMudanca(!monitoraMudanca);
     }, 500);
@@ -45,9 +46,9 @@ function ParallaxGrafismoAmareloVideo(props) {
       window.innerWidth <= setBreakPoint("lg") &&
       window.innerWidth > setBreakPoint("sm")
     ) {
-      setGrafismoAmareloVideoValue({ speed: valueTablet });
+      setGrafismoBolaRabiscoValue({ speed: valueTablet });
     } else if (window.innerWidth <= setBreakPoint("sm")) {
-      setGrafismoAmareloVideoValue({ speed: valueMobile });
+      setGrafismoBolaRabiscoValue({ speed: valueMobile });
     }
     setMonitoraMudanca(!monitoraMudanca);
   }, []);
@@ -55,13 +56,13 @@ function ParallaxGrafismoAmareloVideo(props) {
   return (
     <Fragment>
       <SvgParallax
-        svgName="GrafismoAmareloVideo"
-        className=" grafismoAmareloVideo"
-        parallaxRef={grafismoAmareloVideo.ref}
+        svgName="GrafismoBolaRabisco"
+        className="grafismoBolaRabisco6 right-10 bottom-15"
+        parallaxRef={grafismoBolaRabisco.ref}
         monitoraMudanca={monitoraMudanca}
       />
     </Fragment>
   );
 }
 
-export default ParallaxGrafismoAmareloVideo;
+export default ParallaxGrafismoBolaRabisco6;

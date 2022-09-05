@@ -297,7 +297,7 @@ function OneAnswerWithAudio(props) {
         <Col lg="10" className="questionNumber">
           <Title
             typeH="3"
-            className={"title titleSection type3 mb-5"}
+            className={"titleSection type3 mb-5"}
             content={<Fragment>{`Situação ${questionNumber}`}</Fragment>}
           />
         </Col>

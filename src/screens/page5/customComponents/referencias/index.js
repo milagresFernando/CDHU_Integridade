@@ -12,7 +12,7 @@ import BlocoListas from "./blocoListas";
 
 function Referencias(props) {
   return (
-    <section className="relative gradientBlueEnd">
+    <section className="relative spacingSection gradientBlueEnd">
       <ParallaxGrafAzul />
       <ParallaxGrafismoBolaRabisco2 />
       <Container>
