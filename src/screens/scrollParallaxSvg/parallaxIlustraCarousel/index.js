@@ -80,21 +80,21 @@ function ParallaxIlustraCarousel(props) {
         <SvgParallax
           svgName="CarouselN1"
           svgParallaxClassName="zindex3"
-          className="ilutrasBase carouselBase"
+          className="ilustrasBase carouselBase"
           parallaxRef={n1.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
           svgName="CarouselN2"
           svgParallaxClassName="zindex2"
-          className="ilutrasBase carouselBase"
+          className="ilustrasBase carouselBase"
           parallaxRef={n2.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
           svgName="CarouselN3"
           svgParallaxClassName="zindex1"
-          className="ilutrasBase carouselBase"
+          className="ilustrasBase carouselBase"
           parallaxRef={n3.ref}
           monitoraMudanca={monitoraMudanca}
         />

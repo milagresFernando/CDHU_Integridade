@@ -80,21 +80,21 @@ function ParallaxIlustraDenuncia(props) {
         <SvgParallax
           svgName="DenunciaN1"
           svgParallaxClassName="zindex3"
-          className="ilutrasBase denunciaBase"
+          className="ilustrasBase denunciaBase"
           parallaxRef={n1.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
           svgName="DenunciaN2"
           svgParallaxClassName="zindex2"
-          className="ilutrasBase denunciaBase"
+          className="ilustrasBase denunciaBase"
           parallaxRef={n2.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
           svgName="DenunciaN3"
           svgParallaxClassName="zindex1"
-          className="ilutrasBase denunciaBase"
+          className="ilustrasBase denunciaBase"
           parallaxRef={n3.ref}
           monitoraMudanca={monitoraMudanca}
         />

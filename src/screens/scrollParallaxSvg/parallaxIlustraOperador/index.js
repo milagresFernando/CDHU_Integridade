@@ -80,21 +80,21 @@ function ParallaxIlustraOperador(props) {
         <SvgParallax
           svgName="OperadorN1"
           svgParallaxClassName="zindex3"
-          className="ilutrasBase operadorBase"
+          className="ilustrasBase operadorBase"
           parallaxRef={n1.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
           svgName="OperadorN2"
           svgParallaxClassName="zindex2"
-          className="ilutrasBase operadorBase"
+          className="ilustrasBase operadorBase"
           parallaxRef={n2.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
           svgName="OperadorN3"
           svgParallaxClassName="zindex1"
-          className="ilutrasBase operadorBase"
+          className="ilustrasBase operadorBase"
           parallaxRef={n3.ref}
           monitoraMudanca={monitoraMudanca}
         />
