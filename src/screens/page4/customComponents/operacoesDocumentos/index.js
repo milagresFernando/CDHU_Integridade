@@ -6,6 +6,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 import ParallaxGrafAmarelo2 from "../../../scrollParallaxSvg/parallaxGrafAmarelo2";
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
+import ParallaxGrafismoBolaAzulVideo from "../../../scrollParallaxSvg/parallaxGrafismoBolaAzul";
+import ParallaxGrafismoBolaRoxo from "../../../scrollParallaxSvg/parallaxGrafismoBolaRoxo";
 import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
 import BlocoQuatroOperacoes from "./blocoQuatroOperacoes";
 
@@ -29,6 +31,12 @@ function OperacoesDocumentos(props) {
           </Col>
         </Row>
         <BlocoQuatroOperacoes />
+      </Container>
+      <div className="relative">
+        <ParallaxGrafismoBolaAzulVideo />
+        <ParallaxGrafismoBolaRoxo />
+      </div>
+      <Container>
         <BlocoAccordionUmPorVez />
       </Container>
     </section>

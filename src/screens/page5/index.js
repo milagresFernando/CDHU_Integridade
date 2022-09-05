@@ -17,7 +17,6 @@ function Page5() {
 
   useEffect(() => {
     if (temaCor) {
-      console.log(document.body.classList.value);
       document.body.classList.value.search("ios safari") !== -1
         ? (document.body.className = "ios safari")
         : (document.body.className = "");

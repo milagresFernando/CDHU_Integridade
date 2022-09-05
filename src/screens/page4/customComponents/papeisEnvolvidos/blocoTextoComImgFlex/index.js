@@ -14,6 +14,7 @@ import ParallaxIlustraTitular from "../../../../scrollParallaxSvg/parallaxIlustr
 import ParallaxIlustraControlador from "../../../../scrollParallaxSvg/parallaxIlustraControlador";
 import ParallaxIlustraOperador from "../../../../scrollParallaxSvg/parallaxIlustraOperador";
 import ParallaxIlustraEncarregado from "../../../../scrollParallaxSvg/parallaxIlustraEncarregado";
+import ParallaxTresBolasDesfoque from "../../../../scrollParallaxSvg/parallaxTresBolasDesfoque";
 
 function BlocoTextoComImgFlex() {
   const textsBlock = [
@@ -121,7 +122,7 @@ function BlocoTextoComImgFlex() {
             breakContent="lg" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
           />
         </Col>
-        <Col lg="6">
+        <Col lg="6" className="relative">
           <FlexImgWithText
             rowClasses="align-items-center"
             imgSide="top"
@@ -131,6 +132,7 @@ function BlocoTextoComImgFlex() {
             textsBlock={textsBlock2}
             breakContent="lg" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
           />
+          <ParallaxTresBolasDesfoque />
         </Col>
         <Col lg="6">
           <FlexImgWithText

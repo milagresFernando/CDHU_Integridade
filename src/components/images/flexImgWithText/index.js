@@ -317,7 +317,7 @@ function FlexImgWithText(props) {
         )}
       </Col>
       <Col
-        className={`${
+        className={`zindex2 ${
           props.breakContent
             ? props.imgSide === "left" ||
               props.imgSide === "top" ||

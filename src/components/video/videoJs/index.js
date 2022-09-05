@@ -17,7 +17,6 @@ export const VideoJS = (props) => {
     controlBarItems = "";
   } else {
     controlBarItems = [...props.videoElements.controlBar.children];
-    console.log(controlBarItems);
   }
 
   const options = {

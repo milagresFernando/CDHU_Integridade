@@ -22,6 +22,9 @@ import ParallaxIlustraBancoDados from "../../../../scrollParallaxSvg/parallaxIlu
 import ParallaxIlustraAnonimizacao from "../../../../scrollParallaxSvg/parallaxIlustraAnonimizacao";
 import ParallaxIlustraConsentimento from "../../../../scrollParallaxSvg/parallaxIlustraConsentimento";
 import ParallaxIlustraFimQuatroOperacoes from "../../../../scrollParallaxSvg/parallaxIlustraFimQuatroOperacoes";
+import ParallaxTresBolas from "../../../../scrollParallaxSvg/parallaxTresBolas";
+import ParallaxDuasBolas from "../../../../scrollParallaxSvg/parallaxDuasBolas";
+import ParallaxDuasBolas2 from "../../../../scrollParallaxSvg/parallaxDuasBolas2";
 
 function BlocoQuatroOperacoes(props) {
   const textsBlock0 = [
@@ -176,6 +179,7 @@ function BlocoQuatroOperacoes(props) {
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
             />
           </Col>
+          <ParallaxTresBolas />
         </Row>
         <Row className="justify-content-center relative">
           <Col lg="10" className="linhaMobile2">
@@ -215,6 +219,7 @@ function BlocoQuatroOperacoes(props) {
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
             />
           </Col>
+          <ParallaxDuasBolas />
         </Row>
         <Row className="justify-content-center relative">
           <Col lg="10" className="linhaMobile1">
@@ -241,6 +246,7 @@ function BlocoQuatroOperacoes(props) {
               breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".
             />
           </Col>
+          <ParallaxDuasBolas2 />
         </Row>
       </div>
       <Row className="justify-content-center mb-md-5 relative">

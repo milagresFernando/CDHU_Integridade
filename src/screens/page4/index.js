@@ -11,7 +11,7 @@ import AgoraSuaVez from "./customComponents/agoraSuaVez";
 import OperacoesDocumentos from "./customComponents/operacoesDocumentos";
 import AplicacaoLGPD from "./customComponents/aplicacaoLGPD";
 import PapeisEnvolvidos from "./customComponents/papeisEnvolvidos";
-import ParallaxGrafismoLinhaEnrolada from "../scrollParallaxSvg/parallaxGrafismoLinhaEnrolada";
+import ParallaxGrafismoLinhaEnrolada2 from "../scrollParallaxSvg/parallaxGrafismoLinhaEnrolada2";
 
 function Page4() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
@@ -36,7 +36,7 @@ function Page4() {
 
       <Wrapper className="">
         <AplicacaoLGPD sectionTitle="APLICAÇÃO DA LGPD NA CDHU" />
-        <ParallaxGrafismoLinhaEnrolada />
+        <ParallaxGrafismoLinhaEnrolada2 />
         <PapeisEnvolvidos sectionTitle="PAPÉIS ENVOLVIDOS" />
         <OperacoesDocumentos sectionTitle="OPERAÇÕES E DOCUMENTOS" />
         <AgoraSuaVez sectionTitle="AGORA É SUA VEZ!" />

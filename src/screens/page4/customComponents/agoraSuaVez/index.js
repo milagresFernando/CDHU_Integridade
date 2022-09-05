@@ -18,11 +18,11 @@ function AgoraSuaVez(props) {
       <ParallaxOndas type="laranja" />
 
       <Container>
-        <Row className="justify-content-center mb-5">
+        <Row className="justify-content-center my-5">
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-5 type2"
+              className="titleSection mt-lg-5 mb-5 type2"
               content={<Fragment>{props.sectionTitle}</Fragment>}
               ballLeft="true"
             ></Title>

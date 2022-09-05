@@ -13,14 +13,14 @@ import SvgParallax from "../../../components/images/svgParallax";
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
-function ParallaxTresBolasDesfoque(props) {
+function ParallaxDuasBolas2(props) {
   let n1ValueDesk = 9;
   let n1ValueTablet = 5;
   let n1ValueMobile = 4;
 
-  let n2ValueDesk = 6;
-  let n2ValueTablet = 6;
-  let n2ValueMobile = 6;
+  let n2ValueDesk = -8;
+  let n2ValueTablet = -6;
+  let n2ValueMobile = -6;
 
   let n3ValueDesk = -8;
   let n3ValueTablet = -6;
@@ -76,25 +76,25 @@ function ParallaxTresBolasDesfoque(props) {
 
   return (
     <Fragment>
-      <div className="baseSize tresBolasDesfoque">
+      <div className="baseSize duasBolas ">
         <SvgParallax
-          svgName="TresBolasDesfoqueAzul"
-          svgParallaxClassName="zindex1"
-          className="ilustrasBase tresBolasDesfoqueBase"
+          svgName="DuasBolasAzulClaro"
+          svgParallaxClassName="zindex1 "
+          className="ilustrasBase duasBolasBase2"
           parallaxRef={n1.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="TresBolasDesfoqueRosa"
+          svgName="DuasBolasAzulEscuro"
           svgParallaxClassName="zindex1"
-          className="ilustrasBase tresBolasDesfoqueBase"
+          className="ilustrasBase duasBolasBase2"
           parallaxRef={n2.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="TresBolasDesfoqueAmarelo"
-          svgParallaxClassName="zindex1"
-          className="ilustrasBase tresBolasDesfoqueBase"
+          svgName="TresBolasAmarelo"
+          svgParallaxClassName="zindex1 d-none"
+          className="ilustrasBase duasBolasBase2"
           parallaxRef={n3.ref}
           monitoraMudanca={monitoraMudanca}
         />
@@ -103,4 +103,4 @@ function ParallaxTresBolasDesfoque(props) {
   );
 }
 
-export default ParallaxTresBolasDesfoque;
+export default ParallaxDuasBolas2;

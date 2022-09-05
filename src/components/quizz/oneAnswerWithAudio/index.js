@@ -54,7 +54,12 @@ function OneAnswerWithAudio(props) {
   const [clickNext, setClickNext] = useState(false);
 
   const situacao = useRef(null);
-  const scrollTo = (element) => element.current.scrollIntoView();
+  const scrollTo = (element) => {
+    window.scrollTo(
+      0,
+      element.current.getBoundingClientRect().top + window.scrollY - 80
+    );
+  };
 
   //executa quando a páginna é carregada.verifica se possui limite de questoes, se sim, busca as questões de forma aleatória, senão, só preenche o state de questões
   useEffect(() => {
@@ -550,6 +555,7 @@ function OneAnswerWithAudio(props) {
             <Row className="justify-content-center mt-5">
               <Col lg="10">
                 <FeedBack
+                  refSituacao={situacao}
                   typeFeed={typeFeed}
                   showFeed={showFeed}
                   feedBackItems={feedBackItems}

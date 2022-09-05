@@ -13,7 +13,7 @@ import SvgParallax from "../../../components/images/svgParallax";
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
 
-function ParallaxTresBolasDesfoque(props) {
+function ParallaxDuasBolas(props) {
   let n1ValueDesk = 9;
   let n1ValueTablet = 5;
   let n1ValueMobile = 4;
@@ -76,25 +76,25 @@ function ParallaxTresBolasDesfoque(props) {
 
   return (
     <Fragment>
-      <div className="baseSize tresBolasDesfoque">
+      <div className="baseSize duasBolas ">
         <SvgParallax
-          svgName="TresBolasDesfoqueAzul"
-          svgParallaxClassName="zindex1"
-          className="ilustrasBase tresBolasDesfoqueBase"
+          svgName="TresBolasAzul"
+          svgParallaxClassName="zindex1 d-none"
+          className="ilustrasBase duasBolasBase"
           parallaxRef={n1.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="TresBolasDesfoqueRosa"
+          svgName="TresBolasRosa"
           svgParallaxClassName="zindex1"
-          className="ilustrasBase tresBolasDesfoqueBase"
+          className="ilustrasBase duasBolasBase"
           parallaxRef={n2.ref}
           monitoraMudanca={monitoraMudanca}
         />
         <SvgParallax
-          svgName="TresBolasDesfoqueAmarelo"
+          svgName="TresBolasAmarelo"
           svgParallaxClassName="zindex1"
-          className="ilustrasBase tresBolasDesfoqueBase"
+          className="ilustrasBase duasBolasBase"
           parallaxRef={n3.ref}
           monitoraMudanca={monitoraMudanca}
         />
@@ -103,4 +103,4 @@ function ParallaxTresBolasDesfoque(props) {
   );
 }
 
-export default ParallaxTresBolasDesfoque;
+export default ParallaxDuasBolas;

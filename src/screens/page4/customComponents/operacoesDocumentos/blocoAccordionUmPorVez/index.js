@@ -5,7 +5,6 @@ import { Col, Row } from "react-bootstrap";
 // Components
 import Accordions from "../../../../../components/accordions";
 import TextBlock from "../../../../../components/texts/text_block";
-import Title from "../../../../../components/texts/title";
 import imgUrl from "../../../../assets/images/img-Float.jpg";
 import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
 
@@ -352,7 +351,7 @@ function BlocoAccordionUmPorVez() {
   ];
   return (
     <Fragment>
-      <Row className="justify-content-center">
+      <Row className="justify-content-center relative">
         <Col lg="10">
           <TextBlock textsBlock={textsBlock1} />
           <Accordions

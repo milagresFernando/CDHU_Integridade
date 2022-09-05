@@ -8,6 +8,8 @@ import Title from "../../../../components/texts/title";
 
 import ParallaxGrafismoBolaRabisco5 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco5";
 import ParallaxGrafismoBolaRabisco6 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco6";
+import ParallaxTresBolasDesfoque2 from "../../../scrollParallaxSvg/parallaxTresBolasDesfoque2";
+
 import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 //Imagens
@@ -28,6 +30,7 @@ function PapeisEnvolvidos(props) {
           </Col>
         </Row>
       </Container>
+      <ParallaxTresBolasDesfoque2 />
       <ParallaxGrafismoBolaRabisco5 />
       <ParallaxGrafismoBolaRabisco6 />
     </section>

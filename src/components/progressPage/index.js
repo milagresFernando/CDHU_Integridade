@@ -27,8 +27,6 @@ function ProgressPage(props) {
       window.removeEventListener("scroll", scrollPoint);
     };
   }, [lastWidthBar]);
- 
-  // console.log(menuListTop)
 
   function scrollPoint() {
     let scrollHeight = window.pageYOffset + window.innerHeight;
@@ -41,7 +39,10 @@ function ProgressPage(props) {
     if (endPosition) {
       setEndPosition(false);
     } else {
-      let barUpdated = calcPercentage(window.pageYOffset, (scrollPosition - window.innerHeight));
+      let barUpdated = calcPercentage(
+        window.pageYOffset,
+        scrollPosition - window.innerHeight
+      );
 
       if (props.progressType === "maxView") {
         if (barUpdated > lastWidthBar) {

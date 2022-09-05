@@ -22,7 +22,12 @@ function FeedBack(props) {
   const [breakResponsive, setBreakResponsive] = useState(false);
 
   const feedBack = useRef(null);
-  const scrollTo = (element) => element.current.scrollIntoView();
+  const scrollTo = (element) => {
+    window.scrollTo(
+      0,
+      element.current.getBoundingClientRect().top + window.scrollY - 80
+    );
+  };
 
   useEffect(() => {
     if (props.feedBackItems != "") {
@@ -66,6 +71,7 @@ function FeedBack(props) {
   }
 
   function handleTryAgain() {
+    scrollTo(props.refSituacao);
     props.setShowFeed(false);
     props.setDisable(false);
     props.answers.forEach((answer, id) => {
