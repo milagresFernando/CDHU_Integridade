@@ -3,9 +3,9 @@ import { Fragment } from "react";
 
 // Components
 import TextBlock from "../../../../../components/texts/text_block";
-import imgCard1 from "../../../../assets/images/icoMao.svg";
-import imgCard2 from "../../../../assets/images/icoFolha.svg";
-import imgCard3 from "../../../../assets/images/icoBalanca.svg";
+import imgCard1 from "../../../../assets/images/icoConsolidar.svg";
+import imgCard2 from "../../../../assets/images/icoAdotarPoliticas.svg";
+import imgCard3 from "../../../../assets/images/icoIncentivar.svg";
 import CardSimple from "../../../../../components/cards/cardSimple";
 import { Col, Row } from "react-bootstrap";
 

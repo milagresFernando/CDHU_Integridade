@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 // Components
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
-import Footer from "../../components/footer";
 import Referencias from "./customComponents/referencias";
 
 function Page5() {

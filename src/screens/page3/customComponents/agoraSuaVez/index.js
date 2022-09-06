@@ -7,7 +7,6 @@ import TextBlock from "../../../../components/texts/text_block";
 import Title from "../../../../components/texts/title";
 import BlocoFinalizou from "../../../page2/customComponents/monitoramentoPrograma/blocoFinalizou";
 import BotoesNavegacao from "../../../page2/customComponents/monitoramentoPrograma/botoesNavegacao";
-
 import ParallaxGrafismoLinhaEnrolada from "../../../scrollParallaxSvg/parallaxGrafismoLinhaEnrolada";
 import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";
 

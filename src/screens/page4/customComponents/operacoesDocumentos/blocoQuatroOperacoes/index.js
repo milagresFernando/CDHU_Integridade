@@ -7,14 +7,10 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 // Components
-import Title from "../../../../../components/texts/title";
 import TextBlock from "../../../../../components/texts/text_block";
 import FlexImgWithText from "../../../../../components/images/flexImgWithText";
 
 // Imagens
-import imgUrl from "../../../../assets/images/img-Float.jpg";
-import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
-
 import ParallaxIlustraTratamento from "../../../../scrollParallaxSvg/parallaxIlustraTratamento";
 import ParallaxIlustraCompartilhado from "../../../../scrollParallaxSvg/parallaxIlustraCompartilhado";
 import ParallaxIlustraRelatorio from "../../../../scrollParallaxSvg/parallaxIlustraRelatorio";

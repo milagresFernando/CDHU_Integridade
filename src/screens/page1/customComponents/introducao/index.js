@@ -4,13 +4,11 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
-import BlocoVideoIntroducao from "./blocoVideoIntroducao";
+import BlocoVideo from "./blocoVideo";
 import BlocoImportante from "./blocoImportante";
 import BlocoFinalizou from "./blocoFinalizou";
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import BotoesNavegacao from "./botoesNavegacao";
-import BlocoVideoIntroducao2 from "./blocoVideoIntroducao2";
-import BlocoVideoIntroducao3 from "./blocoVideoIntroducao3";
 
 //Imagens
 
@@ -30,7 +28,7 @@ function Introducao(props) {
             </Title>
           </Col>
         </Row>
-        <BlocoVideoIntroducao />
+        <BlocoVideo typeGrafismo={1} />
         <BlocoImportante />
         <BlocoFinalizou />
         <BotoesNavegacao />

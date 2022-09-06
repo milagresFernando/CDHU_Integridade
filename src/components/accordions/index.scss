@@ -206,6 +206,11 @@
 
           .flexImgWithText {
             background-color: $cor5;
+            &.notImgFull {
+              img {
+                max-width: 150px;
+              }
+            }
           }
           &.bodyWithImg {
             padding: 0 25px;
@@ -240,6 +245,13 @@
         }
         .accordion-collapse {
           .accordion-body {
+            .flexImgWithText {
+              &.notImgFull {
+                img {
+                  max-width: 100px;
+                }
+              }
+            }
             &.bodyWithImg {
               padding: 0 0.8rem;
               &.bottom {

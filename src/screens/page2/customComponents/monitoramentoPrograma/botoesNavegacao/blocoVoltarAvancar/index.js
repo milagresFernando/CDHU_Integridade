@@ -4,8 +4,6 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import NextScreen from "../../../../../../components/buttons/nextScreen";
-import PreviousScreen from "../../../../../../components/buttons/previousScreen";
-import ScreenCounter from "../../../../../../components/buttons/screenCounter";
 
 //Imagens
 

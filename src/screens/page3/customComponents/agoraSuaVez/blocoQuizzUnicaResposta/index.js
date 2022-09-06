@@ -9,25 +9,25 @@ import OneAnswerWithAudio from "../../../../../components/quizz/oneAnswerWithAud
 import imgAnswer1 from "../../../../assets/images/icoQuestionQuizz.svg";
 import imgFeed from "../../../../assets/images/icoFeedPositivo.svg";
 
-import audioFile1 from "../../../../assets/audio/audioQ1.mp3";
-import audioFileFeed1 from "../../../../assets/audio/audioQ1.mp3";
-import transcricao1 from "../../../../assets/audio/audioQ1.pdf";
-import transcricaoFeed1 from "../../../../assets/audio/audioQ1.pdf";
+import audioFile1 from "../../../../assets/audio/page3_audio1.mp3";
+import audioFileFeed1 from "../../../../assets/audio/page3_feed_audio1.mp3";
+import transcricao1 from "../../../../assets/audio/page3_audio1.pdf";
+import transcricaoFeed1 from "../../../../assets/audio/page3_feed_audio1.pdf";
 
-import audioFile2 from "../../../../assets/audio/audioQ2.mp3";
-import audioFileFeed2 from "../../../../assets/audio/audioQ2.mp3";
-import transcricao2 from "../../../../assets/audio/audioQ2.pdf";
-import transcricaoFeed2 from "../../../../assets/audio/audioQ2.pdf";
+import audioFile2 from "../../../../assets/audio/page3_audio2.mp3";
+import audioFileFeed2 from "../../../../assets/audio/page3_feed_audio2.mp3";
+import transcricao2 from "../../../../assets/audio/page3_audio2.pdf";
+import transcricaoFeed2 from "../../../../assets/audio/page3_feed_audio2.pdf";
 
-import audioFile3 from "../../../../assets/audio/audioQ2.mp3";
-import audioFileFeed3 from "../../../../assets/audio/audioQ2.mp3";
-import transcricao3 from "../../../../assets/audio/audioQ2.pdf";
-import transcricaoFeed3 from "../../../../assets/audio/audioQ2.pdf";
+import audioFile3 from "../../../../assets/audio/page3_audio3.mp3";
+import audioFileFeed3 from "../../../../assets/audio/page3_feed_audio3.mp3";
+import transcricao3 from "../../../../assets/audio/page3_audio3.pdf";
+import transcricaoFeed3 from "../../../../assets/audio/page3_feed_audio3.pdf";
 
-import audioFile4 from "../../../../assets/audio/audioQ2.mp3";
-import audioFileFeed4 from "../../../../assets/audio/audioQ2.mp3";
-import transcricao4 from "../../../../assets/audio/audioQ2.pdf";
-import transcricaoFeed4 from "../../../../assets/audio/audioQ2.pdf";
+import audioFile4 from "../../../../assets/audio/page3_audio4.mp3";
+import audioFileFeed4 from "../../../../assets/audio/page3_feed_audio4.mp3";
+import transcricao4 from "../../../../assets/audio/page3_audio4.pdf";
+import transcricaoFeed4 from "../../../../assets/audio/page3_feed_audio4.pdf";
 
 import ParallaxGrafismoBolaRabisco from "../../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco";
 
@@ -258,8 +258,8 @@ function BlocoQuizzUnicaResposta(props) {
           titleClassName: "",
         },
 
-        audioFile: audioFile1,
-        transcricao: transcricao1,
+        audioFile: audioFile2,
+        transcricao: transcricao2,
       },
       title: {
         titleContent: "O que Eunice deve fazer?",

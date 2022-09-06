@@ -5,8 +5,16 @@ import { Col, Row } from "react-bootstrap";
 // Components
 import Accordions from "../../../../../components/accordions";
 import TextBlock from "../../../../../components/texts/text_block";
-import imgUrl from "../../../../assets/images/img-Float.jpg";
-import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
+import imgUrl1 from "../../../../assets/images/icoFinalidade.svg";
+import imgUrl2 from "../../../../assets/images/icoAdequacao.svg";
+import imgUrl3 from "../../../../assets/images/icoNecessidade.svg";
+import imgUrl4 from "../../../../assets/images/icoLivreAcesso.svg";
+import imgUrl5 from "../../../../assets/images/icoQualidadeDados.svg";
+import imgUrl6 from "../../../../assets/images/icoTransparencia.svg";
+import imgUrl7 from "../../../../assets/images/icoSeguranca.svg";
+import imgUrl8 from "../../../../assets/images/icoPrevencao.svg";
+import imgUrl9 from "../../../../assets/images/icoDiscriminacao.svg";
+import imgUrl10 from "../../../../assets/images/icoResponsibilizacao.svg";
 
 //Imagens
 
@@ -33,11 +41,11 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl1,
+        imgUrlBreak: imgUrl1,
         imgSide: "right",
-        colMd: "4",
-        colLg: "4",
+        colMd: "3",
+        colLg: "3",
       },
       contents: {
         contentClassName: "",
@@ -68,8 +76,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl2,
+        imgUrlBreak: imgUrl2,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -99,8 +107,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl3,
+        imgUrlBreak: imgUrl3,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -131,8 +139,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl4,
+        imgUrlBreak: imgUrl4,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -163,8 +171,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl5,
+        imgUrlBreak: imgUrl5,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -195,8 +203,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl6,
+        imgUrlBreak: imgUrl6,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -229,8 +237,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl7,
+        imgUrlBreak: imgUrl7,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -262,8 +270,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl8,
+        imgUrlBreak: imgUrl8,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -293,8 +301,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl9,
+        imgUrlBreak: imgUrl9,
         imgSide: "right",
         colMd: "4",
         colLg: "4",
@@ -323,8 +331,8 @@ function BlocoAccordionUmPorVez() {
       },
       images: {
         rowClasses: "align-items-center",
-        imgUrl: imgUrl,
-        imgUrlBreak: imgUrlBreak,
+        imgUrl: imgUrl10,
+        imgUrlBreak: imgUrl10,
         imgSide: "right",
         colMd: "4",
         colLg: "4",

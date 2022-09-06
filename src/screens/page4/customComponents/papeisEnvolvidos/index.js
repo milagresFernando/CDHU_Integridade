@@ -3,16 +3,13 @@ import { useState, Fragment } from "react";
 
 // Components
 import { Container, Row, Col } from "react-bootstrap";
-import TextBlock from "../../../../components/texts/text_block";
 import Title from "../../../../components/texts/title";
-
-import ParallaxGrafismoBolaRabisco5 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco5";
-import ParallaxGrafismoBolaRabisco6 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco6";
-import ParallaxTresBolasDesfoque2 from "../../../scrollParallaxSvg/parallaxTresBolasDesfoque2";
-
 import BlocoTextoComImgFlex from "./blocoTextoComImgFlex";
 
 //Imagens
+import ParallaxGrafismoBolaRabisco5 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco5";
+import ParallaxGrafismoBolaRabisco6 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco6";
+import ParallaxTresBolasDesfoque2 from "../../../scrollParallaxSvg/parallaxTresBolasDesfoque2";
 
 function PapeisEnvolvidos(props) {
   return (

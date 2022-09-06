@@ -1,12 +1,9 @@
 // React Elements/Hooks
-import { Fragment } from "react/cjs/react.production.min";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 
 // Components
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
-import Footer from "../../components/footer";
-
 import Introducao from "./customComponents/introducao";
 import Capa from "./customComponents/capa";
 

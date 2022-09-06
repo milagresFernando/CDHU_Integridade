@@ -5,9 +5,7 @@ import { useState, useEffect } from "react";
 // Components
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
-import Footer from "../../components/footer";
 import AgoraSuaVez from "./customComponents/agoraSuaVez";
-
 import OperacoesDocumentos from "./customComponents/operacoesDocumentos";
 import AplicacaoLGPD from "./customComponents/aplicacaoLGPD";
 import PapeisEnvolvidos from "./customComponents/papeisEnvolvidos";

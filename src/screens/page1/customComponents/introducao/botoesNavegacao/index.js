@@ -3,7 +3,6 @@ import { useState, Fragment } from "react";
 
 // Components
 import { Container, Row, Col } from "react-bootstrap";
-import Title from "../../../../../components/texts/title";
 import BlocoVoltarAvancar from "./blocoVoltarAvancar";
 
 //Imagens

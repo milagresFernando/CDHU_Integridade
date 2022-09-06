@@ -2,13 +2,10 @@
 import { Fragment } from "react";
 
 // Components
-import Title from "../../../../../components/texts/title";
 import FlexImgWithText from "../../../../../components/images/flexImgWithText";
 import { Row, Col } from "react-bootstrap";
 
 // Imagens
-import imgUrl from "../../../../assets/images/img-Float.jpg";
-import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
 import ParallaxIlustraDenuncia from "../../../../scrollParallaxSvg/parallaxIlustraDenuncia";
 
 function BlocoTextoComImgFlex() {

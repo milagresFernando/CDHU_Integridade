@@ -2,14 +2,11 @@
 import { Fragment } from "react";
 
 // Components
-import Title from "../../../../../components/texts/title";
 import FlexImgWithText from "../../../../../components/images/flexImgWithText";
 import { Row, Col } from "react-bootstrap";
+import TextBlock from "../../../../../components/texts/text_block";
 
 // Imagens
-import imgUrl from "../../../../assets/images/img-Float.jpg";
-import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
-import TextBlock from "../../../../../components/texts/text_block";
 import ParallaxIlustraTitular from "../../../../scrollParallaxSvg/parallaxIlustraTitular";
 import ParallaxIlustraControlador from "../../../../scrollParallaxSvg/parallaxIlustraControlador";
 import ParallaxIlustraOperador from "../../../../scrollParallaxSvg/parallaxIlustraOperador";

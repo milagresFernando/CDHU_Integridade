@@ -4,13 +4,11 @@ import { useState, Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
-
 import BlocoSaibaMais from "./blocoSaibaMais";
 import BlocoFinalizou from "./blocoFinalizou";
 import ParallaxGrafAmarelo from "../../../scrollParallaxSvg/parallaxGrafAmarelo";
-
-import BlocoVideoIntroducao3 from "./blocoVideoIntroducao3";
 import BotoesNavegacao from "./botoesNavegacao";
+import BlocoVideo from "./blocoVideo";
 
 //Imagens
 
@@ -30,7 +28,7 @@ function MonitoramentoPrograma(props) {
             </Title>
           </Col>
         </Row>
-        <BlocoVideoIntroducao3 />
+        <BlocoVideo typeGrafismo={3} />
         <BlocoSaibaMais />
         <BlocoFinalizou />
         <BotoesNavegacao />

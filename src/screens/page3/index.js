@@ -5,10 +5,7 @@ import { useState, useEffect } from "react";
 // Components
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
-import Footer from "../../components/footer";
-
 import CanaisDenuncia from "./customComponents/canaisDenuncia";
-
 import CodigoConduta from "./customComponents/codigoConduta";
 import AgoraSuaVez from "./customComponents/agoraSuaVez";
 

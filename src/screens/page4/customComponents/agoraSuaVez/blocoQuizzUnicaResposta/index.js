@@ -6,12 +6,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import OneAnswer from "../../../../../components/quizz/oneAnswer";
 
 //Imagens
-import imgQuestion1 from "../../../../assets/images/img-Float.jpg";
-import imgQuestion1Break from "../../../../assets/images/img-Full.jpg";
 import imgAnswer1 from "../../../../assets/images/icoQuestionQuizz.svg";
-import imgAnswer1Break from "../../../../assets/images/img-Full.jpg";
 import imgFeed from "../../../../assets/images/icoFeedPositivo.svg";
-import imgFeed1_1_1Break from "../../../../assets/images/img-Full.jpg";
 
 function BlocoQuizzUnicaResposta(props) {
   // caso deseje importar uma imagem sem usar os imports acima, utilize a funcão require(caminho da imagem), direto no array de questions

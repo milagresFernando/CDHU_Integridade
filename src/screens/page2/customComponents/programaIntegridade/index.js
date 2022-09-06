@@ -5,8 +5,8 @@ import { useState, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
-import BlocoVideoIntroducao2 from "./blocoVideoIntroducao2";
 import Bloco3Cards from "./bloco3Cards";
+import BlocoVideo from "./blocoVideo";
 
 //Imagens
 
@@ -25,7 +25,8 @@ function ProgramaIntegridade(props) {
             </Title>
           </Col>
         </Row>
-        <BlocoVideoIntroducao2 />
+
+        <BlocoVideo typeGrafismo={2} />
       </Container>
 
       <ParallaxOndas type="laranja" />

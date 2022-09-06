@@ -3,7 +3,6 @@ import { useState, Fragment } from "react";
 
 // Components
 import { Container, Row, Col } from "react-bootstrap";
-import TextBlock from "../../../../components/texts/text_block";
 import Title from "../../../../components/texts/title";
 import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
 import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";

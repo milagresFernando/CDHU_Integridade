@@ -1,6 +1,52 @@
 /*******************************
 Loading
 ********************************/
+.loaderSvg {
+  background: transparent;
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%, -50%));
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  .loaderBolinha {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+
+    @include transform(translate(-50%, -50%));
+
+    hr {
+      border: 0;
+      border-radius: 50%;
+      margin: 0;
+      height: 40%;
+      width: 40%;
+      position: absolute;
+      animation: bolinhaLoader 2s ease infinite;
+      opacity: 1;
+
+      &:nth-child(1) {
+        background: $cor3;
+        animation-delay: 0.4s;
+      }
+      &:nth-child(2) {
+        background: $cor2;
+        animation-delay: 0.8s;
+      }
+      &:nth-child(3) {
+        background: $cor3;
+        animation-delay: 1.2s;
+      }
+      &:nth-child(4) {
+        background: $cor2;
+        animation-delay: 1.8s;
+      }
+    }
+  }
+}
 .loadingContent {
   background: $cor1;
   position: fixed;
@@ -45,7 +91,7 @@ Loading
       left: 22px;
       border-radius: 50%;
       border: 12px solid #000;
-      border-color: #3a627a transparent #3a627a transparent;
+      border-color: #ffbb3c transparent #ffbb3c transparent;
       animation: spinnerLoader 2.5s linear infinite;
     }
 
@@ -58,7 +104,7 @@ Loading
       animation: spinnerLoader 2.5s linear infinite reverse;
     }
     .spinner > div:nth-child(2) {
-      border-color: transparent #009da3 transparent #009da3;
+      border-color: transparent $cor7 transparent $cor7;
     }
     .spinner > div:nth-child(3) {
       border-color: transparent;
@@ -131,42 +177,6 @@ Loading
       left: 50%;
 
       @include transform(translate(-50%, -50%));
-    }
-  }
-
-  .loaderBolinha {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-
-    @include transform(translate(-50%, -50%));
-
-    hr {
-      border: 0;
-      border-radius: 50%;
-      margin: 0;
-      height: 40%;
-      width: 40%;
-      position: absolute;
-      animation: bolinhaLoader 2s ease infinite;
-
-      &:nth-child(1) {
-        background: $cor1;
-        animation-delay: -1.5s;
-      }
-      &:nth-child(2) {
-        background: $cor2;
-        animation-delay: -1s;
-      }
-      &:nth-child(3) {
-        background: $cor3;
-        animation-delay: -0.5s;
-      }
-      &:nth-child(4) {
-        background: $cor4;
-      }
     }
   }
 

@@ -3,14 +3,9 @@ import { Fragment } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 
 // Components
-
-import CarouselBootsrap from "../../../../../components/carousel";
 import CarouselWithoutImg from "../../../../../components/carouselWithoutImg";
-import Title from "../../../../../components/texts/title";
 
 //Imagens
-import imgUrl from "../../../../assets/images/img-Float.jpg";
-import imgUrlBreak from "../../../../assets/images/img-Full.jpg";
 import ParallaxIlustraCarousel from "../../../../scrollParallaxSvg/parallaxIlustraCarousel";
 
 function BlocoCarouselComImgEstatica() {

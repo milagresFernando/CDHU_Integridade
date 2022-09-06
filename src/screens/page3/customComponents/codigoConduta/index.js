@@ -5,12 +5,9 @@ import { useState, Fragment } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
-
 import BlocoCarouselComImgEstatica from "./blocoCarouselComImgEstatica";
 import BlocoListaComImgFlex from "./blocoListaComImgFlex";
-
-import BlocoVideoIntroducao4 from "./blocoVideoIntroducao4";
-
+import BlocoVideo from "./blocoVideo";
 //Imagens
 
 function CodigoConduta(props) {
@@ -28,7 +25,8 @@ function CodigoConduta(props) {
             </Title>
           </Col>
         </Row>
-        <BlocoVideoIntroducao4 />
+
+        <BlocoVideo typeGrafismo={3} />
       </Container>
       <ParallaxOndas type="roxo" />
       <Container className="spacingContainer">

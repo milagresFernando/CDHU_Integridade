@@ -54,8 +54,6 @@ function App() {
                 <div></div>
               </div>
             </div>
-
-            <div className="textoLoader">Carregando...</div>
           </div>
         </div>
       </Fragment>

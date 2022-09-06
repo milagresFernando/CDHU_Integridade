@@ -62,7 +62,18 @@ function SvgInterativo(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   if (carregaSvg) {
-    return <div>Carregando</div>;
+    return (
+      <Fragment>
+        <div className="loaderSvg">
+          <div className="loaderBolinha ">
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+            <hr></hr>
+          </div>
+        </div>
+      </Fragment>
+    );
   } else {
     return (
       <Fragment>
@@ -71,20 +82,7 @@ function SvgInterativo(props) {
         <Suspense
           fallback={
             <Fragment>
-              <div className="loadingContent">
-                <div className="loaderSpinner">
-                  <div className="loadingio-spinner">
-                    <div className="spinner">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div>
-                  </div>
-
-                  <div className="textoLoader">Carregando...</div>
-                </div>
-              </div>
+              <div className="loaderSvg"></div>
             </Fragment>
           }
         >

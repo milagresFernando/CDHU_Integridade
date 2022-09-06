@@ -28,10 +28,6 @@
 				{					
 					"route": "referencias",
 					"titulo": "Referências bibliográficas"
-				},
-				{					
-					"route": "guide",
-					"titulo": "guide"
 				}
 				
 			]
