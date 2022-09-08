@@ -13,7 +13,12 @@ function List(props) {
     if (list.anchor) {
       return (
         <li key={id} className={list.className}>
-          <a href={list.anchor} target="_blank" rel="noreferrer">
+          <a
+            href={list.anchor}
+            target="_blank"
+            rel="noreferrer"
+            download={list.download && list.download}
+          >
             {list.content}
           </a>
         </li>

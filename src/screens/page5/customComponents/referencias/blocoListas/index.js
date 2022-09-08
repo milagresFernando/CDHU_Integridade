@@ -5,6 +5,10 @@ import { Fragment } from "react";
 import { Col } from "react-bootstrap";
 import Title from "../../../../../components/texts/title";
 import List from "../../../../../components/texts/lists";
+import codigoPdf from "../../../../assets/pdfs/Codigo_de_Conduta_e_Integridade.pdf";
+import estatutoPdf from "../../../../assets/pdfs/Estatuto_Social_CDHU.pdf";
+import lgpdPdf from "../../../../assets/pdfs/LGPD.pdf";
+import programaPdf from "../../../../assets/pdfs/Programa_Integridade_CDHU.pdf";
 
 //Imagens
 
@@ -63,22 +67,26 @@ function BlocoListas() {
     {
       className: "",
       content: <Fragment>Código de Conduta e Integridade CDHU</Fragment>,
-      anchor: "http://google.com",
+      anchor: codigoPdf,
+      download: true,
     },
     {
       className: "",
       content: <Fragment>Estatutos Sociais CDHU</Fragment>,
-      anchor: "http://google.com",
+      anchor: estatutoPdf,
+      download: true,
     },
     {
       className: "",
       content: <Fragment>LGPD</Fragment>,
-      anchor: "http://google.com",
+      anchor: lgpdPdf,
+      download: true,
     },
     {
       className: "",
       content: <Fragment>Programa de Integridade CDHU</Fragment>,
-      anchor: "http://google.com",
+      anchor: programaPdf,
+      download: true,
     },
   ];
   const listItens2 = [
