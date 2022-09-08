@@ -55,7 +55,7 @@ function AudioJs(props) {
   const downloadTranscriptionWrapper = (
     <div className="dTWrapper">
       {/* {downloadButton} */}
-      {transcriptionButton}
+      {/* {transcriptionButton} */}
     </div>
   );
   const play = <span className="play"></span>;
