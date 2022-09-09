@@ -31,14 +31,6 @@
 
           .carousel-item {
             height: 100%;
-            // padding-bottom: 50px;
-
-            &.textOverImg {
-              padding-bottom: 0;
-              .carousel-caption {
-                padding: 50px 7%;
-              }
-            }
 
             .carousel-caption {
               text-align: start;
@@ -51,39 +43,9 @@
               bottom: 0;
               position: relative;
 
-              .flexImgWithText {
-                background-color: transparent;
-                .p-carousel-full-vertical {
-                  padding: 0 4.8rem;
-                }
-              }
-
               &.relative {
                 top: 0;
                 left: 0;
-              }
-
-              &.bodyWithImg {
-                padding: 0 4.8rem;
-                &.fullLeft {
-                  padding-left: 0;
-                  padding-right: 4.8rem;
-                }
-                &.fullRight {
-                  padding-right: 0;
-                  padding-left: 4.8rem;
-                }
-                &.fullTop,
-                &.fullBottom {
-                  padding: 0;
-                  img {
-                    height: 300px !important;
-                  }
-                }
-                &.fullBottom,
-                &.bottom {
-                  padding-top: 1.5rem;
-                }
               }
 
               p {
@@ -402,114 +364,16 @@
           }
         }
 
-        &.break {
-          pointer-events: none;
-          .carousel-inner {
-            background-color: transparent;
-            height: 100%;
-
-            .carousel-item {
-              background-color: $cor5;
-              display: block;
-              float: none;
-              margin-bottom: 1.5rem;
-              padding-bottom: 0;
-              .carousel-caption {
-                .flexImgWithText {
-                  .p-carousel-full-vertical {
-                    padding: 0 1rem;
-                  }
-
-                  .p-default {
-                    padding: 0 1rem;
-                  }
-                }
-
-                &.bodyWithImg {
-                  padding-bottom: 2rem;
-
-                  &.fullTop,
-                  &.fullRight,
-                  &.fullLeft,
-                  &.left,
-                  &.right,
-                  &.bottom,
-                  &.top {
-                    padding-right: 0;
-                    padding-left: 0;
-                  }
-
-                  &.bottom,
-                  &.fullBottom {
-                    padding-bottom: 0;
-                    padding-top: 1.5rem;
-                  }
-                  &.fullTop {
-                    padding-bottom: 2rem;
-                  }
-
-                  &.fullTop,
-                  &.fullBottom {
-                    img {
-                      height: auto !important;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          .carousel-indicators,
-          .carousel-counter,
-          .carousel-control-prev,
-          .carousel-control-next {
-            display: none;
-          }
-
-          &.moldura {
-            margin-bottom: $espaco-margin + 30px;
-
-            .carousel-inner {
-              border: none;
-              .carousel-item {
-                position: relative;
-                z-index: 0;
-                &::before {
-                  content: "";
-                  position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 100%;
-                  border: solid 5px $cor3;
-                  border-radius: $radius-padrao;
-                  z-index: 1;
-                }
-              }
-            }
-          }
-          &.animado {
-            .carousel-inner {
-              .carousel-item {
-                &::before {
-                  height: 100%;
-                }
-                .carousel-caption {
-                  &.bodyWithImg,
-                  &.fullTop,
-                  &.fullBottom {
-                    padding-bottom: 0;
-                  }
-                }
-              }
-            }
-          }
-        }
-
         @media #{$bp-tablet} {
           .carousel-inner {
             .carousel-item {
               .carousel-caption {
                 justify-content: center;
+              }
+              p {
+                &:last-child {
+                  margin-bottom: 50px;
+                }
               }
             }
           }
@@ -567,24 +431,6 @@
                     padding: 0 3.8rem;
                   }
                 }
-
-                &.bodyWithImg {
-                  padding: 0 3.8rem;
-                  &.fullLeft {
-                    padding-left: 0;
-                    padding-right: 3.8rem;
-                  }
-                  &.fullRight {
-                    padding-right: 0;
-                    padding-left: 3.8rem;
-                  }
-                  &.fullTop,
-                  &.fullBottom {
-                    img {
-                      height: 200px !important;
-                    }
-                  }
-                }
               }
             }
           }
@@ -611,29 +457,6 @@
           .carousel-inner {
             .carousel-item {
               .carousel-caption {
-                .flexImgWithText {
-                  .p-carousel-full-vertical {
-                    padding: 0 3.8rem;
-                  }
-
-                  .p-default {
-                    padding: 0 3.8rem;
-                  }
-                }
-
-                &.bodyWithImg {
-                  padding: 0 3.8rem;
-
-                  &.fullRight,
-                  &.fullLeft,
-                  &.left,
-                  &.right,
-                  &.top,
-                  &.bottom {
-                    padding-right: 0;
-                    padding-left: 0;
-                  }
-                }
               }
             }
           }
@@ -672,30 +495,6 @@
           .carousel-inner {
             .carousel-item {
               .carousel-caption {
-                .flexImgWithText {
-                  .p-carousel-full-vertical {
-                    padding: 0 3.8rem;
-                  }
-                }
-
-                &.bodyWithImg {
-                  padding: 0 3.8rem;
-                  &.fullLeft {
-                    padding-left: 0;
-                    padding-right: 0;
-                  }
-                  &.fullTop,
-                  &.fullBottom {
-                    img {
-                      height: 200px !important;
-                    }
-                  }
-
-                  &.fullRight {
-                    padding-right: 0;
-                    padding-left: 0;
-                  }
-                }
               }
             }
           }
