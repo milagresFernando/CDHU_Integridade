@@ -6,13 +6,10 @@ import { useState, useEffect } from "react";
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
 import Referencias from "./customComponents/referencias";
+import LoadPage from "../../components/loadPage";
 
 function Page5() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     if (temaCor) {
@@ -25,14 +22,12 @@ function Page5() {
   }, [temaCor]);
 
   return (
-    <Fragment>
-      {/* <ProgressPage className="textBar" /> */}
+    <LoadPage>
       <Header setTemaCor={setTemaCor} pageAtual={5} className="" />
-
       <Wrapper className="">
         <Referencias sectionTitle="REFERÊNCIAS BIBLIOGRÁFICAS" />
       </Wrapper>
-    </Fragment>
+    </LoadPage>
   );
 }
 

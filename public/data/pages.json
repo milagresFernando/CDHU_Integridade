@@ -2,6 +2,8 @@
     "curso": {
 		"modulo": "",
         "titulo": "CDHU Integridade",
+		"mode" : "",
+		"scorm" : true,
 		"loader": false,
 		"template": "custom",
 		"menu": "",

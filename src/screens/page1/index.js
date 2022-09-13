@@ -1,18 +1,16 @@
 // React Elements/Hooks
-import { useState, useEffect, Fragment } from "react";
+import { useState, useEffect } from "react";
 
 // Components
 import Header from "../../components/header";
 import Wrapper from "../../components/wrapper";
 import Introducao from "./customComponents/introducao";
 import Capa from "./customComponents/capa";
+import LoadPage from "../../components/loadPage";
 
 function Page1() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   useEffect(() => {
     if (temaCor) {
       document.body.classList.value.search("ios safari") !== -1
@@ -24,14 +22,13 @@ function Page1() {
   }, [temaCor]);
 
   return (
-    <Fragment>
-      {/* <ProgressPage className="textBar" /> */}
+    <LoadPage>
       <Header setTemaCor={setTemaCor} pageAtual={1} className="" />
       <Capa />
       <Wrapper className="pb-0">
         <Introducao sectionTitle="Introdução" />
       </Wrapper>
-    </Fragment>
+    </LoadPage>
   );
 }
 

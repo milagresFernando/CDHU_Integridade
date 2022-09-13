@@ -8,10 +8,14 @@ import PagesService from "./services/pages";
 import ScreenRoutes from "./routes";
 import GlobalState from "./contexts/globalState"; //state global
 import { ParallaxProvider } from "react-scroll-parallax";
-// import ScormProvider from "react-scorm-provider";
+import ScormProvider, { withScorm } from "react-scorm-provider";
 
 function App() {
   const [pagesData, setPagesData] = useState(false);
+  const [menuScrolled, setMenuScrolled] = useState(0);
+  const [endPosition, setEndPosition] = useState(false);
+  const [startPage, setStartPage] = useState(0);
+  const [menuPages, setMenuPages] = useState([]);
 
   //checagem se o navegador suporta o userAgentData
   let platform =
@@ -62,13 +66,31 @@ function App() {
     document.title = pagesData.curso.titulo;
 
     return (
-      <GlobalState.Provider value={{ pagesData, setPagesData }}>
-        <ParallaxProvider>
-          <ScreenRoutes pagesData={pagesData} />
-        </ParallaxProvider>
-      </GlobalState.Provider>
+      <ScormProvider
+        version="1.2"
+        debug={process.env.NODE_ENV !== "production"}
+      >
+        <GlobalState.Provider
+          value={{
+            pagesData,
+            setPagesData,
+            menuScrolled,
+            setMenuScrolled,
+            endPosition,
+            setEndPosition,
+            startPage,
+            setStartPage,
+            menuPages,
+            setMenuPages,
+          }}
+        >
+          <ParallaxProvider>
+            <ScreenRoutes pagesData={pagesData} />
+          </ParallaxProvider>
+        </GlobalState.Provider>
+      </ScormProvider>
     );
   }
 }
 
-export default App;
+export default withScorm()(App);

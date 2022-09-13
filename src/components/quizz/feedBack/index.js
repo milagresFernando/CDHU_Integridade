@@ -16,18 +16,13 @@ import ButtonQuizz from "../buttonQuizz";
 //Functions
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
+import scrollTo from "../../../globalFunctions/scrollTo";
 
 function FeedBack(props) {
   const [load, setLoad] = useState(false);
   const [breakResponsive, setBreakResponsive] = useState(false);
 
   const feedBack = useRef(null);
-  const scrollTo = (element) => {
-    window.scrollTo(
-      0,
-      element.current.getBoundingClientRect().top + window.scrollY - 80
-    );
-  };
 
   useEffect(() => {
     if (props.feedBackItems != "") {
@@ -57,7 +52,7 @@ function FeedBack(props) {
 
   useEffect(() => {
     if (props.scrollAnimated && load && props.showFeed) {
-      scrollTo(feedBack);
+      scrollTo(feedBack, 60);
     }
   }, [load, props.showFeed]);
 
@@ -71,7 +66,7 @@ function FeedBack(props) {
   }
 
   function handleTryAgain() {
-    scrollTo(props.refSituacao);
+    scrollTo(props.refSituacao, 60);
     props.setShowFeed(false);
     props.setDisable(false);
     props.answers.forEach((answer, id) => {

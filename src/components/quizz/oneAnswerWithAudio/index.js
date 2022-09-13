@@ -20,6 +20,7 @@ import addZero from "../../../globalFunctions/generalCalcs/addZero";
 import setBreakPoint from "../../../globalFunctions/setBreakPoint";
 import randomArray from "../../../globalFunctions/generalCalcs/randomArray";
 import debounceTimeOut from "../../../globalFunctions/debounceTimeOut";
+import scrollTo from "../../../globalFunctions/scrollTo";
 
 //Imagens
 import IcoPodcast from "../../../screens/assets/images/icoPodcast.svg";
@@ -54,12 +55,6 @@ function OneAnswerWithAudio(props) {
   const [clickNext, setClickNext] = useState(false);
 
   const situacao = useRef(null);
-  const scrollTo = (element) => {
-    window.scrollTo(
-      0,
-      element.current.getBoundingClientRect().top + window.scrollY - 80
-    );
-  };
 
   //executa quando a páginna é carregada.verifica se possui limite de questoes, se sim, busca as questões de forma aleatória, senão, só preenche o state de questões
   useEffect(() => {
@@ -294,7 +289,7 @@ function OneAnswerWithAudio(props) {
     setQuestionCounter(questionCounter + 1);
     setCheckedInitial(setInitialCheckedArray(answers));
     setClickNext(!clickNext);
-    props.options.scrollAnimated && scrollTo(situacao);
+    props.options.scrollAnimated && scrollTo(situacao, 60);
   }
   const audioBlock = load && actualQuestion.audio && (
     <Container className="audioWrapper" key={"audioWrapper"} ref={situacao}>

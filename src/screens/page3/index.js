@@ -1,5 +1,4 @@
 // React Elements/Hooks
-import { Fragment } from "react/cjs/react.production.min";
 import { useState, useEffect } from "react";
 
 // Components
@@ -8,13 +7,10 @@ import Wrapper from "../../components/wrapper";
 import CanaisDenuncia from "./customComponents/canaisDenuncia";
 import CodigoConduta from "./customComponents/codigoConduta";
 import AgoraSuaVez from "./customComponents/agoraSuaVez";
+import LoadPage from "../../components/loadPage";
 
 function Page3() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   useEffect(() => {
     if (temaCor) {
@@ -27,8 +23,7 @@ function Page3() {
   }, [temaCor]);
 
   return (
-    <Fragment>
-      {/* <ProgressPage className="textBar" /> */}
+    <LoadPage>
       <Header setTemaCor={setTemaCor} pageAtual={3} className="" />
 
       <Wrapper className="">
@@ -36,7 +31,7 @@ function Page3() {
         <CanaisDenuncia sectionTitle="CANAIS DE DENÚNCIA" />
         <AgoraSuaVez sectionTitle="AGORA É SUA VEZ!" />
       </Wrapper>
-    </Fragment>
+    </LoadPage>
   );
 }
 

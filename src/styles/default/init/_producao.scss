@@ -21,7 +21,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
   }
 }
 
@@ -37,7 +37,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
 }
 .relative {
   position: relative;

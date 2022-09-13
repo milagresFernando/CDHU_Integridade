@@ -10,13 +10,11 @@ import OperacoesDocumentos from "./customComponents/operacoesDocumentos";
 import AplicacaoLGPD from "./customComponents/aplicacaoLGPD";
 import PapeisEnvolvidos from "./customComponents/papeisEnvolvidos";
 import ParallaxGrafismoLinhaEnrolada2 from "../scrollParallaxSvg/parallaxGrafismoLinhaEnrolada2";
+import LoadPage from "../../components/loadPage";
 
 function Page4() {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   useEffect(() => {
     if (temaCor) {
       document.body.classList.value.search("ios") !== -1
@@ -28,8 +26,7 @@ function Page4() {
   }, [temaCor]);
 
   return (
-    <Fragment>
-      {/* <ProgressPage className="textBar" /> */}
+    <LoadPage>
       <Header setTemaCor={setTemaCor} pageAtual={4} className="" />
 
       <Wrapper className="">
@@ -39,7 +36,7 @@ function Page4() {
         <OperacoesDocumentos sectionTitle="OPERAÇÕES E DOCUMENTOS" />
         <AgoraSuaVez sectionTitle="AGORA É SUA VEZ!" />
       </Wrapper>
-    </Fragment>
+    </LoadPage>
   );
 }
 
