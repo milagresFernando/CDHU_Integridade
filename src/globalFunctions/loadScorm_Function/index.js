@@ -10,7 +10,7 @@ function loadScorm_Function(props) {
   } else {
     strData = window.sessionStorage.getItem("dataCurso");
   }
-  console.log("Load Data: ", strData);
+  // console.log("Load Data: ", strData);
 
   if (strData != undefined || strData != null) {
     data = JSON.parse(strData);

@@ -3,10 +3,10 @@ function verificaBottom() {
   let scrollPosition = document.documentElement.scrollHeight;
 
   if (((scrollHeight - scrollPosition) / scrollHeight).toFixed(2) >= 0) {
-    console.log("TRUE");
+    // console.log("TRUE");
     return true;
   } else {
-    console.log("FALSE");
+    // console.log("FALSE");
     return false;
   }
 }

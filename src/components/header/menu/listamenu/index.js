@@ -178,7 +178,7 @@ function ListaMenu(props) {
             setScormSaved(true);
             isScorm && props.sco.setStatus("completed");
 
-            console.log("Completed");
+            // console.log("Completed");
             setTravaComplete(true);
           }
         }
