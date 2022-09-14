@@ -9,7 +9,6 @@ import verificaBottom from "../../globalFunctions/verificaBottom";
 function LoadPage(props) {
   const { endPosition, setEndPosition } = useContext(GlobalState);
   const [load, setLoad] = useState(false);
-  const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
 
   const resetWindowScrollPosition = useCallback(
     () => window.scrollTo(0, 0),

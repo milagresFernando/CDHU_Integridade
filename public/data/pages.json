@@ -3,7 +3,7 @@
 		"modulo": "",
         "titulo": "CDHU Integridade",
 		"mode" : "",
-		"scorm" : true,
+		"scorm" : false,
 		"loader": false,
 		"template": "custom",
 		"menu": "",
