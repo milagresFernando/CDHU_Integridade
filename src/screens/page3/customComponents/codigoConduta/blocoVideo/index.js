@@ -41,7 +41,7 @@ function BlocoVideo(props) {
       className: "mb-0",
       content: (
         <Fragment>
-          Clique no play para conhecer o{" "}
+          <strong>Clique no play</strong> para conhecer o{" "}
           <strong>Código de Conduta e Integridade</strong> da CDHU:
         </Fragment>
       ),

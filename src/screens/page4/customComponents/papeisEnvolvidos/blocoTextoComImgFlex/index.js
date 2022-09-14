@@ -20,8 +20,8 @@ function BlocoTextoComImgFlex() {
       className: "corTextoClaro",
       content: (
         <Fragment>
-          Na LGPD, são apresentados os seguintes papéis envolvidos no tratamento
-          de dados:
+          Na LGPD, são apresentados os seguintes papéis envolvidos no{" "}
+          <strong>tratamento de dados:</strong>
         </Fragment>
       ),
     },

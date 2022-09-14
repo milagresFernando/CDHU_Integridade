@@ -93,7 +93,11 @@ function ListaMenu(props) {
               } else if (id === props.itemVisited) {
                 currentClass = "active";
               } else {
-                currentClass = "travado";
+                if (isScorm) {
+                  currentClass = "travado";
+                } else {
+                  currentClass = "";
+                }
               }
 
               return (

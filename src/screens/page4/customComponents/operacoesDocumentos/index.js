@@ -10,6 +10,7 @@ import ParallaxGrafismoBolaAzulVideo from "../../../scrollParallaxSvg/parallaxGr
 import ParallaxGrafismoBolaRoxo from "../../../scrollParallaxSvg/parallaxGrafismoBolaRoxo";
 import BlocoAccordionUmPorVez from "./blocoAccordionUmPorVez";
 import BlocoQuatroOperacoes from "./blocoQuatroOperacoes";
+import BlocoSaibaMais from "./blocoSaibaMais ";
 
 //Imagens
 
@@ -38,6 +39,7 @@ function OperacoesDocumentos(props) {
       </div>
       <Container>
         <BlocoAccordionUmPorVez />
+        <BlocoSaibaMais />
       </Container>
     </section>
   );

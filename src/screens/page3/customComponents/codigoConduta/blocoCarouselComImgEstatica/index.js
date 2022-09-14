@@ -4,11 +4,25 @@ import { Col, Image, Row } from "react-bootstrap";
 
 // Components
 import CarouselWithoutImg from "../../../../../components/carouselWithoutImg";
+import TextBlock from "../../../../../components/texts/text_block";
 
 //Imagens
 import ParallaxIlustraCarousel from "../../../../scrollParallaxSvg/parallaxIlustraCarousel";
 
 function BlocoCarouselComImgEstatica() {
+  const textsBlock1 = [
+    {
+      tagElement: "p",
+      className: "mt-5",
+      content: (
+        <Fragment>
+          Além disso, tanto a <strong>atuação</strong> quanto as{" "}
+          <strong>decisões</strong> da CDHU são determinadas com fundamento nos
+          seguintes <strong>valores:</strong>
+        </Fragment>
+      ),
+    },
+  ];
   const carouselItens = [
     {
       contents: {
@@ -121,6 +135,9 @@ function BlocoCarouselComImgEstatica() {
   return (
     <Fragment>
       <Row className="justify-content-center mb-md-5 pb-lg-5 pb-md-3 mb-5">
+        <Col lg="10">
+          <TextBlock textsBlock={textsBlock1} />
+        </Col>
         <Col lg="5" className="order-lg-1 order-2">
           <CarouselWithoutImg
             carouselItens={carouselItens}

@@ -1,4 +1,4 @@
-@import "src/App.scss";
+@import "src/styles/default/_init.scss";
 
 @each $tema, $cor in $cores {
   $cor-texto: map-get($cor, cor-texto);
@@ -44,28 +44,8 @@
           @include transition(all 500ms ease-in);
           .container,
           .row,
-          .col,
-          .conteudoMenu {
+          .col {
             height: 100%;
-          }
-          .conteudoMenu {
-            position: relative;
-            padding-top: 40px;
-            padding-bottom: 40px;
-
-            &::before {
-              background: $cor6;
-              content: "";
-              position: absolute;
-              width: 100vw;
-              height: 100%;
-              left: 50%;
-              top: 0;
-              z-index: 10;
-
-              @include transition(all 0.6s);
-              @include transform(translateX(-50%));
-            }
           }
 
           .menuBG {
@@ -74,11 +54,36 @@
             left: 0;
             width: 100vw;
             height: 0;
-            background: rgba(#000, 0.65);
-            z-index: -1;
+            z-index: 0;
             opacity: 0;
 
             @include transition(all 500ms ease-in);
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 50%;
+              top: 0;
+              z-index: 10;
+              background: rgba(#000, 0.65);
+              @include transition(all 0.6s);
+              @include transform(translateX(-50%));
+              z-index: -2;
+            }
+            &::before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              left: 50%;
+              top: 60px;
+              z-index: 10;
+              background: $cor6;
+              @include transition(all 0.6s);
+              @include transform(translateX(-50%));
+              z-index: -1;
+            }
           }
 
           // Abre e Fecha Menu
@@ -94,6 +99,11 @@
 
             //.conteudoMenu { height: 100vh; }
           }
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        &::after {
+          height: calc(100% + 80px);
         }
       }
     }

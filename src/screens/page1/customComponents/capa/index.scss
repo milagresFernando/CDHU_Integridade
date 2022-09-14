@@ -1,5 +1,6 @@
-@import "src/App.scss";
+@import "src/styles/default/_init.scss";
 .capa {
+  margin-top: 60px;
   &.p-capa {
     padding-top: $altura-header;
   }

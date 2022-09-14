@@ -41,7 +41,7 @@ function BlocoVideo(props) {
       className: "mb-0",
       content: (
         <Fragment>
-          Clique no play para conhecer a{" "}
+          <strong>Clique no play</strong> para conhecer a{" "}
           <strong>Lei Geral de Proteção de Dados (LGPD)</strong>:
         </Fragment>
       ),

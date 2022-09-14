@@ -38,7 +38,8 @@ function BlocoListas() {
       content: (
         <Fragment>
           MALDONADO, Viviane Nobrega (coord.). LGPD – Lei Geral de Proteção de
-          Dados Pessoais. Manual de Implementação. 2. ed. Revista dos Tribunais.
+          Dados Pessoais. Manual de Implementação. 2. ed.{" "}
+          <strong>Revista dos Tribunais.</strong>
           <strong></strong> Ed. Thomson Reuters, 2021.
         </Fragment>
       ),
