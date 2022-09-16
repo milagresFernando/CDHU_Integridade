@@ -18,7 +18,7 @@ function ProgramaIntegridade(props) {
           <Col lg="10">
             <Title
               typeH="3"
-              className="titleSection mb-3"
+              className="titleSection mb-5"
               content={<Fragment>{props.sectionTitle}</Fragment>}
             >
               <span className="ballTitle"></span>

@@ -8,6 +8,8 @@ import OneAnswer from "../../../../../components/quizz/oneAnswer";
 //Imagens
 import imgAnswer1 from "../../../../assets/images/icoQuestionQuizz.svg";
 import imgFeed from "../../../../assets/images/icoFeedPositivo.svg";
+import BlocoFinalizou from "./blocoFinalizou";
+import BotoesNavegacao from "./botoesNavegacao";
 
 function BlocoQuizzUnicaResposta(props) {
   // caso deseje importar uma imagem sem usar os imports acima, utilize a funcão require(caminho da imagem), direto no array de questions
@@ -21,7 +23,7 @@ function BlocoQuizzUnicaResposta(props) {
     breakContent: "sm",
     randomQuestions: false,
     randomAnswers: false,
-    // maxQuestions: 3,
+    maxQuestions: 1,
     iconFeed: false,
     scrollAnimated: true,
   };
@@ -582,12 +584,20 @@ function BlocoQuizzUnicaResposta(props) {
       },
     },
   ];
+  const finalFeedComponents = (
+    <Container>
+      <BlocoFinalizou />
+      <BotoesNavegacao />
+    </Container>
+  );
+  const finalFeed = [{ type: "components" }, finalFeedComponents];
 
   return (
     <Fragment>
       <OneAnswer
         options={options}
         questions={questions}
+        finalFeed={finalFeed}
         setCorrectCounter={setCorrectCounter}
         setTotalQuestions={setTotalQuestions}
         correctCounter={correctCounter}

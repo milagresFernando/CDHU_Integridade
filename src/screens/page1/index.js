@@ -8,7 +8,7 @@ import Introducao from "./customComponents/introducao";
 import Capa from "./customComponents/capa";
 import LoadPage from "../../components/loadPage";
 
-function Page1() {
+function Page1(props) {
   const [temaCor, setTemaCor] = useState("custom"); //seta a cor do tema no body. Passar uma classe aqui caso queira iniciar com um tema
 
   useEffect(() => {

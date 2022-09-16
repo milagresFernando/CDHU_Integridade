@@ -3,8 +3,8 @@ import { useState, Fragment } from "react";
 
 // Components
 import { Container, Row, Col, Image } from "react-bootstrap";
-import TextBlock from "../../../../../components/texts/text_block";
-import iconeMenu from "../../../../assets/images/iconeMenu.svg";
+import TextBlock from "../../../../../../components/texts/text_block";
+import iconeMenu from "../../../../../assets/images/iconeMenu.svg";
 
 //Imagens
 
@@ -15,7 +15,7 @@ function BlocoFinalizou(props) {
       className: "",
       content: (
         <Fragment>
-          Você finalizou o conteúdo sobre o Programa de Integridade.
+          Você finalizou o conteúdo sobre a aplicação da LGPD.
         </Fragment>
       ),
     },

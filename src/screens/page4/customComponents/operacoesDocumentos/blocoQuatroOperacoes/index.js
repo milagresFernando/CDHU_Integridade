@@ -129,8 +129,8 @@ function BlocoQuatroOperacoes(props) {
       content: (
         <Fragment>
           Utilização de <strong>meios técnicos</strong> razoáveis e disponíveis
-          no momento do <strong>tratamento</strong>, por meio meio dos quais um
-          dado <strong>perde a possibilidade de associação,</strong> direta ou
+          no momento do <strong>tratamento</strong>, por meio dos quais um dado{" "}
+          <strong>perde a possibilidade de associação,</strong> direta ou
           indireta, a um indivíduo.
         </Fragment>
       ),

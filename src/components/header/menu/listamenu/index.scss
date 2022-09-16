@@ -52,7 +52,7 @@
             left: 50%;
             top: 0;
             z-index: 13;
-
+            pointer-events: none;
             @include transition(all 0.3s ease);
             @include transform(translateX(-50%));
           }

@@ -30,6 +30,8 @@ import transcricao4 from "../../../../assets/audio/page3_audio4.pdf";
 import transcricaoFeed4 from "../../../../assets/audio/page3_feed_audio4.pdf";
 
 import ParallaxGrafismoBolaRabisco from "../../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco";
+import BlocoFinalizou from "./blocoFinalizou";
+import BotoesNavegacao from "./botoesNavegacao";
 
 function BlocoQuizzUnicaResposta(props) {
   // caso deseje importar uma imagem sem usar os imports acima, utilize a funcão require(caminho da imagem), direto no array de questions
@@ -47,6 +49,7 @@ function BlocoQuizzUnicaResposta(props) {
     iconFeed: false,
     scrollAnimated: true,
   };
+
   const questions = [
     {
       audio: {
@@ -75,7 +78,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE IGOR E KAIO.",
+          titleContent: "CONVERSA ENTRE IGOR E KAIO",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -201,7 +204,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE IGOR E KAIO.",
+          titleContent: "CONVERSA ENTRE IGOR E KAIO",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -253,7 +256,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE EUNICE E LEANDRO.",
+          titleContent: "CONVERSA ENTRE EUNICE E LEANDRO",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -383,7 +386,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE	EUNICE E LEANDRO.",
+          titleContent: "CONVERSA ENTRE	EUNICE E LEANDRO",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -416,8 +419,8 @@ function BlocoQuizzUnicaResposta(props) {
             content: (
               <Fragment>
                 <strong>
-                  Olívia é responsável pelos contratos da CDHU com fornecedores
-                  e parceiros. Certo dia, ela encontrou sua amiga Joana no
+                  Olivia é responsável pelos contratos da CDHU com fornecedores
+                  e parceiros. Certo dia, ela encontrou sua amiga João no
                   corredor e as duas conversaram rapidamente.
                 </strong>
               </Fragment>
@@ -429,14 +432,14 @@ function BlocoQuizzUnicaResposta(props) {
             content: (
               <Fragment>
                 <strong>Clique no play</strong> para ouvir a conversa entre
-                Olivia e Joana.
+                Olivia e João.
               </Fragment>
             ),
           },
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE OLIVIA E JOANA.",
+          titleContent: "CONVERSA ENTRE OLIVIA E João",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -568,7 +571,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE OLIVIA E JOANA.",
+          titleContent: "CONVERSA ENTRE OLIVIA E João",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -582,7 +585,7 @@ function BlocoQuizzUnicaResposta(props) {
             content: (
               <Fragment>
                 <strong>
-                  Assim como Olivia e Joana, de que outras maneiras você também
+                  Assim como Olivia e João, de que outras maneiras você também
                   pode contribuir com a integridade na CDHU em seu dia a dia?
                 </strong>
               </Fragment>
@@ -621,7 +624,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE FLORA E TALES.",
+          titleContent: "CONVERSA ENTRE FLORA E TALES",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -749,7 +752,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE FLORA E TALES.",
+          titleContent: "CONVERSA ENTRE FLORA E TALES",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -773,6 +776,13 @@ function BlocoQuizzUnicaResposta(props) {
       },
     },
   ];
+  const finalFeedComponents = (
+    <Container>
+      <BlocoFinalizou />
+      <BotoesNavegacao />
+    </Container>
+  );
+  const finalFeed = [{ type: "components" }, finalFeedComponents];
 
   return (
     <div className="relative overflow">
@@ -780,6 +790,7 @@ function BlocoQuizzUnicaResposta(props) {
       <OneAnswerWithAudio
         options={options}
         questions={questions}
+        finalFeed={finalFeed}
         setCorrectCounter={setCorrectCounter}
         setTotalQuestions={setTotalQuestions}
         correctCounter={correctCounter}

@@ -3,7 +3,7 @@ import { useState, Fragment } from "react";
 
 // Components
 import { Container, Row, Col } from "react-bootstrap";
-import NextScreen from "../../../../../../components/buttons/nextScreen";
+import NextScreen from "../../../../../../../components/buttons/nextScreen";
 
 //Imagens
 

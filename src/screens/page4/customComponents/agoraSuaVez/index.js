@@ -6,8 +6,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import Title from "../../../../components/texts/title";
 import ParallaxOndas from "../../../scrollParallaxSvg/parallaxOndas";
 import BlocoQuizzUnicaResposta from "./blocoQuizzUnicaResposta";
-import BlocoFinalizou from "./blocoFinalizou";
-import BotoesNavegacao from "./botoesNavegacao";
 
 //Imagens
 
@@ -28,9 +26,6 @@ function AgoraSuaVez(props) {
           </Col>
         </Row>
         <BlocoQuizzUnicaResposta />
-
-        <BlocoFinalizou />
-        <BotoesNavegacao />
       </Container>
     </section>
   );

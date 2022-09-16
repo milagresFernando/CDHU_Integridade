@@ -61,8 +61,11 @@ function BlocoVideo(props) {
       className: "mb-5",
       content: (
         <Fragment>
-          Para começar, clique no <em>play</em> e conheça{" "}
-          <strong>o que é</strong> integridade:
+          Para começar,{" "}
+          <strong>
+            clique no <em>play</em>
+          </strong>{" "}
+          e conheça <strong>o que é</strong> integridade:
         </Fragment>
       ),
     },

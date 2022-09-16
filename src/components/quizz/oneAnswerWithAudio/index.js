@@ -216,7 +216,11 @@ function OneAnswerWithAudio(props) {
           props.setTotalQuestions(addZero(questions.length));
         }
 
-        setFinalFeedBackItems(props.finalFeed[0]);
+        if (props.finalFeed[0].type == "components") {
+          setFinalFeedBackItems(props.finalFeed[1]);
+        } else {
+          setFinalFeedBackItems(props.finalFeed[0]);
+        }
       }
     }
   }, [finalFeedBackItems, showFinalFeed]);
@@ -578,15 +582,20 @@ function OneAnswerWithAudio(props) {
               </Col>
             </Row>
 
-            {/* <FeedBack
-            typeFeed={"finalFeed"}
-            showFeed={showFinalFeed}
-            feedBackItems={finalFeedBackItems}
-            breakContent={props.options.breakContent}
-            showFinalFeed={showFinalFeed}
-            isLastQuestion={isLastQuestion}
-            totalQuestions={questions.length}
-          /> */}
+            {typeFeed != "wrong" &&
+              (props.finalFeed[0].type == "components" ? (
+                finalFeedBackItems
+              ) : (
+                <FeedBack
+                  typeFeed={"finalFeed"}
+                  showFeed={showFinalFeed}
+                  feedBackItems={finalFeedBackItems}
+                  breakContent={props.options.breakContent}
+                  showFinalFeed={showFinalFeed}
+                  isLastQuestion={isLastQuestion}
+                  totalQuestions={questions.length}
+                />
+              ))}
 
             {counterBar}
           </Container>

@@ -13,23 +13,28 @@
 			"telas":[
 								{					
 					"route": "introducao",
-					"titulo": "Introdução"
+					"titulo": "Introdução",
+					"trava" : false
 				},
 				{					
 					"route": "programa-de-integridade",
-					"titulo": "Programa de Integridade"
+					"titulo": "Programa de Integridade",
+					"trava" : false
 				},
 				{					
 					"route": "codigo-de-conduta-e-integridade",
-					"titulo": "Código de Conduta e Integridade"
+					"titulo": "Código de Conduta e Integridade",
+					"trava" : true
 				},
 				{					
 					"route": "lgpd",
-					"titulo": "LGPD"
+					"titulo": "LGPD",
+					"trava" : true
 				},
 				{					
 					"route": "referencias",
-					"titulo": "Referências bibliográficas"
+					"titulo": "Referências bibliográficas",
+					"trava" : false
 				}
 				
 			]

@@ -52,7 +52,9 @@ function FeedBack(props) {
 
   useEffect(() => {
     if (props.scrollAnimated && load && props.showFeed) {
-      scrollTo(feedBack, 60);
+      setTimeout(() => {
+        scrollTo(feedBack, 60);
+      }, 100);
     }
   }, [load, props.showFeed]);
 

@@ -16,6 +16,9 @@ function ScreenRoutes(props) {
   const { pagesData, setPagesData } = useContext(GlobalState);
   const { startPage, setStartPage } = useContext(GlobalState);
   const { menuPages, setMenuPages } = useContext(GlobalState);
+  const { changeRoute, setChangeRoute } = useContext(GlobalState);
+  const { liberaScorm, setLiberaScorm } = useContext(GlobalState);
+
   const [pagesAtual, setPagesAtual] = useState();
   const [allPages, setAllPages] = useState([]);
   const [checkConnect, setCheckConnect] = useState(false);
@@ -54,9 +57,33 @@ function ScreenRoutes(props) {
       recebeLoad = loadScorm_Function(props.sco);
       setMenuPages(recebeLoad.menu);
       setStartPage(recebeLoad.paginaInicial);
+
+      // console.log(pagesData.curso.conteudo.telas[4].trava, startPage);
+      // if (
+      //   pagesData.curso.conteudo.telas[recebeLoad.paginaInicial - 1].trava ==
+      //   true
+      // ) {
+      //   console.log("entro");
+      //   setLiberaScorm(false);
+      // }
+
       setCheckLoaded(true);
     }
   }, [checkConnect]);
+
+  useEffect(() => {
+    const routePathAtual = window.location.href;
+    const routePathAtualName = routePathAtual.substring(
+      routePathAtual.lastIndexOf("/") + 1
+    );
+    pagesData.curso.conteudo.telas.forEach((tela, id) => {
+      if (tela.route == routePathAtualName) {
+        console.log(tela.trava);
+      }
+    });
+    // console.log(pageAtual);
+    // console.log(pagesData.curso.conteudo.telas[pageAtual].trava);
+  }, [changeRoute]);
 
   useEffect(() => {
     if (checkLoaded) {

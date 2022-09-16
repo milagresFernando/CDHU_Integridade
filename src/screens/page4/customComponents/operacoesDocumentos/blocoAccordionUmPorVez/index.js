@@ -57,7 +57,7 @@ function BlocoAccordionUmPorVez() {
               <Fragment>
                 Realização do tratamento para{" "}
                 <strong>
-                  propósitos legítimos, específicos,explícitos e informados ao
+                  propósitos legítimos, específicos, explícitos e informados ao
                   titular,
                 </strong>{" "}
                 sem possibilidade de tratamento posterior de forma incompatível

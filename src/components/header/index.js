@@ -18,6 +18,8 @@ function Header(props) {
   const [headerStyle, setHeaderStyle] = useState(headerInitialPos);
   const [showHeader, setShowHeader] = useState(true);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [isOnepage, setIsOnepage] = useState(false);
+  const [load, setLoad] = useState(false);
 
   const headerRef = useRef(null);
   const { pagesData, setPagesData } = useContext(GlobalState);
@@ -33,6 +35,17 @@ function Header(props) {
       };
     }
   }, []);
+
+  useEffect(() => {
+    if (pagesData.curso.mode == "onepage") {
+      setStartPage(props.pageAtual - 1);
+      setIsOnepage(true);
+    } else {
+      if (props.pageAtual - 1 > startPage) setStartPage(props.pageAtual - 1);
+    }
+
+    setLoad(true);
+  }, [startPage]);
 
   useEffect(() => {
     if (props.hideOnScroll) {

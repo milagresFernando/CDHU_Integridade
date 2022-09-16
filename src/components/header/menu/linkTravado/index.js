@@ -1,11 +1,31 @@
 // React Elements/Hooks
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import GlobalState from "../../../../contexts/globalState";
 
 function LinkTravado(props) {
+  const { pagesData, setPagesData } = useContext(GlobalState);
+
+  const location = useLocation();
+  const actualPath = location.pathname;
+  const navigate = useNavigate();
+
+  let idActualPage;
+  pagesData.curso.conteudo.telas.forEach((element, id) => {
+    if (element.route == actualPath.slice(1)) {
+      idActualPage = id;
+    }
+  });
+
+  const { changeRoute, setChangeRoute } = useContext(GlobalState);
   if (props.trava === "travado") {
     return <span>{props.content}</span>;
   } else {
-    return <Link to={`/${props.link}`}>{props.content}</Link>;
+    return (
+      <Link to={`/${props.link}`} onClick={() => setChangeRoute(!changeRoute)}>
+        {props.content}
+      </Link>
+    );
   }
 }
 

@@ -50,11 +50,6 @@ function AgoraSuaVez(props) {
       <ParallaxGrafismoLinhaEnrolada />
 
       <BlocoQuizzUnicaResposta />
-
-      <Container>
-        <BlocoFinalizou />
-        <BotoesNavegacao />
-      </Container>
     </section>
   );
 }

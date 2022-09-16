@@ -12,8 +12,11 @@ import ScormProvider, { withScorm } from "react-scorm-provider";
 
 function App() {
   const [pagesData, setPagesData] = useState(false);
+  const [liberaScorm, setLiberaScorm] = useState(true);
   const [menuScrolled, setMenuScrolled] = useState(0);
+
   const [endPosition, setEndPosition] = useState(false);
+  const [changeRoute, setChangeRoute] = useState(false);
   const [startPage, setStartPage] = useState(0);
   const [menuPages, setMenuPages] = useState([]);
 
@@ -82,6 +85,10 @@ function App() {
             setStartPage,
             menuPages,
             setMenuPages,
+            liberaScorm,
+            setLiberaScorm,
+            changeRoute,
+            setChangeRoute,
           }}
         >
           <ParallaxProvider>

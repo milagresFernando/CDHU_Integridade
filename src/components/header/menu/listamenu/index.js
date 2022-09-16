@@ -16,6 +16,7 @@ function ListaMenu(props) {
   let currentClass = "";
   const [dataChanged, setDataChanged] = useState(false);
   const [travaComplete, setTravaComplete] = useState(false);
+  const [travaScorm, setTravaScorm] = useState(false);
   const [scormSaved, setScormSaved] = useState(false);
   // let newData = [];
   const [load, setLoad] = useState(false);
@@ -27,8 +28,14 @@ function ListaMenu(props) {
   const [newSuspendData, setNewSuspendData] = useState([]);
 
   const { menuPages, setMenuPages } = useContext(GlobalState);
+  const { pagesData, setPagesData } = useContext(GlobalState);
+  const { liberaScorm, setLiberaScorm } = useContext(GlobalState);
 
   useEffect(() => {
+    // if (pagesData.curso.conteudo.telas[props.itemVisited].trava == true) {
+    //   setLiberaScorm(false);
+    // }
+
     if (menuPages.length === 0) {
       setNewSuspendData(
         props.listItens.map(() => {
@@ -39,11 +46,12 @@ function ListaMenu(props) {
       setNewSuspendData(menuPages);
     }
 
+    setTravaScorm(pagesData.curso.conteudo.telas[props.itemVisited].trava);
     setLoad(true);
   }, [isScorm, menuPages, props.listItens]);
 
   useEffect(() => {
-    if (load && newSuspendData !== "") {
+    if (load && newSuspendData.length !== 0) {
       if (props.tipoMenu === "onepage") {
         setListItens(
           props.listItens.map((list, id) => {

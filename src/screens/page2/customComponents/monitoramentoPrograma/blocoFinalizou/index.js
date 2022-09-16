@@ -15,7 +15,7 @@ function BlocoFinalizou(props) {
       className: "",
       content: (
         <Fragment>
-          Você finalizou o conteúdo sobre o Código de Conduta e Integridade.
+          Você finalizou o conteúdo sobre o Programa de Integridade.
         </Fragment>
       ),
     },
