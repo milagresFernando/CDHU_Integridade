@@ -19,8 +19,9 @@ function LoadPage(props) {
   useEffect(() => {
     if (load) {
       let hasVScroll =
-        document.body.scrollHeight.toFixed() >
-        document.body.clientHeight.toFixed();
+        document.body.scrollHeight >
+        document.body.clientHeight;
+
       if (!hasVScroll) {
         setEndPosition(true);
       }
