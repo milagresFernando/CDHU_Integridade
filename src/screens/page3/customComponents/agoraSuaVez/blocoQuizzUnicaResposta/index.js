@@ -440,7 +440,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE OLIVIA E João",
+          titleContent: "CONVERSA ENTRE OLIVIA E JOÃO",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -572,7 +572,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE OLIVIA E João",
+          titleContent: "CONVERSA ENTRE OLIVIA E JOÃO",
           tagTitle: "5",
           titleClassName: "",
         },

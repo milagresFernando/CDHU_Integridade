@@ -27,7 +27,7 @@ function AplicacaoLGPD(props) {
         <BlocoVideo typeGrafismo={3} />
       </Container>
       <ParallaxOndas type="azul" />
-      <Container className="spacingContainer">
+      <Container className="spacingContainer waves">
         <BlocoTextoComImgFlex />
       </Container>
     </section>

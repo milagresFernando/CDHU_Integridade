@@ -29,7 +29,7 @@ function CodigoConduta(props) {
         <BlocoVideo typeGrafismo={3} />
       </Container>
       <ParallaxOndas type="roxo" />
-      <Container className="spacingContainer">
+      <Container className="spacingContainer waves">
         <BlocoListaComImgFlex />
         <BlocoCarouselComImgEstatica />
       </Container>

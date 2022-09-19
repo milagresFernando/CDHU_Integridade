@@ -63,7 +63,7 @@ export const VideoJS = (props) => {
         "durationDisplay",
         "volumePanel",
         "qualitySelector",
-        "subsCapsButton",
+        // "subsCapsButton",
         "fullscreenToggle",
         ...controlBarItems,
       ],
