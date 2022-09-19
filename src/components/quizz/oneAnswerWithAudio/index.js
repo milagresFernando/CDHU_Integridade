@@ -2,7 +2,7 @@
 import "./index.scss";
 
 // React Elements/Hooks
-import { useState, Fragment, useEffect, useRef } from "react";
+import { useState, Fragment, useEffect, useRef, useContext } from "react";
 
 // Components
 import { Container, Row, Col, Form, Image } from "react-bootstrap";
@@ -14,6 +14,7 @@ import FeedBack from "../feedBack";
 import ButtonQuizz from "../buttonQuizz";
 import CounterBar from "../counterBar";
 import AudioJs from "../../audio";
+import GlobalState from "../../../contexts/globalState";
 
 // Functions
 import addZero from "../../../globalFunctions/generalCalcs/addZero";
@@ -53,6 +54,7 @@ function OneAnswerWithAudio(props) {
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [checkedInitial, setCheckedInitial] = useState([]);
   const [clickNext, setClickNext] = useState(false);
+  const { liberaScorm, setLiberaScorm } = useContext(GlobalState);
 
   const situacao = useRef(null);
 
@@ -204,8 +206,11 @@ function OneAnswerWithAudio(props) {
   useEffect(() => {
     if (questionCounter == questions.length) {
       setIsLastQuestion(true);
+      if (typeFeed != "wrong") {
+        setLiberaScorm(false);
+      }
     }
-  }, [questions, questionCounter]);
+  }, [questions, questionCounter, typeFeed]);
 
   //seta o feed final e ajusta os contadores desse feed
   useEffect(() => {
@@ -251,6 +256,7 @@ function OneAnswerWithAudio(props) {
       answered == "correct" && setCorrectCounter(correctCounter + 1);
 
       setTypeFeed(answered);
+
       const feedBack = actualQuestion.feedbacks[answered];
 
       setFeedBackItems(feedBack);
@@ -283,6 +289,7 @@ function OneAnswerWithAudio(props) {
       setShowButtonNext(true);
     } else {
       setShowFinalFeed(true);
+      // setLiberaScorm(false);
     }
   }
   function handleNext() {

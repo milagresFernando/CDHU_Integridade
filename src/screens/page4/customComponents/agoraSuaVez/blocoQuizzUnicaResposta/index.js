@@ -23,7 +23,7 @@ function BlocoQuizzUnicaResposta(props) {
     breakContent: "sm",
     randomQuestions: false,
     randomAnswers: false,
-    maxQuestions: 1,
+    // maxQuestions: 1,
     iconFeed: false,
     scrollAnimated: true,
   };

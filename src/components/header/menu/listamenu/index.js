@@ -146,7 +146,7 @@ function ListaMenu(props) {
           setEndScroll(true);
         }
       } else {
-        if (props.bottomReached && !endScroll) {
+        if (props.bottomReached && !endScroll && !liberaScorm) {
           let newData_Items = [...newSuspendData];
           let newData_fromItem = newData_Items[props.itemVisited];
           newData_fromItem = 1;
@@ -181,16 +181,20 @@ function ListaMenu(props) {
               setMenuPages(newData_Items);
               setDataChanged(true);
             } else {
-              // console.log("Menu: ", menuPages);
+              //   console.log("Menu: ", menuPages);
               setScormSaved(true);
               setEndScroll(true);
             }
-          } else if (newCounter === newData_Items.length && !travaComplete) {
+          } else if (
+            newCounter === newData_Items.length &&
+            !travaComplete &&
+            !liberaScorm
+          ) {
             setMenuPages(newData_Items);
             setScormSaved(true);
             isScorm && props.sco.setStatus("completed");
 
-            // console.log("Completed");
+            //console.log("Completed");
             setTravaComplete(true);
           }
         }
@@ -203,6 +207,7 @@ function ListaMenu(props) {
     endScroll,
     newSuspendData,
     travaComplete,
+    liberaScorm,
   ]);
 
   if (props.tipoMenu === "onepage") {

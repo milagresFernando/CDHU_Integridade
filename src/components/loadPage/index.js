@@ -8,12 +8,24 @@ import verificaBottom from "../../globalFunctions/verificaBottom";
 
 function LoadPage(props) {
   const { endPosition, setEndPosition } = useContext(GlobalState);
+  const { liberaScorm, setLiberaScorm } = useContext(GlobalState);
   const [load, setLoad] = useState(false);
 
   const resetWindowScrollPosition = useCallback(
     () => window.scrollTo(0, 0),
     []
   );
+
+  useEffect(() => {
+    if (load) {
+      let hasVScroll =
+        document.body.scrollHeight.toFixed() >
+        document.body.clientHeight.toFixed();
+      if (!hasVScroll) {
+        setEndPosition(true);
+      }
+    }
+  }, [load]);
 
   useEffect(() => {
     window.onbeforeunload = function () {
@@ -35,11 +47,11 @@ function LoadPage(props) {
         window.removeEventListener("scroll", scrollEnd);
       };
     }
-  }, [load, endPosition, document.body.scrollHeight]);
+  }, [load, endPosition, document.body.scrollHeight, liberaScorm]);
 
   function scrollEnd() {
     let recebePosition = verificaBottom();
-    if (recebePosition) {
+    if (recebePosition && !liberaScorm) {
       setEndPosition(true);
     }
   }

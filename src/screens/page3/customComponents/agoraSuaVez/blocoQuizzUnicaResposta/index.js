@@ -39,13 +39,14 @@ function BlocoQuizzUnicaResposta(props) {
 
   const [correctCounter, setCorrectCounter] = useState(0);
   const [totalQuestions, setTotalQuestions] = useState(0);
+  // const { liberaScorm, setLiberaScorm } = useContext(GlobalState);
 
   const options = {
     answersType: "upper-alpha",
     breakContent: "sm",
     randomQuestions: false,
     randomAnswers: false,
-    // maxQuestions: 3,
+    // maxQuestions: 1,
     iconFeed: false,
     scrollAnimated: true,
   };

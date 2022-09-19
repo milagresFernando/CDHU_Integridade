@@ -12,7 +12,7 @@ import ScormProvider, { withScorm } from "react-scorm-provider";
 
 function App() {
   const [pagesData, setPagesData] = useState(false);
-  const [liberaScorm, setLiberaScorm] = useState(true);
+  const [liberaScorm, setLiberaScorm] = useState(false);
   const [menuScrolled, setMenuScrolled] = useState(0);
 
   const [endPosition, setEndPosition] = useState(false);

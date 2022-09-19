@@ -2,7 +2,7 @@
 import "./index.scss";
 
 // React Elements/Hooks
-import { useState, Fragment, useEffect, useRef } from "react";
+import { useState, Fragment, useEffect, useRef, useContext } from "react";
 
 // Components
 import { Container, Row, Col, Form } from "react-bootstrap";
@@ -12,6 +12,7 @@ import Title from "../../texts/title";
 import FeedBack from "../feedBack";
 import ButtonQuizz from "../buttonQuizz";
 import CounterBar from "../counterBar";
+import GlobalState from "../../../contexts/globalState";
 
 // Functions
 import addZero from "../../../globalFunctions/generalCalcs/addZero";
@@ -47,6 +48,7 @@ function OneAnswer(props) {
   const [isLastQuestion, setIsLastQuestion] = useState(false);
   const [checkedInitial, setCheckedInitial] = useState([]);
   const [clickNext, setClickNext] = useState(false);
+  const { liberaScorm, setLiberaScorm } = useContext(GlobalState);
 
   const situacao = useRef(null);
 
@@ -199,8 +201,11 @@ function OneAnswer(props) {
   useEffect(() => {
     if (questionCounter == questions.length) {
       setIsLastQuestion(true);
+      if (typeFeed != "wrong") {
+        setLiberaScorm(false);
+      }
     }
-  }, [questions, questionCounter]);
+  }, [questions, questionCounter, typeFeed]);
 
   //seta o feed final e ajusta os contadores desse feed
   useEffect(() => {

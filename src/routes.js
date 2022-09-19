@@ -78,7 +78,8 @@ function ScreenRoutes(props) {
     );
     pagesData.curso.conteudo.telas.forEach((tela, id) => {
       if (tela.route == routePathAtualName) {
-        console.log(tela.trava);
+        //console.log(tela.trava);
+        setLiberaScorm(tela.trava);
       }
     });
     // console.log(pageAtual);
@@ -109,7 +110,7 @@ function ScreenRoutes(props) {
           );
         })
       );
-
+      setChangeRoute(!changeRoute);
       setCheckPages(true);
     }
   }, [checkLoaded, menuPages, startPage]);
