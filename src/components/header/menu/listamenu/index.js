@@ -159,13 +159,15 @@ function ListaMenu(props) {
 
           if (newCounter !== newData_Items.length) {
             let newList_Items = [...listItens];
-            
-            if ((props.itemVisited+1) != newList_Items.length) {
-              let newItem_fromList = { ...newList_Items[props.itemVisited + 1] };
+
+            if (props.itemVisited + 1 != newList_Items.length) {
+              let newItem_fromList = {
+                ...newList_Items[props.itemVisited + 1],
+              };
 
               if (!travaComplete) {
                 newItem_fromList = (
-                  <li key={props.itemVisited + 1} className={""}>
+                  <li key={props.itemVisited + 1} className={"routeItem"}>
                     <LinkTravado
                       content={props.listItens[props.itemVisited + 1].content}
                       link={props.listItens[props.itemVisited + 1].route}
@@ -177,7 +179,7 @@ function ListaMenu(props) {
 
               newList_Items[props.itemVisited + 1] = newItem_fromList;
             }
-            
+
             setListItens(newList_Items);
 
             if (!dataChanged) {

@@ -206,11 +206,8 @@ function OneAnswerWithAudio(props) {
   useEffect(() => {
     if (questionCounter == questions.length) {
       setIsLastQuestion(true);
-      if (typeFeed != "wrong") {
-        setLiberaScorm(false);
-      }
     }
-  }, [questions, questionCounter, typeFeed]);
+  }, [questions, questionCounter]);
 
   //seta o feed final e ajusta os contadores desse feed
   useEffect(() => {
@@ -226,9 +223,12 @@ function OneAnswerWithAudio(props) {
         } else {
           setFinalFeedBackItems(props.finalFeed[0]);
         }
+        if (typeFeed != "wrong") {
+          setLiberaScorm(false);
+        }
       }
     }
-  }, [finalFeedBackItems, showFinalFeed]);
+  }, [finalFeedBackItems, showFinalFeed, typeFeed]);
 
   function setInitialCheckedArray(checkedArray) {
     return checkedArray.map(() => false);
