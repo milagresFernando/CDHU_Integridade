@@ -288,6 +288,17 @@
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0.35rem;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              border-bottom: 3px solid #ffcec7;
+            }
+
             &.upper-alpha {
               label {
                 &::after {
@@ -327,8 +338,7 @@
                 flex: 1;
                 align-items: center;
 
-                border-bottom: 3px solid #ffcec7;
-                border-left: 0;
+                border: 3px solid transparent;
                 @include transition(all 0.5s ease);
                 padding: 10px;
 
@@ -390,10 +400,10 @@
               &:disabled {
                 + label {
                   opacity: 0.7;
-                  border: none;
+                  border: 3px solid transparent;
                   // color: #888;
                   background-color: #aaa;
-                  border-color: #888;
+
                   &::before {
                     // background-color: #aaa;
                     // border-color: #888;
