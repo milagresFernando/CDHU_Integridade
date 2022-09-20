@@ -4,7 +4,7 @@ import { Fragment } from "react";
 // Components
 import { Container, Row, Col } from "react-bootstrap";
 
-import Destaques from "../../../../../components/destaques";
+import Destaques from "../../../../components/destaques";
 
 function BlocoSaibaMais() {
   const textsBlock = [
