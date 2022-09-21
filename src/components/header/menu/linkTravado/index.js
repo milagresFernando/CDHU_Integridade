@@ -1,5 +1,5 @@
 // React Elements/Hooks
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import GlobalState from "../../../../contexts/globalState";
 
@@ -8,7 +8,6 @@ function LinkTravado(props) {
 
   const location = useLocation();
   const actualPath = location.pathname;
-  const navigate = useNavigate();
 
   let idActualPage;
   pagesData.curso.conteudo.telas.forEach((element, id) => {

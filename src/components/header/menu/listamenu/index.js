@@ -32,10 +32,6 @@ function ListaMenu(props) {
   const { liberaScorm, setLiberaScorm } = useContext(GlobalState);
 
   useEffect(() => {
-    // if (pagesData.curso.conteudo.telas[props.itemVisited].trava == true) {
-    //   setLiberaScorm(false);
-    // }
-
     if (menuPages.length === 0) {
       setNewSuspendData(
         props.listItens.map(() => {
