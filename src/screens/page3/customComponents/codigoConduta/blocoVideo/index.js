@@ -76,7 +76,7 @@ function BlocoVideo(props) {
           <ParallaxGrafismoRoxoVideo2 />
           <ParallaxGrafismoAzulVideo />
           <ParallaxGrafismoBolaAzulVideo3 />
-          <ParallaxGrafismoBolaLaranjaVideo2 />
+          {/* <ParallaxGrafismoBolaLaranjaVideo2 /> */}
           <ParallaxGrafismoBolaAmareloVideo2 />
         </Fragment>
       );

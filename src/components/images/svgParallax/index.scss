@@ -188,13 +188,13 @@
     }
     &.grafismoRoxoVideo2 {
       right: 0%;
-      bottom: 20%;
+      bottom: 40%;
       width: 195px;
       height: auto;
 
       @media #{$bp-tablet} {
         right: -10%;
-        bottom: 20%;
+        bottom: 40%;
         width: 140px;
         height: auto;
       }
