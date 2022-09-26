@@ -372,7 +372,7 @@ function OneAnswerWithAudio(props) {
             </Row>
           </Col>
 
-          <Col lg="10" className="mt-4">
+          <Col lg="10" className="mt-5">
             <TextBlock
               textsBlock={actualQuestion.audioFeed.textQuestionBlockAudio}
             />
