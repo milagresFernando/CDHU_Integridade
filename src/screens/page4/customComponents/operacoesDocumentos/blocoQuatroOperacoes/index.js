@@ -46,11 +46,11 @@ function BlocoQuatroOperacoes(props) {
       className: "bgWhite",
       content: (
         <Fragment>
-          <strong>Toda operação realizada com dados pessoais,</strong> como as
-          que se referem à coleta, produção, recepção, classificação,
-          utilização, ao acesso, à reprodução, transmissão, distribuição, ao
-          processamento, arquivamento, armazenamento, à eliminação, avaliação ou
-          ao controle da informação, modificação, comunicação, transferência,
+          <strong>Toda operação realizada com dados pessoais, </strong>como as
+          que se referem a coleta, produção, recepção, classificação,
+          utilização, acesso, reprodução, transmissão, distribuição,
+          processamento, arquivamento, armazenamento, eliminação, avaliação ou
+          controle da informação, modificação, comunicação, transferência,
           difusão ou extração.
         </Fragment>
       ),

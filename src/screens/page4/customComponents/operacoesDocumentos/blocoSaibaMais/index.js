@@ -13,7 +13,10 @@ function BlocoSaibaMais() {
       className: "",
       content: (
         <Fragment>
-          <a href="https://www.cdhu.sp.gov.br/" target="_blank">
+          <a
+            href="https://cdhuspgovbr.sharepoint.com/sites/intranet/SitePages/lgpd.aspx"
+            target="_blank"
+          >
             <strong>Clique aqui</strong>
           </a>{" "}
           para acessar os conteúdos relacionados à LGPD. Lembre-se, também, de

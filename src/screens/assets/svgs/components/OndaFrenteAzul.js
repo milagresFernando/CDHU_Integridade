@@ -2,7 +2,7 @@ import * as React from "react";
 
 function OndaFrenteAzul(props) {
   return (
-    <svg viewBox="0 0 2246.03 800">
+    <svg data-name="ondaFrente" viewBox="0 0 2246.03 800">
       <defs>
         <linearGradient
           id="OndaFrenteAzulId"
@@ -13,15 +13,7 @@ function OndaFrenteAzul(props) {
           gradientUnits="userSpaceOnUse"
         >
           <stop offset={0.33} stopColor="#00b1ed" stopOpacity={0} />
-          <stop offset={0.35} stopColor="#00b1ed" stopOpacity={0.1} />
-          <stop offset={0.38} stopColor="#00b1ed" stopOpacity={0.29} />
-          <stop offset={0.42} stopColor="#00b1ed" stopOpacity={0.46} />
-          <stop offset={0.47} stopColor="#00b1ed" stopOpacity={0.61} />
-          <stop offset={0.52} stopColor="#00b1ed" stopOpacity={0.73} />
-          <stop offset={0.57} stopColor="#00b1ed" stopOpacity={0.83} />
-          <stop offset={0.63} stopColor="#00b1ed" stopOpacity={0.91} />
-          <stop offset={0.7} stopColor="#00b1ed" stopOpacity={0.96} />
-          <stop offset={0.8} stopColor="#00b1ed" stopOpacity={0.99} />
+          <stop offset={0.8} stopColor="#00b1ed" stopOpacity={0.71} />
           <stop offset={1} stopColor="#00b1ed" />
         </linearGradient>
       </defs>

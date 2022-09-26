@@ -331,7 +331,6 @@ function OneAnswerWithAudio(props) {
               <AudioJs
                 className="mb-3"
                 src={actualQuestion.audio.audioFile}
-                transcricao={actualQuestion.audio.transcricao}
                 titleSetings={actualQuestion.audio.titleAudio}
               />
             </Col>

@@ -145,7 +145,7 @@ function BlocoCarouselComImgEstatica() {
             pauseOnHover={true} //se true pausa o carrousel quando no mouse over, é necessário possuir um "generalInterval definido"
             indicators={true} //se false remove as setas de navegação
             counter={false} // se false remove o contador de itens
-            loop={true} //se for false não deixa voltar a partir do primeiro item ou avancar a partir do ultimo
+            loop={false} //se for false não deixa voltar a partir do primeiro item ou avancar a partir do ultimo
             textOverImg={false} //se true deixa a imagem como background e ignora do todos os imgSides dos itens
             breakOn="sm" // quebra o carrosel em vários blocos, remove on controles e botões. Passe "xs","sm","md","lg","xl","xxl"
             breakContent="md" // parametro obrigatório, você deve definir em qual breakpoint o elemento vai quebrar e ficar vertical. Passe "sm","md","lg","xl","xxl".

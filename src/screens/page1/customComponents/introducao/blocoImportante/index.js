@@ -13,7 +13,7 @@ function BlocoImportante() {
       className: "",
       content: (
         <Fragment>
-          A <strong>adoção dos princípios e condutas</strong> estabelecidas no
+          A <strong>adoção dos princípios e condutas</strong> estabelecidos no
           Programa de Integridade da CDHU é <strong>essencial</strong> para
           garantir a confiabilidade, a eficiência e a integridade de um{" "}
           <strong>ambiente corporativo</strong> ético e transparente.

@@ -11,22 +11,19 @@ import imgFeed from "../../../../assets/images/icoFeedPositivo.svg";
 
 import audioFile1 from "../../../../assets/audio/page3_audio1.mp3";
 import audioFileFeed1 from "../../../../assets/audio/page3_feed_audio1.mp3";
-import transcricao1 from "../../../../assets/audio/page3_audio1.pdf";
+
 import transcricaoFeed1 from "../../../../assets/audio/page3_feed_audio1.pdf";
 
 import audioFile2 from "../../../../assets/audio/page3_audio2.mp3";
 import audioFileFeed2 from "../../../../assets/audio/page3_feed_audio2.mp3";
-import transcricao2 from "../../../../assets/audio/page3_audio2.pdf";
 import transcricaoFeed2 from "../../../../assets/audio/page3_feed_audio2.pdf";
 
 import audioFile3 from "../../../../assets/audio/page3_audio3.mp3";
 import audioFileFeed3 from "../../../../assets/audio/page3_feed_audio3.mp3";
-import transcricao3 from "../../../../assets/audio/page3_audio3.pdf";
 import transcricaoFeed3 from "../../../../assets/audio/page3_feed_audio3.pdf";
 
 import audioFile4 from "../../../../assets/audio/page3_audio4.mp3";
 import audioFileFeed4 from "../../../../assets/audio/page3_feed_audio4.mp3";
-import transcricao4 from "../../../../assets/audio/page3_audio4.pdf";
 import transcricaoFeed4 from "../../../../assets/audio/page3_feed_audio4.pdf";
 
 import ParallaxGrafismoBolaRabisco from "../../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco";
@@ -85,7 +82,7 @@ function BlocoQuizzUnicaResposta(props) {
         },
 
         audioFile: audioFile1,
-        transcricao: transcricao1,
+        transcricao: "",
       },
       title: {
         titleContent: "Como Kaio deve proceder?",
@@ -263,7 +260,7 @@ function BlocoQuizzUnicaResposta(props) {
         },
 
         audioFile: audioFile2,
-        transcricao: transcricao2,
+        transcricao: "",
       },
       title: {
         titleContent: "O que Eunice deve fazer?",
@@ -421,7 +418,7 @@ function BlocoQuizzUnicaResposta(props) {
               <Fragment>
                 <strong>
                   Olivia é responsável pelos contratos da CDHU com fornecedores
-                  e parceiros. Certo dia, ela encontrou sua amiga João no
+                  e parceiros. Certo dia, ela encontrou sua amiga Camilo no
                   corredor e as duas conversaram rapidamente.
                 </strong>
               </Fragment>
@@ -433,20 +430,20 @@ function BlocoQuizzUnicaResposta(props) {
             content: (
               <Fragment>
                 <strong>Clique no play</strong> para ouvir a conversa entre
-                Olivia e João.
+                Olivia e Camilo.
               </Fragment>
             ),
           },
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE OLIVIA E JOÃO",
+          titleContent: "CONVERSA ENTRE OLIVIA E CAMILO",
           tagTitle: "5",
           titleClassName: "",
         },
 
         audioFile: audioFile3,
-        transcricao: transcricao3,
+        transcricao: "",
       },
       title: {
         titleContent: "O que Olivia deve fazer?",
@@ -572,7 +569,7 @@ function BlocoQuizzUnicaResposta(props) {
         ],
 
         titleAudio: {
-          titleContent: "CONVERSA ENTRE OLIVIA E JOÃO",
+          titleContent: "CONVERSA ENTRE OLIVIA E CAMILO",
           tagTitle: "5",
           titleClassName: "",
         },
@@ -586,7 +583,7 @@ function BlocoQuizzUnicaResposta(props) {
             content: (
               <Fragment>
                 <strong>
-                  Assim como Olivia e João, de que outras maneiras você também
+                  Assim como Olivia e Camilo, de que outras maneiras você também
                   pode contribuir com a integridade na CDHU em seu dia a dia?
                 </strong>
               </Fragment>
@@ -631,7 +628,7 @@ function BlocoQuizzUnicaResposta(props) {
         },
 
         audioFile: audioFile4,
-        transcricao: transcricao4,
+        transcricao: "",
       },
       title: {
         titleContent: "O que Tales deve fazer?",

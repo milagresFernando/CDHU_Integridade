@@ -25,7 +25,7 @@ function AudioJs(props) {
     .split("/")
     [props.src.split("/").length - 1].split(".")[0];
 
-  const transcriptionButton = (
+  const transcriptionButton = props.transcricao && (
     <div className="transcricao">
       <a
         className="btn-transcricao"
@@ -39,6 +39,7 @@ function AudioJs(props) {
       </a>
     </div>
   );
+
   const downloadButton = (
     <div className="download">
       <a
@@ -55,7 +56,7 @@ function AudioJs(props) {
   const downloadTranscriptionWrapper = (
     <div className="dTWrapper">
       {/* {downloadButton} */}
-      {/* {transcriptionButton} */}
+      {transcriptionButton}
     </div>
   );
   const play = <span className="play"></span>;

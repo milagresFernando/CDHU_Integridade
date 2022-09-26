@@ -2,7 +2,7 @@ import * as React from "react";
 
 function OndaFrenteLaranja(props) {
   return (
-    <svg viewBox="0 0 2246.03 800">
+    <svg data-name="ondaFrente" viewBox="0 0 2246.03 800">
       <defs>
         <linearGradient
           id="OndaFrenteLaranjaId"
@@ -13,15 +13,10 @@ function OndaFrenteLaranja(props) {
           gradientUnits="userSpaceOnUse"
         >
           <stop offset={0.33} stopColor="#fdfdfd" stopOpacity={0} />
-          <stop offset={0.35} stopColor="#fbefe8" stopOpacity={0.12} />
-          <stop offset={0.39} stopColor="#f9dac8" stopOpacity={0.3} />
-          <stop offset={0.43} stopColor="#f7c7ab" stopOpacity={0.47} />
-          <stop offset={0.47} stopColor="#f6b792" stopOpacity={0.61} />
-          <stop offset={0.52} stopColor="#f4a97d" stopOpacity={0.73} />
-          <stop offset={0.57} stopColor="#f39e6d" stopOpacity={0.83} />
-          <stop offset={0.63} stopColor="#f3955f" stopOpacity={0.91} />
-          <stop offset={0.7} stopColor="#f28f56" stopOpacity={0.96} />
-          <stop offset={0.8} stopColor="#f28c51" stopOpacity={0.99} />
+          <stop offset={0.45} stopColor="#fae4d8" stopOpacity={0.21} />
+          <stop offset={0.65} stopColor="#f6be9e" stopOpacity={0.55} />
+          <stop offset={0.81} stopColor="#f4a274" stopOpacity={0.79} />
+          <stop offset={0.94} stopColor="#f29159" stopOpacity={0.94} />
           <stop offset={1} stopColor="#f28b50" />
         </linearGradient>
       </defs>

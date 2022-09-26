@@ -134,11 +134,11 @@ function BlocoQuizzUnicaResposta(props) {
                 className: "",
                 content: (
                   <Fragment>
-                    De acordo com o artigo 6 da LGPD, o princípio da necessidade
-                    é a limitação do tratamento ao mínimo necessário para a
-                    realização de suas finalidades, com abrangência dos dados
-                    pertinentes, proporcionais e não excessivos em relação às
-                    finalidades do tratamento de dados.
+                    De acordo com o artigo 6º da LGPD, o princípio da
+                    necessidade é a limitação do tratamento ao mínimo necessário
+                    para a realização de suas finalidades, com abrangência dos
+                    dados pertinentes, proporcionais e não excessivos em relação
+                    às finalidades do tratamento de dados.
                   </Fragment>
                 ),
               },
@@ -272,7 +272,7 @@ function BlocoQuizzUnicaResposta(props) {
                     específicas de execução de políticas públicas e atribuição
                     legal pelos órgãos e pelas entidades públicas, respeitados
                     os princípios de proteção de dados pessoais elencados no
-                    artigo 6 dessa Lei.
+                    artigo 6º dessa Lei.
                   </Fragment>
                 ),
               },
@@ -481,7 +481,7 @@ function BlocoQuizzUnicaResposta(props) {
                 className: "",
                 content: (
                   <Fragment>
-                    De acordo com o artigo 5 da LGPD, dados pessoais sensíveis
+                    De acordo com o artigo 5º da LGPD, dados pessoais sensíveis
                     são: dado pessoal sobre origem racial ou étnica, convicção
                     religiosa, opinião política, filiação a sindicato ou a
                     organização de caráter religioso, filosófico ou político,
@@ -564,7 +564,7 @@ function BlocoQuizzUnicaResposta(props) {
                 className: "",
                 content: (
                   <Fragment>
-                    De acordo com o artigo 5 da LGPD, o banco de dados é um
+                    De acordo com o artigo 5º da LGPD, o banco de dados é um
                     conjunto estruturado de dados pessoais, estabelecido em um
                     ou em vários locais, em suporte eletrônico ou físico.
                   </Fragment>

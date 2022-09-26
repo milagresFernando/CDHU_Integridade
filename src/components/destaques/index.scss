@@ -8,6 +8,7 @@
   background: linear-gradient(to right, $cor3 0%, $cor4 100%);
   border: solid 3px $cor2;
 
+  z-index: 0;
   &::before {
     content: "";
     position: absolute;
