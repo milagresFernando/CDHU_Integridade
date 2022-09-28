@@ -267,7 +267,7 @@ function BlocoQuizzUnicaResposta(props) {
                 className: "",
                 content: (
                   <Fragment>
-                    De acordo com o artigo 26 da LGPD, o uso compartilhado de
+                    De acordo com o artigo 26º da LGPD, o uso compartilhado de
                     dados pessoais pelo Poder Público deve atender a finalidades
                     específicas de execução de políticas públicas e atribuição
                     legal pelos órgãos e pelas entidades públicas, respeitados
