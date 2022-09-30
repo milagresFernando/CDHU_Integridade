@@ -68,7 +68,10 @@ function FeedBack(props) {
   }
 
   function handleTryAgain() {
-    scrollTo(props.refSituacao, 60);
+    setTimeout(() => {
+      scrollTo(props.refSituacao, 60);
+    }, 100);
+
     props.setShowFeed(false);
     props.setDisable(false);
     props.answers.forEach((answer, id) => {

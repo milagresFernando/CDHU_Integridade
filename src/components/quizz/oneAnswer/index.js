@@ -293,7 +293,10 @@ function OneAnswer(props) {
     setQuestionCounter(questionCounter + 1);
     setCheckedInitial(setInitialCheckedArray(answers));
     setClickNext(!clickNext);
-    props.options.scrollAnimated && scrollTo(situacao, 60);
+    props.options.scrollAnimated &&
+      setTimeout(() => {
+        scrollTo(situacao, 60);
+      }, 100);
   }
 
   const questionTexts = (
