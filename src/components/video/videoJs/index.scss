@@ -79,6 +79,24 @@
         }
       }
 
+      &:not(.vjs-has-started.vjs-user-inactive.vjs-playing.vjs-paused) {
+        .vjs-text-track-cue {
+          @include transition(all 0.2s ease);
+          margin-top: -30px;
+        }
+      }
+
+      &.vjs-has-started {
+        &.vjs-user-inactive {
+          &.vjs-playing {
+            .vjs-text-track-cue {
+              @include transition(all 0.2s ease);
+              margin-top: initial !important;
+            }
+          }
+        }
+      }
+
       .vjs-control-bar {
         flex-wrap: wrap;
         height: auto;
