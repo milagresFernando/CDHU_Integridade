@@ -418,8 +418,8 @@ function BlocoQuizzUnicaResposta(props) {
               <Fragment>
                 <strong>
                   Olivia é responsável pelos contratos da CDHU com fornecedores
-                  e parceiros. Certo dia, ela encontrou sua amiga Camilo no
-                  corredor e as duas conversaram rapidamente.
+                  e parceiros. Certo dia, ela encontrou seu amigo Camilo no
+                  corredor e os dois conversaram rapidamente.
                 </strong>
               </Fragment>
             ),
