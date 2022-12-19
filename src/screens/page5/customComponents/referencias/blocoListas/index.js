@@ -168,6 +168,7 @@ function BlocoListas() {
         <hr />
         <List tagElement="ul" listItens={listItens2} className="" />
       </Col>
+      <hr />
     </Fragment>
   );
 }

@@ -1,5 +1,5 @@
 // React Elements/Hooks
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 
 // Components
 import { Container, Row, Col } from "react-bootstrap";
@@ -7,10 +7,29 @@ import Title from "../../../../components/texts/title";
 import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import ParallaxGrafismoBolaRabisco2 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco2";
 import BlocoListas from "./blocoListas";
+import BlocoFinalizou from "./blocoFinalizou";
+
+// Scorm
+import { withScorm } from "react-scorm-provider";
 
 //Imagens
 
 function Referencias(props) {
+  useEffect(() => {
+    props.sco.setStatus("completed");
+  }, []);
+
+  function btnFunction() {
+    props.sco.setStatus("completed");
+
+    setTimeout(() => {
+      if (window.CloseWindow && typeof window.CloseWindow === "function") {
+        window.CloseWindow();
+      } else {
+        window.close();
+      }
+    }, 1000);
+  }
   return (
     <section className="relative spacingSection gradientBlueEnd">
       <ParallaxGrafAzul />
@@ -33,9 +52,10 @@ function Referencias(props) {
         <Row className="justify-content-center">
           <BlocoListas />
         </Row>
+        <BlocoFinalizou btnFunction={btnFunction} />
       </Container>
     </section>
   );
 }
 
-export default Referencias;
+export default withScorm()(Referencias);
