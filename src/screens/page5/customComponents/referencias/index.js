@@ -8,6 +8,7 @@ import ParallaxGrafAzul from "../../../scrollParallaxSvg/parallaxGrafAzul";
 import ParallaxGrafismoBolaRabisco2 from "../../../scrollParallaxSvg/parallaxGrafismoBolaRabisco2";
 import BlocoListas from "./blocoListas";
 import BlocoFinalizou from "./blocoFinalizou";
+import BotoesNavegacao from "./botoesNavegacao";
 
 // Scorm
 import { withScorm } from "react-scorm-provider";
@@ -19,16 +20,16 @@ function Referencias(props) {
     props.sco.setStatus("completed");
   }, []);
 
-  function btnFunction() {
+  function btnCompleteScorm() {
     props.sco.setStatus("completed");
 
-    setTimeout(() => {
-      if (window.CloseWindow && typeof window.CloseWindow === "function") {
-        window.CloseWindow();
-      } else {
-        window.close();
-      }
-    }, 1000);
+    // setTimeout(() => {
+    //   if (window.CloseWindow && typeof window.CloseWindow === "function") {
+    //     window.CloseWindow();
+    //   } else {
+    //     window.close();
+    //   }
+    // }, 1000);
   }
   return (
     <section className="relative spacingSection gradientBlueEnd">
@@ -52,7 +53,11 @@ function Referencias(props) {
         <Row className="justify-content-center">
           <BlocoListas />
         </Row>
-        <BlocoFinalizou btnFunction={btnFunction} />
+        {/* <BlocoFinalizou btnFunction={btnFunction} /> */}
+        <BotoesNavegacao
+          completeScorm={true}
+          btnCompleteScorm={btnCompleteScorm}
+        />
       </Container>
     </section>
   );

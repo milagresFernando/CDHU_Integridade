@@ -1,0 +1,7 @@
+@import "src/styles/default/_init.scss";
+.finaliza-relative {
+  position: relative;
+  @media #{$bp-tablet} {
+    position: static;
+  }
+}

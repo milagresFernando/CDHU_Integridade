@@ -35,6 +35,11 @@
 					"route": "referencias",
 					"titulo": "Referências bibliográficas",
 					"trava" : false
+				},
+				{					
+					"route": "finalizacao",
+					"titulo": "Finalização",
+					"trava" : false
 				}
 				
 			]

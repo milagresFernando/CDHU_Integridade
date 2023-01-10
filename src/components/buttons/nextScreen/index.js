@@ -31,6 +31,9 @@ function NextScreen(props) {
 
   //avanca para a proxima tela
   function handleNext() {
+    if (props.completeScorm) {
+      props.btnCompleteScorm();
+    }
     setChangeRoute(!changeRoute);
     //  setEndPosition(false);
     const newPath = `/${
