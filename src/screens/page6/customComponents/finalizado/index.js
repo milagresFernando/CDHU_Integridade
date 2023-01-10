@@ -2,7 +2,7 @@
 import "./index.scss";
 
 // React Elements/Hooks
-import { useState, Fragment } from "react";
+import { useState, Fragment, useEffect } from "react";
 
 // Components
 import { Container, Row, Col } from "react-bootstrap";
@@ -10,7 +10,13 @@ import ParallaxFinalizado from "../../../scrollParallaxSvg/parallaxFinalizado";
 
 //Imagens
 
+// Scorm
+import { withScorm } from "react-scorm-provider";
+
 function Finalizado(props) {
+  useEffect(() => {
+    props.sco.setStatus("completed");
+  }, []);
   return (
     <Fragment>
       <section className={"relative"}>
@@ -20,4 +26,4 @@ function Finalizado(props) {
   );
 }
 
-export default Finalizado;
+export default withScorm()(Finalizado);

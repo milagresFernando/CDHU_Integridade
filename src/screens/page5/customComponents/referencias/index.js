@@ -16,10 +16,6 @@ import { withScorm } from "react-scorm-provider";
 //Imagens
 
 function Referencias(props) {
-  useEffect(() => {
-    props.sco.setStatus("completed");
-  }, []);
-
   function btnCompleteScorm() {
     props.sco.setStatus("completed");
 
@@ -53,7 +49,7 @@ function Referencias(props) {
         <Row className="justify-content-center">
           <BlocoListas />
         </Row>
-        {/* <BlocoFinalizou btnFunction={btnFunction} /> */}
+
         <BotoesNavegacao
           completeScorm={true}
           btnCompleteScorm={btnCompleteScorm}
